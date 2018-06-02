@@ -119,7 +119,7 @@ $.fn.extend({
                 if(moveY < 0){
                     $this.css({"top":"0"});
                 }
-                if(moveY > (faHeight)){
+                if(moveY > (faHeight-thisHeight)){
                     $this.css({"top":faHeight});
                 }
                 return moveY;
