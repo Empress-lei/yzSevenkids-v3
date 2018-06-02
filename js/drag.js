@@ -35,13 +35,13 @@ $.fn.extend({
         hander.css({"cursor":"move"});
 
         var faWidth = father.width();
-        console.log(faWidth)
+        // console.log(faWidth)
         var faHeight = father.height();
-        console.log(faHeight)
+        // console.log(faHeight)
         var thisWidth = $this.width()+parseInt($this.css('padding-left'))+parseInt($this.css('padding-right'));
-        console.log(thisWidth)
+        // console.log(thisWidth)
         var thisHeight = $this.height()+parseInt($this.css('padding-top'))+parseInt($this.css('padding-bottom'));
-        console.log(thisHeight)
+        // console.log(thisHeight)
         var mDown = false;//
         var positionX;
         var positionY;

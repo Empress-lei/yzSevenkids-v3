@@ -69,6 +69,7 @@
   margin: 11.5px auto;
 }
 .sgin_pages {
+  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;

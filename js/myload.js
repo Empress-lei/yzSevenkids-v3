@@ -2,7 +2,7 @@
 $(function () {
     var tempUrl = ""
     //load 指导方案
-    $(".list_li").click(function () {
+    $(".myload").click(function () {
         if(tempUrl != $(this).data("url") ) {
             tempUrl = $(this).data("url");
         }else {
@@ -16,9 +16,9 @@ $(function () {
 })
 function myload(url, callback) {
     //加载loading
-    $(".activi_mess").html("");
+    $(".myloadDiv").html("");
     //加载loading
-    $(".activi_mess").load(url, function () {
+    $(".myloadDiv").load(url, function () {
         if (typeof callback == "function") {
             callback();
         } else {
