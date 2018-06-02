@@ -1,0 +1,760 @@
+@import "base_pc.css";
+.warp_page {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /*清除点击高亮效果*/
+  .maxcen_width {
+    width: 1228px;
+    margin: 0 auto;
+  }
+  .creat_pages {
+    height: auto;
+    cursor: pointer;
+    padding-bottom: 100px;
+    margin-top: 128px !important;
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+      background-image: none;
+    }
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+      background-image: none;
+    }
+    .swiper-button-next {
+      position: absolute;
+      width: 48px;
+      height: 108px;
+      right: -48px;
+      z-index: 999999;
+      color: #333;
+      text-align: center;
+      padding-top: 16px;
+      background-color: #FFF7F4;
+    }
+    .swiper-button-prev {
+      position: absolute;
+      width: 48px;
+      height: 108px;
+      left: 375px;
+      z-index: 888;
+      top: 35%;
+      color: #333333;
+      text-align: center;
+      padding-top: 16px;
+      margin-bottom: 1px;
+      background-color: #FFF7F4;
+    }
+    .button_my:hover {
+      color: #fff;
+      background-color: #FF530B;
+    }
+    .creat_title {
+      width: 100%;
+      padding: 15px 20px;
+      background-color: #FFF7F4;
+      h3 {
+        font-size: 32px;
+        line-height: 45px;
+        color: #181818;
+      }
+      .describe_text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #999;
+      }
+    }
+    //创建海报
+    .creat_modu {
+      padding: 20px;
+      position: relative;
+    }
+    .creat_center {
+      float: left;
+      height: 667px;
+      width: 375px;
+      position: relative;
+      z-index: 3;
+      background-color: #fff;
+      .creat_content {
+        height: 667px;
+        width: 375px;
+        margin: 0 auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+        //overflow: hidden;
+        .swiper-container {
+          height: 667px;
+          width: 375px;
+          .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+          }
+          .edit_area {
+            text-align: left;
+            height: 667px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            li {
+              .element-box {
+                overflow: hidden;
+              }
+            }
+          }
+          //第一屏  首页
+          .alitghost_home {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-size: 100% 100%;
+            position: relative;
+            //顶部的五彩起
+            .render_img {
+              display: block;
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            //你家中有闲置不用的物品么 文本图片
+            .title_one {
+              display: block;
+              width: 292px;
+              position: absolute;
+              top: 100px;
+              left: 50%;
+              margin-left: -146px;
+            }
+            .tiele_text {
+              display: block;
+              width: 193px;
+              position: absolute;
+              top: 172px;
+              left: 50%;
+              margin-left: -96.5px;
+            }
+            .theme_ghost {
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              width: 100%;
+            }
+            //龙舟
+            .title_textf {
+              position: absolute;
+              z-index: 2;
+              left: 50%;
+              bottom: 32px;
+              width: 252px;
+              margin-left: -126px;
+            }
+          }
+          //第二屏  学校的邀请函
+          .alitghost_invi {
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            position: relative;
+            .logo_render {
+              display: block;
+              width: 57px;
+              height: 57px;
+              margin: 30px auto 0;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              border-radius: 50%;
+              border: 2px solid #fff;
+            }
+            //幼儿园名称
+            .invi_title {
+              padding: 15px 20px 5px;
+              text-align: center;
+              font-size: 20px;
+              line-height: 28px;
+              color: #FF4539;
+            }
+            .invi_txt {
+              text-align: center;
+              font-size: 14px;
+              line-height: 20px;
+              color: #FF4539;
+              padding-bottom: 8px;
+            }
+            .title_left {
+              display: block;
+              margin: 0 auto 5px;
+              width: 251px;
+            }
+            .title_right {
+              display: block;
+              margin: 0 auto;
+              width: 295px;
+            }
+            .theme_img {
+              position: absolute;
+              bottom: 75px;
+              left: 50%;
+              display: block;
+              width: 290px;
+              margin-left: -145px;
+            }
+          }
+          //第三屏   活动介绍
+          .alitghost_intr {
+            width: 100%;
+            background-size: 100% 100%;
+            position: relative;
+            .intr_text {
+              width: 269px;
+              height: 410px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              margin: 0 auto;
+              padding: 90px 17px 0;
+              position: relative;
+              z-index: 4;
+              .lovelist_img {
+                display: block;
+                width: 100%;
+                margin: 0 auto 3px;
+              }
+              p {
+                font-size: 14px;
+                color: #FFFFFF;
+                line-height: 22px;
+                margin-bottom: 15px;
+              }
+              .p_back {
+                background-position: left 6px;
+                background-repeat: no-repeat;
+                background-size: 11px 10px;
+                text-indent: 20px;
+              }
+            }
+            .footer_ghost {
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+            }
+          }
+          //第四屏
+          .alitghost_mess {
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            padding: 35px 15px 20px;
+            .mess_title {
+              margin-bottom: 15px;
+              font-size: 16px;
+              color: #333;
+              line-height: 40px;
+              background: url(../images/pub/tit.png) no-repeat left center;
+              background-size: 25px 25px;
+              padding-left: 35px;
+            }
+            .mess_list {
+              width: 100%;
+              li {
+                width: 100%;
+                background: #FFF;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                //时间的图标
+                .list {
+                  width: 100%;
+                  padding: 15px 15px 5px;
+                  .timeimg {
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 4px;
+                  }
+                  .mess_time {
+                    font-size: 14px;
+                    color: #333333;
+                    position: relative;
+                    z-index: 555;
+                    line-height: 25px;
+                    padding-left: 10px;
+                  }
+                  //地点的图标
+                  .mess_address {
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 4px;
+                  }
+                }
+                .time_num {
+                  font-size: 12px;
+                  line-height: 20px;
+                  color: #333;
+                  padding: 0 15px 15px 40px;
+                }
+              }
+            }
+            .mess_bot {
+              margin-top: 50px;
+              width: 183px;
+              height: 86px;
+              padding: 8px 10px 5px 15px;
+              color: #fff;
+              font-size: 12px;
+              background-size: cover;
+            }
+            .theme_rice {
+              position: absolute;
+              right: 0;
+              bottom: 150px;
+              width: 180px;
+            }
+          }
+          //第五屏 用户信息
+          .alitghost_user {
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            padding: 35px 15px 20px;
+            .mess_title {
+              margin-bottom: 15px;
+              font-size: 16px;
+              color: #333;
+              line-height: 40px;
+              background: url("../images/pub/tit1.png") no-repeat left center;
+              background-size: 25px 25px;
+              padding-left: 40px;
+            }
+            //宝宝信息填写
+            .mess_list {
+              background: #fff;
+              border-radius: 8px;
+              padding: 20px 15px 50px;
+              .baby_name {
+                position: relative;
+                padding-top: 30px;
+                padding-bottom: 11px;
+                border-bottom: 1px solid #e6e6e6;
+                .baby_input {
+                  display: block;
+                  width: 70%;
+                  height: 32px;
+                  line-height: 32px;
+                  color: #333;
+                  font-size: 14px;
+                }
+                .baby_la {
+                  height: 32px;
+                  line-height: 32px;
+                  color: #333;
+                  font-size: 14px;
+                }
+                .obtain_code {
+                  display: block;
+                  color: #fff;
+                  width: 95px;
+                  height: 32px;
+                  line-height: 32px;
+                  text-align: center;
+                  font-size: 12px;
+                  background-color: #0099FF;
+                  -webkit-border-radius: 3px;
+                  -moz-border-radius: 3px;
+                  -ms-border-radius: 3px;
+                  -o-border-radius: 3px;
+                  border-radius: 3px;
+                  position: absolute;
+                  right: 0;
+                  bottom: 14px;
+                }
+              }
+              ::-webkit-input-placeholder {
+                color: #999999;
+                font-size: 14px;
+              }
+              ::-moz-placeholder {
+                color: #999999;
+                font-size: 14px;
+              }
+              :-ms-input-placeholder {
+                color: #999999;
+                font-size: 14px;
+              }
+              input:-moz-placeholder {
+                color: #999999;
+                font-size: 14px;
+              }
+              .cord_error {
+                font-size:12px;
+                color:rgba(255,19,19,1);
+                line-height:17px;
+                text-align: right;
+                padding-top: 7px;
+              }
+              .sub_btn {
+                display: block;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                color: #999999;
+                font-size: 16px;
+                text-align: center;
+                background-color: #F3F3F3;
+                -webkit-border-radius: 50px 50px;
+                -moz-border-radius: 50px 50px;
+                -ms-border-radius: 50px 50px;
+                -o-border-radius: 50px 50px;
+                border-radius: 50px 50px;
+                margin: 15px auto 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //填写信息区域
+    //创建活动 2018-1-22修改样式（创建活动公共样式)
+    .creat_modify {
+      float: left;
+      width: 685px;
+      margin-left: 128px;
+      .perfect {
+        padding: 0 0 16px 0;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FF530B;
+        font-weight: bold;
+      }
+      ::-webkit-input-placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+
+      ::-moz-placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+      /* firefox 19+ */
+      :-ms-input-placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+      /* ie */
+      input:-moz-placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+      textarea:-moz-placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+      .kinder_name {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+        label {
+          width: 98px;
+          display: block;
+          float: left;
+          line-height: 38px;
+        }
+        .name_input {
+          float: left;
+          width: 579px;
+          height: 38px;
+          font-size: 16px;
+          padding: 0 10px;
+          margin-left: 7px;
+          color: #333;
+          border: 1px solid #DDDDDD;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          border-radius: 8px;
+        }
+        .render_intr {
+          float: left;
+          width: 579px;
+          min-height: 110px;
+          font-size: 16px;
+          padding: 10px;
+          margin-left: 7px;
+          color: #333;
+          border: 1px solid #DDDDDD;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          border-radius: 8px;
+        }
+      }
+      .look_exam {
+        display: block;
+        text-align: right;
+        font-size: 12px;
+        line-height: 17px;
+        color: #0099FF;
+        text-decoration: underline;
+      }
+      .line_bor {
+        width: 100%;
+        height: 1px;
+        margin: 30px 0;
+        border-top: 1px solid #EEEEEE;
+      }
+      //活动时间
+      .activity_time {
+        margin-bottom: 20px;
+        .time_tit {
+          font-size: 16px;
+          color: #333;
+          width: 98px;
+          display: block;
+          float: left;
+          line-height: 38px;
+        }
+        .layui-form, .layui-form-item, .layui-inline {
+
+        }
+        .layui-form-item, .layui-inline {
+          margin: 0 !important;
+        }
+        .time_choice {
+          width: 500px;
+          height: 38px;
+          #time_year {
+            width: 579px;
+            height: 38px;
+            font-size: 16px;
+            padding: 0 10px;
+            margin-left: 7px;
+            color: #333;
+            border: 1px solid #DDDDDD;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+          }
+        }
+        .item {
+          width: 160px;
+          height: 50px;
+        }
+      }
+
+      .city_div1 {
+        font-size: 16px;
+        position: relative;
+        color: #333;
+        .pick_span {
+          width: 98px;
+          display: block;
+          float: left;
+          line-height: 38px;
+        }
+        .pick-area {
+          float: left;
+          width: 579px;
+          height: 38px;
+          font-size: 16px;
+          padding: 0 10px 0 2px;
+          margin-left: 7px;
+          color: #333;
+          border: 1px solid #DDDDDD;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          border-radius: 8px;
+        }
+        .pick-show {
+          width: 100%;
+          position: relative;
+          padding: 0 8px;
+          height: 38px;
+          line-height: 38px;
+          border-radius: 3px;;
+          padding-left: 0 !important;
+        }
+        .pick-show span {
+          float: left;
+          display: inline-block;
+          max-width: 200px !important;
+          height: 36px;
+          line-height: 36px;
+          padding: 0 8px;
+          overflow: hidden;
+          font-size: 16px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #999;
+          cursor: pointer;
+        }
+        .pick-show span:hover {
+          color: #fff !important;
+          border-radius: 3px;
+          background: #ff530b !important;
+        }
+        .pick-show span.pressActive {
+          background: #ff530b !important;
+          color: #fff !important;
+          border-radius: 3px
+        }
+        .pick-show em.pick-arrow {
+          display: none !important;
+          position: absolute;
+          top: 14px;
+          right: 8px;
+          display: block;
+          border: 8px solid #999;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+        }
+        .pick-show i {
+          float: left;
+          display: inline-block;
+          padding: 0 3px;
+          color: #888;
+          font-style: normal;
+        }
+        .pick-list {
+          display: none;
+          width: 280px;
+          position: absolute;
+          line-height: 36px;
+          margin: 0;
+          padding: 0;
+          background: #fff;
+          z-index: 999999999;
+          overflow-y: auto;
+          overflow-x: hidden;
+          border: 1px solid #dedede;
+          border-top: none;
+        }
+        .pick-list li {
+          margin: 0;
+          padding-left: 8px;
+          list-style: none;
+          color: #888;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .pick-list li:hover {
+          color: #FD530B;
+          font-weight: bold;
+        }
+      }
+      .submit_btn {
+        display: block;
+        width: 222px;
+        height: 54px;
+        font-size: 20px;
+        margin-top: 47px;
+        color: #FFFFFF;
+        line-height: 54px;
+        text-align: center;
+        background-color: #FF530B;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+      }
+      // 园所性质
+      .activity_lab {
+        width: 100%;
+        .lab_tit {
+          padding-bottom: 15px;
+          font-size: 16px;
+          color: #181818;
+          p {
+            color: #888;
+          }
+        }
+        //公立的标签
+        .lab_pubbtn {
+          padding-top: 15px;
+          .gray_btn {
+            float: left;
+            width: 104px;
+            font-size: 12px;
+            color: #888;
+            padding: 4px 0;
+            text-align: center;
+            margin: 0 12px 16px 0;
+            border-radius: 100px;
+            border: 1px solid #888;
+          }
+          .orange_btn {
+            float: left;
+            width: 104px;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0 12px 16px 0;
+            background: #FF530B;
+            border-radius: 100px;
+            border: 1px solid #FF530B;
+          }
+        }
+        //私立的按钮
+        .lab_pribtn {
+          padding: 15px 0 25px;
+          border-bottom: 1px solid #888;
+          .gray_btn {
+            float: left;
+            width: 104px;
+            font-size: 12px;
+            color: #888;
+            padding: 4px 0;
+            text-align: center;
+            margin: 0 12px 16px 0;
+            border-radius: 100px;
+            border: 1px solid #888;
+          }
+          .orange_btn {
+            float: left;
+            width: 104px;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0 12px 16px 0;
+            background: #FF530B;
+            border-radius: 100px;
+            border: 1px solid #FF530B;
+          }
+        }
+      }
+      //按钮
+      .sub_btn {
+        //width: 100%;
+        padding-top: 50px;
+        position: absolute;
+        right: 30px;
+        a {
+          display: block;
+          width: 124px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          border: 1px solid #181818;
+          border-radius: 25px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

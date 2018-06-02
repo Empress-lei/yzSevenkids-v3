@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动数据列表</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="ie-comp">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/activi_data.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/data.js"></script>
+</head>
+<body>
+<div class="warp_page">
+    <!--导航-->
+    <div class="home_nav">
+        <header class="home_header clearfix maxcen_width">
+            <a href="index.html"><img src="./images/pub/logo.png" alt="logo" class="logo_img fl"></a>
+            <div class="hover_ani">
+                <span class="span_dec" style="display:none"></span>
+                <ul>
+                    <li>
+                        <a href="./pages/templateCore/exper-1.0.html" class="nav_list">活动中心</a>
+                    </li>
+                    <li>
+                        <a href="./pages/designMana/makeapint.html" class="nav_list">活动管理</a>
+                    </li>
+                    <li>
+                        <a href="./pages/guide.html" class="nav_list">操作指南</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav_list">更多</a>
+                    </li>
+                </ul>
+            </div>
+            <!--登录注册的地方-->
+            <a href="javascript:void(0)" class="home_sing" style="display: none">
+                <span class="sing_in">请登录</span>&nbsp;&nbsp;|&nbsp;&nbsp; <span class="register">免费注册</span>
+            </a>
+            <!--登录之后显示的信息-->
+            <div class="sing_nostyle">
+                <img src="../../images/icon/edit_icon.png" alt="" class="szimg">
+                <p class="name_sco">学校名称或者已登录</p>
+                <img src="../../images/new1.0/mess/touxiang.png" alt="" class="sco_icon">
+                <ul class="hover_mess">
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="activ_tit fl">我的活动</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p><span>2</span>场准备中活动</p>
+                    </li>
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="num_tit fl">我的账号</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p>手机账号:<span>1591036****</span></p>
+                        <p>微信账号：<span>***</span>星</p>
+                        <p>微信账号：<span class="no_binding">未绑定</span></p>
+                    </li>
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="back_tit fl">管理员</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p>数据统计分析报表</p>
+                    </li>
+                    <a href="javascript:void(0)" class="sign_out">退出登录</a>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="activi_data maxcen_width">
+        <ul class="data_la clearfix">
+            <li class="data_sta conduct active_sta fl" data-url="./data/conduct.html">进行中</li>
+            <li class="data_sta end fl" data-url="./data/end.html">已结束</li>
+        </ul>
+        <div class="list_content activi_mess">
+
+        </div>
+    </div>
+    <footer class="footer-white">
+        <div class="footer_mess maxcen_width clearfix">
+            <img src="./images/pub/logo.png" alt="logo" class="footer_logo fl">
+            <div class="footer_company fl">
+                <p class="com_mess">公司：北京七个小孩教育科技有限公司</p>
+                <p class="com_mess">地址：北京市海淀区中关村大街18号科贸电子城B座互联网教育创新中心1940</p>
+                <p>电话：010-57207965</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script>
+    $(function () {
+        seleRender(".data_la .data_sta");
+    })
+    //单选选择标签
+    function seleRender(item) {
+        var item = $(item);
+        item.on("click", function () {
+            item.removeClass("active_sta");
+            $(this).siblings("li").addClass("active_sta");
+        })
+        item.on("click", function () {
+            item.removeClass("active_sta");
+            $(this).addClass("active_sta");
+
+        })
+    }
+</script>
+</html>

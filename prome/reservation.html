@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>幼儿园慧招生 -- 活动介绍</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="ie-comp">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div class="make_appo">
+    <div class="make_tit clearfix">
+        <div class="clearfix fl">
+            <h3 class="make_title fl">预约记录 <span>(共 <span class="title_num">20</span> 位家长预约报名)</span></h3>
+            <span class="craet_time fl">创建时间：<span class="time_data">2018.05.31 18：30</span></span>
+        </div>
+        <div class="item fr">
+            <div class="filter-box clearfix">
+                <div class="time_branch fl">
+                    <!--<span class="branch_icon"></span>-->
+                    <input type="text" class="filter-title" id="time_branch" placeholder="根据活动创建时间查看信息表" readonly="readonly">
+                </div>
+                <select name="filter">
+                    <option value="07:30">1.根据活动创建时间查看信息表</option>
+                    <option value="08:00">2.根据活动创建时间查看信息表</option>
+                    <option value="08:30" selected>3.根据活动创建时间查看信息表</option>
+                    <option value="09:00">4.根据活动创建时间查看信息表</option>
+                    <option value="09:30">5.根据活动创建时间查看信息表</option>
+                    <option value="10:00">6.根据活动创建时间查看信息表</option>
+                    <option value="10:30">7.根据活动创建时间查看信息表</option>
+                    <option value="11:00">8.根据活动创建时间查看信息表</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <ul class="make_ul">
+        <li class="clearfix">
+            <img src="./images/intr_1.4/sup.png" alt="" class="pic_img fl">
+            <div class="make_mess fl">
+                <h4>家长微信昵称</h4>
+                <p class="baby_mess">宝宝姓名：<span>娇娇</span></p>
+            </div>
+            <div class="make_time fr">
+                <label class="sgin_btn">已签到</label>
+            </div>
+            <p class="x_sex">宝宝年龄：<span class="color_num">3岁4个月</span><span class="verline">|</span><span class="ear_icon">联系方式：<span class="color_num">17512345678</span></span><span class="verline">|</span>预约时间：<span class="color_num">2018.05.22 18：22</span></p>
+        </li>
+        <li class="clearfix">
+            <img src="./images/intr_1.4/sup.png" alt="" class="pic_img fl">
+            <div class="make_mess fl">
+                <h4>家长微信昵称</h4>
+                <p class="baby_mess">宝宝姓名：<span>娇娇</span></p>
+            </div>
+            <div class="make_time fr">
+                <label class="sgin_btn">已签到</label>
+            </div>
+            <p class="x_sex">宝宝年龄：<span class="color_num">3岁4个月</span><span class="verline">|</span><span class="ear_icon">联系方式：<span class="color_num">17512345678</span></span><span class="verline">|</span>预约时间：<span class="color_num">2018.05.22 18：22</span></p>
+        </li>
+        <li class="clearfix">
+            <img src="./images/intr_1.4/sup.png" alt="" class="pic_img fl">
+            <div class="make_mess fl">
+                <h4>家长微信昵称</h4>
+                <p class="baby_mess">宝宝姓名：<span>娇娇</span></p>
+            </div>
+            <div class="make_time fr">
+                <label class="no_sgin">已签到</label>
+            </div>
+            <p class="x_sex">宝宝年龄：<span class="color_num">3岁4个月</span><span class="verline">|</span><span class="ear_icon">联系方式：<span class="color_num">17512345678</span></span><span class="verline">|</span>预约时间：<span class="color_num">2018.05.22 18：22</span></p>
+
+        </li>
+    </ul>
+    <a href="javascript:void (0);" class="look_mess">查看更多</a>
+    <a href="javascript:void (0);" class="down_txt">下载</a>
+</div>
+</body>
+<script>
+    $(function () {
+        //时间选择器
+        //选择时间
+        $('.filter-box').selectFilter({
+            callBack: function (val) {
+                //返回选择的值
+                console.log(val + '-是返回的值')
+            }
+        });
+        $(".time_branch").click(function () {
+            if($(".time_branch input").hasClass("branch_icon")) {
+                $(".time_branch input").removeClass("branch_icon");
+            }else {
+
+                $(".time_branch input").addClass("branch_icon");
+            }
+        })
+        $(".filter-list li").click(function () {
+            $(".time_branch input").removeClass("branch_icon");
+        })
+
+    })
+
+    jQuery.fn.selectFilter = function (options) {
+        var defaults = {
+            callBack: function (res) {
+            }
+        };
+        var ops = $.extend({}, defaults, options);
+        var selectList = $(this).find('select option');
+        var that = this;
+        var html = '';
+        // 读取select 标签的值
+        html += '<ul class="filter-list">';
+        $(selectList).each(function (idx, item) {
+            var val = $(item).val();
+            // console.log(val)
+            var valText = $(item).html();
+            var selected = $(item).attr('selected');
+            var disabled = $(item).attr('disabled');
+            var isSelected = selected ? 'filter-selected' : '';
+            var isDisabled = disabled ? 'filter-disabled' : '';
+            if (selected) {
+                html += '<li class="' + isSelected + '" data-value="' + val + '"><a title="' + valText + '">' + valText + '</a></li>';
+                $(that).find('.filter-title').val(valText);
+                console.log($("#myiframe").contents().find("#time_num").html(valText))
+            } else if (disabled) {
+                html += '<li class="' + isDisabled + '" data-value="' + val + '"><a>' + valText + '</a></li>';
+            } else {
+                html += '<li data-value="' + val + '"><a title="' + valText + '">' + valText + '</a></li>';
+            }
+            ;
+        });
+        html += '</ul>';
+
+        $(that).append(html);
+        $(that).find('select').hide();
+
+        //点击选择
+        $(that).on('click', '.time_branch', function () {
+            $(that).find('.filter-list').slideToggle(100);
+            $(that).find('.filter-list').toggleClass('filter-open');
+        });
+        //点击选择列表
+        $(that).find('.filter-list li').not('.filter-disabled').on('click', function () {
+            var val = $(this).data('value');
+            var valText = $(this).find('a').html();
+            $(that).find('.filter-title').val(valText);
+            $(that).find('.icon-filter-arrow').toggleClass('filter-show');
+            $(this).addClass('filter-selected').siblings().removeClass('filter-selected');
+            $(this).parent().slideToggle(50);
+            for (var i = 0; i < selectList.length; i++) {
+                var selectVal = selectList.eq(i).val();
+                if (val == selectVal) {
+                    $(that).find('select').val(val);
+                }
+                ;
+            }
+            ;
+            ops.callBack(val); //返回值
+        });
+
+        //其他元素被点击则收起选择
+        $(document).on('mousedown', function (e) {
+            closeSelect(that, e);
+        });
+        $(document).on('touchstart', function (e) {
+            closeSelect(that, e);
+        });
+        function closeSelect(that, e) {
+            var filter = $(that).find('.filter-list'),
+                filterEl = $(that).find('.filter-list')[0];
+            var filterBoxEl = $(that)[0];
+            var target = e.target;
+            if (filterEl !== target && !$.contains(filterEl, target) && !$.contains(filterBoxEl, target)) {
+                filter.slideUp(50);
+                $(that).find('.filter-list').removeClass('filter-open');
+                $(that).find('.icon-filter-arrow').removeClass('filter-show');
+            }
+            ;
+        }
+
+        //标签选择
+        $('.lab_pubbtn li').click(function () {
+            if ($(this).hasClass('orange_btn')) {
+                $(this).removeClass('orange_btn');
+            } else {
+                $(this).addClass('orange_btn');
+                $('.lab_pribtn li').removeClass('orange_btn');
+            }
+        });
+    };
+
+</script>
+</html>

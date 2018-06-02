@@ -1,0 +1,107 @@
+@import "base_pc.css";
+.warp_page {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /*清除点击高亮效果*/
+}
+.warp_page .maxcen_width {
+  width: 1228px;
+  margin: 0 auto;
+}
+.warp_page .activi_data {
+  margin-top: 128px;
+  padding-bottom: 50px;
+}
+.warp_page .activi_data .data_la {
+  padding: 0 15px 15px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.warp_page .activi_data .data_la .data_sta {
+  width: 203px;
+  height: 38px;
+  line-height: 38px;
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+  background-color: #EEEEEE;
+}
+.warp_page .activi_data .data_la .conduct {
+  -webkit-border-radius: 19px 0 0 19px;
+  -moz-border-radius: 19px 0 0 19px;
+  -ms-border-radius: 19px 0 0 19px;
+  -o-border-radius: 19px 0 0 19px;
+  border-radius: 19px 0 0 19px;
+  margin-right: 2px;
+}
+.warp_page .activi_data .data_la .end {
+  -webkit-border-radius: 0  19px 19px 0;
+  -moz-border-radius: 0  19px 19px 0;
+  -ms-border-radius: 0  19px 19px 0;
+  -o-border-radius: 0  19px 19px 0;
+  border-radius: 0  19px 19px 0;
+}
+.warp_page .activi_data .data_la .active_sta {
+  color: #fff;
+  text-align: center;
+  background-color: #FF530B;
+}
+.warp_page .activi_data .list_content {
+  min-height: 700px;
+}
+.warp_page .activi_data .conduct_list .activi_li,
+.warp_page .activi_data .end_list .activi_li {
+  width: 100%;
+  padding: 17px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+.warp_page .activi_data .conduct_list .activi_li .cover_img,
+.warp_page .activi_data .end_list .activi_li .cover_img {
+  width: 200px;
+  height: 140px;
+}
+.warp_page .activi_data .conduct_list .activi_li .data_num,
+.warp_page .activi_data .end_list .activi_li .data_num {
+  padding: 20px 30px;
+}
+.warp_page .activi_data .conduct_list .activi_li .data_num .pad_bot,
+.warp_page .activi_data .end_list .activi_li .data_num .pad_bot {
+  padding-bottom: 15px;
+}
+.warp_page .activi_data .conduct_list .activi_li .data_num .num_title,
+.warp_page .activi_data .end_list .activi_li .data_num .num_title {
+  font-size: 18px;
+  color: #181818;
+  line-height: 25px;
+  font-weight: 800;
+}
+.warp_page .activi_data .conduct_list .activi_li .data_num .num_time,
+.warp_page .activi_data .end_list .activi_li .data_num .num_time {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+}
+.warp_page .activi_data .conduct_list .activi_li .data_num .x_sex,
+.warp_page .activi_data .end_list .activi_li .data_num .x_sex {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+}
+.warp_page .activi_data .conduct_list .activi_li .data_num .x_sex .verline,
+.warp_page .activi_data .end_list .activi_li .data_num .x_sex .verline {
+  padding: 0 15px;
+}
+.warp_page .activi_data .conduct_list .activi_li .dataarr,
+.warp_page .activi_data .end_list .activi_li .dataarr {
+  width: 19px;
+  margin-top: 48px;
+}
+.warp_page .activi_data .conduct_list .activi_li:hover,
+.warp_page .activi_data .end_list .activi_li:hover {
+  box-shadow: 0 4px 13px 0 rgba(141, 141, 141, 0.5);
+  border-bottom: 1px solid #fff;
+}

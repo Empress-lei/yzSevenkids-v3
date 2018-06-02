@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pc版创建活动 -- 完善信息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="ie-comp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/activi_creat.css">
+    <link rel="stylesheet" href="../css/poster.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <style>
+        .layui-laydate-content td, .layui-laydate-content th {
+            width: 36px !important;
+        }
+    </style>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
+    <script src="../swiperjs/swiper-3.4.2.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/city/pick-pcc.min.1.0.2.js"></script>
+    <script src="../js/areaAuto.js"></script>
+    <script src=../js/city/pick-pcc.min.1.0.2.js></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/perfect.js"></script>
+    <!--<script src="../../js/common.js"></script>-->
+    <!--<script src="../../js/creat.js"></script>-->
+</head>
+<body>
+<div class="exam_pages">
+    <div class="exam_box">
+        <div  class="exam_close">
+            <img src="../images/pub/close_icon.png" alt="" class="exam_icon">
+        </div>
+        <ul class="exam_ul clearfix">
+            <li>1.品牌简介</li>
+            <li>2.教育理念</li>
+            <li>3.特色课程</li>
+            <li>4.食谱介绍</li>
+        </ul>
+        <h3 class="render_intrd">园所介绍示例</h3>
+        <p class="render_text">
+            ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+            <br><br>
+            我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。
+            <br><br>
+            我园严格执行365天带量食谱，详细制定了孩子每天摄入的蛋白质、脂肪、碳水化合物等营养的摄入量，让孩子吃好每一顿饭不仅是家长关心的事，也是我们最重要的事</p>
+    </div>
+</div>
+<div class="warp_page">
+    <!--导航-->
+    <div class="home_nav">
+        <header class="home_header clearfix maxcen_width">
+            <a href="index.html"><img src="./images/pub/logo.png" alt="logo" class="logo_img fl"></a>
+            <div class="hover_ani">
+                <span class="span_dec" style="display:none"></span>
+                <ul>
+                    <li>
+                        <a href="./pages/templateCore/exper-1.0.html" class="nav_list">活动中心</a>
+                    </li>
+                    <li>
+                        <a href="./pages/designMana/makeapint.html" class="nav_list">活动管理</a>
+                    </li>
+                    <li>
+                        <a href="./pages/guide.html" class="nav_list">操作指南</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav_list">更多</a>
+                    </li>
+                </ul>
+            </div>
+            <!--登录注册的地方-->
+            <a href="javascript:void(0)" class="home_sing" style="display: none">
+                <span class="sing_in">请登录</span>&nbsp;&nbsp;|&nbsp;&nbsp; <span class="register">免费注册</span>
+            </a>
+            <!--登录之后显示的信息-->
+            <div class="sing_nostyle">
+                <img src="../../images/icon/edit_icon.png" alt="" class="szimg">
+                <p class="name_sco">学校名称或者已登录</p>
+                <img src="../../images/new1.0/mess/touxiang.png" alt="" class="sco_icon">
+                <ul class="hover_mess">
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="activ_tit fl">我的活动</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p><span>2</span>场准备中活动</p>
+                    </li>
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="num_tit fl">我的账号</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p>手机账号:<span>1591036****</span></p>
+                        <p>微信账号：<span>***</span>星</p>
+                        <p>微信账号：<span class="no_binding">未绑定</span></p>
+                    </li>
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="back_tit fl">管理员</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p>数据统计分析报表</p>
+                    </li>
+                    <a href="javascript:void(0)" class="sign_out">退出登录</a>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <section class="creat_pages maxcen_width">
+        <div class="creat_title">
+            <h3>与粽不同</h3>
+            <p class="describe_text">一句话描述活动宣品的重要性，引导用户创建使用</p>
+        </div>
+        <div class="creat_modu clearfix maxcen_width">
+            <div class="creat_center fl">
+                <div class="creat_content">
+                    <!--1、背景色-->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--第一屏  首页-->
+                            <!--1、背景图-->
+                            <div class="swiper-slide alitghost_home" style="background-image: url('../images/template/alitghost/back1.png');">
+                                <ul class="edit_area">
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="item" data-type="1">
+                                        <div class="element-box">
+                                            <!--3、标题背景图-->
+                                            <img src="../images/template/alitghost/render1.png" alt="" class="render_img ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <!--4、渲染图-->
+                                            <img src="../images/template/alitghost/title1.png" alt="" class="title_one ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <!--4、渲染图-->
+                                            <img src="../images/template/alitghost/tiele_text.png" alt="" class="tiele_text ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <!--4、渲染图-->
+                                            <img src="../images/template/alitghost/theme1.png" alt="" class="theme_ghost ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <!--4、渲染图-->
+                                            <img src="../images/template/alitghost/title_textf.png" alt="" class="title_textf ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--第二屏  学校的邀请函-->
+                            <!--1、背景图-->
+                            <div class="swiper-slide alitghost_invi" style="background-image: url('../images/template/alitghost/back2.png');">
+                                <!--2、幼儿园名称的位置（class="invi_title"）  默认的颜色为白色；
+                                加class="invi_titleblack"；字体为黑色
+                                加class="invi_goose";咏鹅字体颜色的变化
+                                -->
+                                <ul class="edit_area">
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <!--4、渲染图-->
+                                            <img src="../images/template/alitghost/title1.png" alt="" class="logo_render ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <div class="invi_title" id="kinder_name">
+                                                ***幼儿园 & ***4s
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <div class="invi_txt">
+                                                邀您参加免费亲子体验活动
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <img src="../images/template/alitghost/title2.png" alt="" class="title_left ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <img src="../images/template/alitghost/title_text2.png" alt="" class="title_right ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <img src="../images/template/alitghost/theme2.png" alt="" class="theme_img ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--第三屏   活动介绍-->
+                            <!--1、背景图-->
+                            <div class="swiper-slide alitghost_intr" style="background-image: url('../images/template/alitghost/back3.png');">
+                                <ul class="edit_area">
+                                    <li class="item" style="background-image: url('../images/template/alitghost/redback.png')">
+                                        <!--
+                                            背景图和内容分开
+                                            元素分开做
+                                        -->
+                                        <div class="element-box">
+                                            <img src="../../images/template/alitghost/lovelist.png" alt="" class="lovelist_img ani">
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <!--
+                                            背景图和内容分开
+                                            元素分开做
+                                        -->
+                                        <div class="element-box">
+                                            <div class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                                                爱心是一泓清泉，荡涤着世间的尘埃! 爱心是一缕阳光，扫除了心底的阴霾! 爱心是一股暖流，温暖了人们的心怀!
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <!--
+                                            背景图和内容分开
+                                            元素分开做
+                                        -->
+                                        <div class="element-box">
+                                            <div class="p_back">
+                                                ❤ 这一次的活动，我们将以爱心义卖的方式将获得的款项集合起来，在我们家长代表的监督下利用这些款项购买孩子们需要的生活学习用品，捐献给**机构的孩子们。
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <!--
+                                            背景图和内容分开
+                                            元素分开做
+                                        -->
+                                        <div class="element-box">
+                                            <div class="p_back" style="background-image: url('../images/template/alitghost/love1.png')">
+                                                ❤ 这今天每个小朋友都是买家也都是卖家，在这种买卖的过程中获得了角色的体验，同时也用实际的行动感受了付出爱的快乐。
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <img src="../images/template/alitghost/footer3.png" alt="" class="footer_ghost ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--第四屏  活动信息-->
+                            <!--1、背景图-->
+                            <div class="swiper-slide alitghost_mess" style="background-image: url('../images/template/alitghost/back4.png');">
+                                <ul class="edit_area">
+                                   <li class="item"> <!--2、标题位置点（内容：活动信息）  默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色 加class="mess_titlesnake" 我的小蛇的颜色-->
+                                       <div class="element-box">
+                                           <h3 class="mess_title">活动信息</h3>
+                                       </div>
+                                   </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <ul class="mess_list">
+                                                <li>
+                                                    <div class="clearfix list">
+                                                        <img src="../images/pub/time_3.png" alt="" class="timeimg fl">
+                                                        <h4 class="mess_time fl">时间</h4>
+                                                    </div>
+                                                    <div class="time_num clearfix">
+                                                        <span id="year_num">2018-01-23 周二 上午 01:30:00</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="clearfix list">
+                                                        <img src="../images/pub/add.png" alt="" class="mess_address fl">
+                                                        <h4 class="mess_time fl">地点</h4>
+                                                    </div>
+                                                    <div class="time_num address">
+                                                        <span id="address">**市 **区 **区</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="clearfix list">
+                                                        <img src="../images/pub/tell.png" alt="" class="timeimg fl">
+                                                        <h4 class="mess_time fl">咨询电话</h4>
+                                                    </div>
+                                                    <p  id="tell_num" class="time_num">010 - 12345678</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item"> <!--2、标题位置点（内容：活动信息）  默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色 加class="mess_titlesnake" 我的小蛇的颜色-->
+                                        <div class="element-box">
+                                            <div class="mess_bot" style="background-image: url('../images/template/alitghost/rectangle.png');">
+                                                如果宝宝的年龄在2—3岁，<br>
+                                                那赶紧报名吧！<br>
+                                                只限20组家庭，手慢无！<br>
+                                                报名后，老师会跟你联系哦！
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <img src="../images/template/alitghost/children4.png" alt="" class="theme_rice ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--第五屏 用户信息-->
+                            <!--1、背景图-->
+                            <div class="swiper-slide alitghost_user" style="background-image: url('../images/template/alitghost/back5.png');">
+                                <!--2、标题位置点（内容： 填写信息） 默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色
+                                加class="mess_titlesnake" 我的小蛇的颜色
+                                -->
+                                <ul class="edit_area">
+                                    <li class="item"> <!--2、标题位置点（内容：活动信息）  默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色 加class="mess_titlesnake" 我的小蛇的颜色-->
+                                        <div class="element-box">
+                                            <h3 class="mess_title">活动信息</h3>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="element-box">
+                                            <ul class="mess_list">
+                                                <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                                                    <label class="fl baby_la">宝宝姓名：</label><input type="text" class="baby_input fl" placeholder="请输入宝宝名称" readonly="readonly">
+                                                </li>
+                                                <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s" id="messDate">
+                                                    <label class="fl baby_la">出生日期：</label><input type="tel" placeholder="请输入出生日期"  readonly="readonly"  class="baby_input fl" id="date1">
+                                                </li>
+                                                <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                                                    <label class="fl baby_la">联系电话：</label>
+                                                    <input type="tel" class="baby_input fl"  placeholder="请输入联系电话"  id="j_phone"  readonly="readonly">
+                                                    <a href="javascript:void (0)" class="obtain_code" id="j_getVerifyCode">获取验证码</a>
+                                                </li>
+                                                <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                                    <label class="fl baby_la">验证码：</label><input type="tel" placeholder="请输入手机验证码" class="baby_input fl"  readonly="readonly">
+                                                </li>
+                                                <p class="cord_error">短信验证码输入错误</p>
+                                                <a href="#" class="sub_btn ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">提交</a>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next button_my">下<br>一<br>页</div>
+                    <div class="swiper-button-prev button_my">上<br>一<br>页</div>
+                </div>
+            </div>
+            <!--创建活动-->
+            <div class="creat_modify">
+                <div class="clearfix">
+                    <h3 class="perfect">园所信息完善</h3>
+                </div>
+                <div class="kinder_name clearfix">
+                    <label>幼儿园名称：</label><input type="text" value="" class="name_input inn" id="in" placeholder="请输入幼儿园名称">
+                </div>
+                <div class="kinder_name clearfix">
+                    <label>联 系 方 式：</label><input type="text" value="" class="name_input" id="tell" placeholder="请输入手机号">
+                </div>
+                <div class="intr_div">
+                    <div class="kinder_name clearfix">
+                        <label>园 所 介 绍：</label><textarea class="render_intr" onfocus=$(this).autoHeight(); placeholder="请添加园所特色"></textarea>
+                    </div>
+                    <a href="javascript:void (0);" class="look_exam">查看示例</a>
+                </div>
+                <div class="line_bor"></div>
+                <div class="clearfix">
+                    <h3 class="perfect">活动信息</h3>
+                </div>
+                <div class="kinder_name clearfix">
+                    <label>合作方信息：</label><input type="text" value="" class="name_input inn" id="inp_partner" placeholder="请输入合作方信息">
+                </div>
+                <!--选择时间-->
+                <div class="activity_time clearfix">
+                    <h3 class="time_tit fl">活动时间：</h3>
+                    <div class="layui-form fl">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <div class="layui-input-inline time_choice">
+                                    <span class="year_icon"></span>
+                                    <input type="text" class="layui-input" id="time_year" placeholder="请选择活动时间" readonly="readonly">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city_div1 clearfix">
+                    <span class="fl pick_span">活动地址</span>
+                    <div class="fl pick-area pick-area1" name="省 / 市 / 区"></div>
+                </div>
+                <!--提交按钮-->
+                <a href="#" class="submit_btn fl">提&nbsp;&nbsp;交</a>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<script>
+    $(function () {
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            centeredSlides: true,
+            paginationClickable: true,
+            normalizeSlideIndex: true,
+            pagination: '.swiper-pagination',
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            onSlideChangeEnd: function (swiper) {
+                var nowNum = (swiper.activeIndex + 1);
+                $('.nowNum').html(nowNum);
+            },
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimate(swiper); //初始化完成开始动画
+            },
+            onSlideChangeEnd: function(swiper) {
+                // alert(swiper.activeIndex) //切换结束时，告诉我现在是第几个slide
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            }
+        });
+    })
+</script>
+</html>

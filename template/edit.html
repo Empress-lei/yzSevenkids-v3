@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>$animate</title>
+    <script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script src="../angular/angular.min.js"></script>
+    <script src="../angular/angular-animate.js"></script>
+    <style type="text/css" media="screen">
+        .fade { transition: 1s linear all; -webkit-transition: 1s linear all; }
+        .fade.ng-enter { opacity: 0; }
+        .fade.ng-enter.ng-enter-active { opacity: 1; }
+        .fade.ng-leave { opacity: 1; }
+        .fade.ng-leave.ng-leave-active { opacity: 0; }
+    </style>
+</head>
+<body ng-app="Demo" ng-controller="testCtrl as ctrl">
+<div>
+    <h1>Test List</h1>
+    <ul>
+        <li ng-repeat="item in ctrl.items" class="fade">{{item.value}}
+            <a href="javascript:void(0);" ng-click="ctrl.removeItem($index)">close</a>
+        </li>
+    </ul>
+    <br />
+    <input type="text" ng-model="ctrl.item.value" />
+    <button ng-click="ctrl.addItem()">Add Item</button>
+</div>
+<script type="text/javascript">
+    (function(){
+        var app = angular.module('Demo', ["ngAnimate"])
+            .controller('testCtrl',testCtrl);
+        function testCtrl() {
+            this.items = [
+                { value: "AAAAA" },
+                { value: "BBBBB" },
+                { value: "CCCCC" },
+                { value: "DDDDD" },
+                { value: "EEEEE" }
+            ];
+            this.addItem = function () {
+                this.items.push(this.item);
+                this.item = {};
+            };
+            this.removeItem = function (index) {
+                this.items.splice(index, 1);
+            };
+        }
+    }());
+</script>
+</body>
+</html>
