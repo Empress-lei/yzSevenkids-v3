@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="./css/footer.css">
     <!--海报编辑样式-->
     <link rel="stylesheet" href="./css/poster.css">
-    <link rel="stylesheet" href="./css/creat.css">
+    <link rel="stylesheet" href="./css/textSize.css">
     <link rel="stylesheet" href="./css/jquery-ui.css">
     <script src="./js/jquery-2.1.1.min.js"></script>
     <!--海报编辑js-->
-    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/drag.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/hzs_edit.js"></script>
     <script src="./js/hzs_poster.js"></script>
     <script src="./js/myload.js"></script>
@@ -42,8 +42,8 @@
             </div>
         </div>
         <div class="poster_con">
-            <div class="swiper-slide alitghost_home" id="slider">
-                <ul class="edit_area"
+            <div class="swiper-slide alitghost_home">
+                <ul class="edit_area"  id="slider"
                     style="width:100%;height: 100%;position:relative;background-image: url('./images/template/alitghost/back1.png');background-size: cover;">
                     <!--
                           元素单独的样式  全部加在li标签上
@@ -64,7 +64,7 @@
                     <li class="ui-widget-content intersected drag_text" data-contentType="1"
                         style="width:300px;display: block;position: absolute;top: 102px;left: 50px;font-size: 16px;color: #0e90d2">
                         <i class='hander'></i>
-                        <div class="element-box">
+                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
                             <!--4、渲染图-->
                             <div>********幼儿园</div>
                         </div>
@@ -74,7 +74,7 @@
                         <!--可拖动的标识-->
 
                         <i class='hander'></i>
-                        <div class="element-box">
+                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
                             <!--4、渲染图-->
                             <div>
                                 邀您参加免费亲子体验活
@@ -111,7 +111,7 @@
                     <li class="ui-widget-content intersected drag_text" data-contentType="1"
                         style="display: block;position: absolute;top: 558px;left: 30px;font-size: 22px">
                         <i class='hander'></i>
-                        <div class="element-box">
+                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
                             <!--4、渲染图-->
                             <div class="">
                                 2018年*月*日 星期*
@@ -121,7 +121,7 @@
                     <li class="ui-widget-content intersected drag_text" data-contentType="1"
                         style="display: block;position: absolute;top: 584px;left: 30px;font-size: 14px">
                         <i class='hander'></i>
-                        <div class="element-box">
+                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
                             <!--4、渲染图-->
                             <div class="">
                                 北京市海淀区中关村大街啊哈 <br>
@@ -553,6 +553,28 @@
 </body>
 <script>
     $(function () {
+        //拖动缩放元素位置，图片大小
+        $('#slider li').each(function () {
+            $(this).dragging({
+                move: 'both',
+                randomPosition: false,
+                hander: '.hander'
+            });
+        });
+        //签到海报 拖动缩放元素位置，图片大小
+        $('#sliderSgin li').each(function () {
+            $(this).dragging({
+                move: 'both',
+                randomPosition: false,
+                hander: '.hander'
+            });
+        });
+        $(".drag_text").resizable({
+            aspectRatio: false
+        });
+        $(".drag_img").resizable({
+            aspectRatio: true
+        });
         //鼠标经过出现扫码朦层
         $(".mudular-list li").hover(function () {
             $('.case_w', this).stop().animate({"bottom": "20px"}, 300);

@@ -7,12 +7,12 @@ $(function () {
         console.log(thix.index())
         var aaaStyle = thix.css("font-size");
         console.log(aaaStyle)
-        $("#btn-toolbar .dropdown-toggle").text(aaaStyle);
-        $("#btn-toolbar").show();
+        $(".btn-toolbar .dropdown-toggle").text(aaaStyle);
+        $(".btn-toolbar").show();
     })
     $('.dropdown-menu li a').click(function () {
         obtainSize($(this));
-        $("#btn-toolbar").hide();
+        $(".btn-toolbar").hide();
         $(".dropdown-menu").hide()
     })
     $(".dropdown-toggle").click(function () {
@@ -26,5 +26,3 @@ function obtainSize(obj) {
     console.log(text);
     thix.css("fontSize", text);
 }
-
-//textarea 文本框高度自适应
