@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/poster.css">
     <link rel="stylesheet" href="../css/textSize.css">
-    <link rel="stylesheet" href="../css/creat.css">
+    <link rel="stylesheet" href="../css/creatH5_v3.css">
     <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
@@ -28,12 +28,12 @@
         <div class="poster_title clearfix">
             <h3 class="poster_left">我是一条快乐的小鱼（音乐律动） - 邀约海报编辑</h3>
             <div class="poster_close">
-                <img src="./images/pub/close_icon.png" alt="" class="close_icon">
+                <img src="../images/pub/close_icon.png" alt="" class="close_icon">
             </div>
         </div>
         <div class="cord_div">
             <div class="cord_content">
-                <img src="./images/pub/invalidwe.png" alt="二维码的位置" class="cord_pic">
+                <img src="../images/pub/invalidwe.png" alt="二维码的位置" class="cord_pic">
                 <p class="cord_p">打开微信扫一扫，分享成功，即可免费学习。</p>
             </div>
         </div>
@@ -666,6 +666,13 @@
 
 <script>
     $(function () {
+        $(".prev_txt").click(function () {
+            $(".cord_pages").show();
+        })
+        //二维码上的的关闭按钮
+        $(".cord_pages .poster_close").click(function () {
+            $(".cord_pages").hide();
+        })
         $(".home ul li").addClass("pro_bor");
     })
 </script>

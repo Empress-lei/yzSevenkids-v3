@@ -34,6 +34,10 @@ $(function () {
     $(".poster_exhi .poster_close").click(function () {
         $(".poster_exhi").hide();
     })
+    // 点击预览
+    $(".prev_txt").click(function () {
+        $(".cord_pages").show();
+    })
     //点击转发  出现二维码
     $(".send_txt").click(function () {
         $(".cord_pages").show();

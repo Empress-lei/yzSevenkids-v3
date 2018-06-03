@@ -11,36 +11,50 @@ $(function () {
     //旁边导航
     seleRender(".craet_nav li", $(".home"))
     $(".prohibit .ui-resizable-handle").remove();
-    //双击  可修改文字
-    $(".editText").click(function () {
-        $(".hander").css("height", 0);
-        $(".hander").css("width", 0);
-        var tag = $(this);
-        var flag = true;
-        $(document).on("click", function (e) {//点击空白处，设置的弹框消失
-            var target = $(e.target);
-            if (target.closest(tag).length == 0 && flag == true) {
-                flag = false;
-                $(".hander").css("height", "100%");
-                $(".hander").css("width", "100%");
-            }
-        });
-    })
-    //双击修改图片上传
-    $(".editImg").dblclick(function () {
-        $(".hander").css("height", 0);
-        $(".hander").css("width", 0);
-        editImg($(this).find("img"));
-        var tag = $(this);
-        var flag = true;
-        $(document).on("click", function (e) {//点击空白处，设置的弹框消失
-            var target = $(e.target);
-            if (target.closest(tag).length == 0 && flag == true) {
-                flag = false;
-                $(".hander").css("height", "100%");
-                $(".hander").css("width", "100%");
-            }
-        });
+
+    $(".edit").click(function () {
+        if ($(this).data("type") == "1") {
+            $(".hander").css("height", 0);
+            $(".hander").css("width", 0);
+            editImg($(this).find("img"));
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处，设置的弹框消失
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".hander").css("height", "100%");
+                    $(".hander").css("width", "100%");
+                }
+            });
+        } else if ($(this).data("type") == "2") {
+            $(".hander").css("height", 0);
+            $(".hander").css("width", 0);
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处，设置的弹框消失
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".hander").css("height", "100%");
+                    $(".hander").css("width", "100%");
+                }
+            });
+        }else if ($(this).data("type") == "7") {
+            $(".hander").css("height", 0);
+            $(".hander").css("width", 0);
+            editImg($(this).find("img"));
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处，设置的弹框消失
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".hander").css("height", "100%");
+                    $(".hander").css("width", "100%");
+                }
+            });
+        }
     })
 })
 
