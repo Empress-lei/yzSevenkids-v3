@@ -432,6 +432,7 @@ input:-moz-placeholder {
   background-color: #FFF7F4;
 }
 .warp_page .make_appo {
+  min-height: 600px;
   padding: 40px 0;
 }
 .warp_page .make_appo .make_title {
