@@ -13,6 +13,7 @@ $(function () {
     $(".prohibit .ui-resizable-handle").remove();
 
     $(".edit").click(function () {
+        //图片
         if ($(this).data("type") == "1") {
             $(".hander").css("height", 0);
             $(".hander").css("width", 0);
@@ -27,6 +28,7 @@ $(function () {
                     $(".hander").css("width", "100%");
                 }
             });
+        // 文字
         } else if ($(this).data("type") == "2") {
             $(".hander").css("height", 0);
             $(".hander").css("width", 0);
@@ -36,6 +38,7 @@ $(function () {
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
+                    $(".btn-toolbar").hide()
                     $(".hander").css("height", "100%");
                     $(".hander").css("width", "100%");
                 }

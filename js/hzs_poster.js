@@ -1,21 +1,5 @@
 
 $(function () {
-    //拖动缩放元素位置，图片大小
-    $('#slider ul li').each(function () {
-        $(this).dragging({
-            move: 'both',
-            randomPosition: false,
-            hander: '.hander'
-        });
-    });
-    //签到海报 拖动缩放元素位置，图片大小
-    $('#sliderSgin ul li').each(function () {
-        $(this).dragging({
-            move: 'both',
-            randomPosition: false,
-            hander: '.hander'
-        });
-    });
     $(".drag_text").resizable({
         aspectRatio: false
     });
