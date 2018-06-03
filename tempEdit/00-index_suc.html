@@ -2,55 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>pc版创建活动 -- 完善信息</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>pc版创建活动 -- 编辑成功</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="Generator" content="EditPlus">
     <meta name="renderer" content="ie-comp">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/activi_creat.css">
     <link rel="stylesheet" href="../css/poster.css">
-    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/textSize.css">
+    <link rel="stylesheet" href="../css/creat.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../css/animate.min.css">
-    <link rel="stylesheet" href="../layui/css/layui.css">
-    <style>
-        .layui-laydate-content td, .layui-laydate-content th {
-            width: 36px !important;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
     <script src="../js/jquery-2.1.1.min.js"></script>
-    <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
     <script src="../swiperjs/swiper-3.4.2.min.js"></script>
-    <script src="../layui/layui.js"></script>
-    <script src="../js/city/pick-pcc.min.1.0.2.js"></script>
-    <script src="../js/areaAuto.js"></script>
-    <script src=../js/city/pick-pcc.min.1.0.2.js></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/creat_v3.js"></script>
+    <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
 </head>
 <body>
-<!--园所介绍示例-->
-<div class="exam_pages">
-    <div class="exam_box">
-        <div  class="exam_close">
-            <img src="../images/pub/close_icon.png" alt="" class="exam_icon">
+<!--二维码展示区域-->
+<div class="cord_pages">
+    <div class="cord_box">
+        <div class="poster_title clearfix">
+            <h3 class="poster_left">我是一条快乐的小鱼（音乐律动） - 邀约海报编辑</h3>
+            <div class="poster_close">
+                <img src="./images/pub/close_icon.png" alt="" class="close_icon">
+            </div>
         </div>
-        <ul class="exam_ul clearfix">
-            <li>1.品牌简介</li>
-            <li>2.教育理念</li>
-            <li>3.特色课程</li>
-            <li>4.食谱介绍</li>
-        </ul>
-        <h3 class="render_intrd">园所介绍示例</h3>
-        <p class="render_text">
-            ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
-            <br><br>
-            我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。
-            <br><br>
-            我园严格执行365天带量食谱，详细制定了孩子每天摄入的蛋白质、脂肪、碳水化合物等营养的摄入量，让孩子吃好每一顿饭不仅是家长关心的事，也是我们最重要的事</p>
+        <div class="cord_div">
+            <div class="cord_content">
+                <img src="./images/pub/invalidwe.png" alt="二维码的位置" class="cord_pic">
+                <p class="cord_p">打开微信扫一扫，分享成功，即可免费学习。</p>
+            </div>
+        </div>
     </div>
 </div>
+<!--创建活动区域-->
 <div class="warp_page">
     <!--导航-->
     <div class="home_nav">
@@ -111,44 +100,71 @@
             </div>
         </header>
     </div>
+
+    <!--创建区域-->
     <div class="creat_pages maxcen_width">
+        <input id="File" type="file" style="display: none"/>
         <div class="creat_title">
             <h3>与粽不同</h3>
             <p class="describe_text">一句话描述活动宣品的重要性，引导用户创建使用</p>
         </div>
-        <div class="creat_modu clearfix maxcen_width">
-            <div class="creat_center fl">
+        <div class="creat_modu maxcen_width clearfix">
+            <div class="creat_container suc_container">
                 <div class="creat_content">
                     <!--1、背景色-->
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <!--第一屏-->
+                            <!--第一屏  首页-->
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
                                     style="width:100%;height: 100%;position:relative;">
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <!--
+                                        中强：
+                                           是否：
+                                             0 否   1 是
+
+                                        data-type="" 元素类型 0 提交按钮  1 图片  2 文本 3音频 4 视频 5页面背景图 6背景颜色
+                                                                          100  新文本框  101 复合文本 102 表单
+                                        data-site="1"  每屏 元素位置   1开始  以此类推
+                                        data-animation  动画名称  直接是动画名称
+                                        data-duration 动画时长    自定义的动画时长
+                                        data-delay  动画延时
+                                        data-animcountnum 动画次数
+                                        data-isfor    动画是否循环
+                                        data-isdrag   元素是否可拖动
+                                        data-issize   元素是否可以更改大小
+                                        data-isshow   元素是否显示
+                                        data-iseditable 元素是否可编辑
+                                    -->
+                                    <!--背景图-->
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5" data-site="1"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back1.png');background-size: cover;"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg pro_bor" data-type="1" data-site="2"
                                         style="display: block;position: absolute;top: 0;left: 0;">
                                         <div class="element-box" style="display: block;">
                                             <img src="../images/template/alit/render1.png" alt="" class="render_img"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg ani"
+                                    <li class="ui-widget-content drag_img editImg ani pro_bor" data-type="1" data-site="3"
+                                        data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
+                                        data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 100px;left: 43px"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
                                         <div class="element-box" style="display: block;">
+                                            <!--3、logo-->
                                             <img src="../images/template/alit/title1.png" alt="" class="title1_img"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg ani"
+                                    <li class="ui-widget-content drag_img editImg pro_bor" data-type="1" data-site="4"
+                                        data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
+                                        data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 178px;left: 91px"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
@@ -157,7 +173,9 @@
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg ani"
+                                    <li class="ui-widget-content drag_img editImg pro_bor" data-type="1" data-site="5"
+                                        data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
+                                        data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 312px;left: 0"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
@@ -166,7 +184,9 @@
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg ani"
+                                    <li class="ui-widget-content drag_img editImg pro_bor" data-type="1" data-site="6"
+                                        data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
+                                        data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 568px;left: 58px"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
@@ -185,49 +205,64 @@
                                           元素单独的样式  全部加在li标签上
                                           动画全部加在li样式上
                                     -->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back2.png');background-size: cover;"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg " data-type="1"
                                         style="display: block;width: 57px;height: 57px;position: absolute;top: 30px;left: 159px">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <!--3、logo-->
+
                                             <img src="../images/pub/default_pic.png" alt="" class="render_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text editText kinder_name"
+                                    <li class="ui-widget-content intersected drag_text editText" data-type="2"
                                         style="display: block;position: absolute;top: 102px;left: 80.54px;font-size: 20px;line-height:28px;color: #FF4539;">
+                                        <i class='hander'></i>
                                         <div class="element-box">
-                                            <div>********************幼儿园
+                                            <!--4、渲染图-->
+                                            <div contenteditable="true" style="outline: none">********************幼儿园
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text editText"
+                                    <li class="ui-widget-content intersected drag_text editText" data-type="2"
                                         style="display: block;position: absolute;top: 129px;left: 108px;font-size: 14px;line-height: 20px;color: #FF4539;">
+                                        <!--可拖动的标识-->
+                                        <i class='hander'></i>
                                         <div class="element-box">
-                                            <div>邀您参加免费亲子体验活</div>
+                                            <div contenteditable="true" style="outline: none">邀您参加免费亲子体验活</div>
                                         </div>
                                     </li>
                                     <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width: 251px;position: absolute;top: 160px;left: 62px;">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <!--3、logo-->
+
                                             <img src="../images/template/alit/poster_tit.png" alt="" class="poster_img"
                                                  style="display: block;width: 100%;height: 100%">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width: 309px;position: absolute;top: 200px;left: 33px">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <!--3、logo-->
+
                                             <img src="../images/template/alit/love_tit.png" alt="" class="poster_img"
                                                  style="display: block;width: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width: 304px;position: absolute;top: 353px;left: 36px">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <!--3、logo-->
                                             <img src="../images/template/alit/theme2.png" alt="" class="theme2_img"
                                                  style="display: block;width: 100%;">
                                         </div>
@@ -238,55 +273,72 @@
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
                                     style="width:100%;height: 100%;position:relative;">
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back3.png');background-size: cover;"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width:269px;position: absolute;top: 0;left: 60px">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <!--3、logo-->
                                             <img src="../images/template/alit/red.png" alt="" class="back_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width:215px;position: absolute;top: 90px;left: 84px;z-index: 1">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <!--3、logo-->
                                             <img src="../images/template/alit/heat.png" alt="" class="back_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text"
+                                    <li class="ui-widget-content intersected drag_text" data-type="2"
                                         style="display: block;width:233px;position: absolute;top: 103px;left: 80.54px;font-size: 14px;line-height:25px;color: #fff;z-index: 2">
+                                        <i class='hander'></i>
                                         <div class="element-box">
-                                            <div>
+                                            <!--4、渲染图-->
+                                            <div contenteditable="true" style="outline: none">
                                                 爱心是一泓清泉，荡涤着世间的尘埃! 爱心是一缕阳光，扫除了心底的阴霾! 爱心是一股暖流，温暖了人们的心怀!
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text"
+                                    <li class="ui-widget-content intersected drag_text" data-type="2"
                                         style="display: block;width:233px;position: absolute;top: 190px;left: 80.54px;font-size: 14px;line-height:25px;color: #fff;z-index: 2">
+                                        <!--可拖动的标识-->
+                                        <i class='hander'></i>
                                         <div class="element-box">
-                                            <div>
+                                            <div contenteditable="true" style="outline: none">
                                                 ❤
                                                 这一次的活动，我们将以爱心义卖的方式将获得的款项集合起来，在我们家长代表的监督下利用这些款项购买孩子们需要的生活学习用品，捐献给**机构的孩子们。
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text"
+                                    <li class="ui-widget-content intersected drag_text" data-type="2"
                                         style="display: block;width:236px;position: absolute;top: 315px;left: 80.54px;font-size: 14px;line-height:25px;color: #fff;z-index: 2">
+                                        <!--可拖动的标识-->
+                                        <i class='hander'></i>
                                         <div class="element-box">
-                                            <div>
+                                            <div contenteditable="true" style="outline: none">
                                                 ❤
                                                 这一次的活动，我们将以爱心义卖的方式将获得的款项集合起来，在我们家长代表的监督下利用这些款项购买孩子们需要的生活学习用品，捐献给**机构的孩子们。
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width: 100%;position: absolute;top: 473px;left: 0">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <!--3、logo-->
                                             <img src="../images/template/alit/footer3.png" alt="" class="theme2_img"
                                                  style="display: block;width: 100%;">
                                         </div>
@@ -298,47 +350,64 @@
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
                                     style="width:100%;height: 100%;position:relative;">
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back4.png');background-size: cover;"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="1"
                                         style="display: block;width:30px;position: absolute;top: 60px;left: 15px">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <!--3、logo-->
                                             <img src="../images/pub/mess_tit.png" alt="" class="back_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
                                     <li class="ui-widget-content intersected drag_text prohibit editText pro_bor"
+                                        data-type="2"
                                         style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box">
-                                            <div>
+                                            <div contenteditable="true" style="outline: none">
                                                 园所介绍
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width:90px;position: absolute;top: 45px;left: 253px;z-index: 1">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <img src="../images/template/alit/chi.png" alt="" class="back_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text prohibit editText renderIntr"
+                                    <!--
+                                            宽高  不允许修改
+                                        -->
+                                    <li class="ui-widget-content intersected drag_text prohibit editText" data-type="7"
                                         style="display: block;width: 345px;height: 329px;overflow: auto;padding: 15px;background-color: #fff;position: absolute;top: 110px;left: 15px;font-size: 14px;line-height:25px;color: #333;z-index: 2">
+                                        <!--可拖动的标识-->
+                                        <i class='hander'></i>
                                         <div class="element-box">
-                                            <div>
+                                            <div contenteditable="true" style="outline: none">
                                                 ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
                                                 我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。
                                                 我园严格执行365天带量食谱，详细制定了孩子每天摄入的蛋白质、脂肪、碳水化合物等营养的摄入量，让孩子吃好每一顿饭不仅是家长关心的事，也是我们最重要的事
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img editImg"
+                                    <li class="ui-widget-content drag_img editImg" data-type="1"
                                         style="display: block;width: 100%;position: absolute;top: 449px;left: 0">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <!--3、logo-->
                                             <img src="../images/template/alit/footer4.png" alt="" class="theme2_img"
                                                  style="display: block;width: 100%;">
                                         </div>
@@ -350,28 +419,36 @@
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
                                     style="width:100%;height: 100%;position:relative;">
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back4.png');background-size: cover;"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit"
+                                    <li class="ui-widget-content drag_img prohibit" data-type="1"
                                         style="display: block;width:30px;position: absolute;top: 60px;left: 15px">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <!--3、logo-->
                                             <img src="../images/pub/tit.png" alt="" class="back_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text prohibit"
+                                    <li class="ui-widget-content intersected drag_text prohibit" data-type="2"
                                         style="display: block;position: absolute;top: 60px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box">
                                             <div>
                                                 活动信息
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit mess_pro"
+                                    <li class="ui-widget-content drag_img prohibit mess_pro" data-type="8"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1">
 
                                         <i class='hander'></i>
@@ -386,8 +463,9 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content drag_img prohibit mess_pro"
+                                    <li class="ui-widget-content drag_img prohibit mess_pro" data-type="8"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 211px;left: 15px;z-index: 1">
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="clearfix list">
                                                 <img src="../images/pub/add.png" alt="" class="mess_address fl">
@@ -399,8 +477,10 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content drag_img prohibit mess_pro"
+                                    <li class="ui-widget-content drag_img prohibit mess_pro" data-type="8"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 313px;left: 15px;z-index: 1">
+
+                                        <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="clearfix list">
                                                 <img src="../images/pub/tell.png" alt="" class="timeimg fl">
@@ -413,39 +493,46 @@
                             </div>
 
                             <!--第六屏-->
-                            <div class="swiper-slide home">
+                            <div class="swiper-slide home" id="container_six" style="display: none">
                                 <ul class="edit_area"
                                     style="width:100%;height: 100%;position:relative;">
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back4.png');background-size: cover;"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="1"
                                         style="display: block;width:30px;position: absolute;top: 60px;left: 15px;z-index: 2;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <!--3、logo-->
                                             <img src="../images/pub/tit1.png" alt="" class="back_img"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text prohibit pro_bor"
+                                    <li class="ui-widget-content intersected drag_text prohibit pro_bor" data-type="2"
                                         style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box">
                                             <div>
                                                 报名信息
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:345px;height: 424px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-color: #fff;border-radius: 8px;">
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;position: absolute;top: 122px;left: 30px;z-index: 35;">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="baby_name clearfix ani">
@@ -457,7 +544,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;background-color:#fff;position: absolute;top: 190px;left: 30px;z-index: 5">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="baby_name clearfix ani">
@@ -469,8 +556,10 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;background-color:#fff;position: absolute;top: 257px;left: 30px;z-index: 1">
+
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="baby_name clearfix">
                                                 <label class="fl baby_la">联系电话：</label>
@@ -480,8 +569,10 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;position: absolute;top: 324px;left: 30px;z-index: 5">
+
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="baby_name clearfix">
                                                 <label class="fl baby_la">验证码：</label><input type="tel"
@@ -491,16 +582,18 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;position: absolute;top: 415px;left: 218px;z-index: 1;color: #FF4539;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div>
+                                            <div class="">
                                                 短信验证码输入错误
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor"
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;position: absolute;top: 430px;left: 30px;z-index: 1;color: #FF4539;">
+                                        <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="sub_btn">
                                                 提交
@@ -511,60 +604,71 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next button_my">下<br>一<br>页</div>
-                    <div class="swiper-button-prev button_my">上<br>一<br>页</div>
                 </div>
+                <ol class="invi_text invi_posi">
+                    <li class="invi_li prev_txt">
+                        预览
+                    </li>
+                    <li class="invi_li send_txt">
+                        转发
+                    </li>
+                </ol>
             </div>
-            <!--创建活动-->
-            <div class="creat_modify">
-                <div class="clearfix">
-                    <h3 class="perfect">园所信息完善</h3>
-                </div>
-                <div class="kinder_name clearfix">
-                    <label>幼儿园名称：</label><input type="text" value="" class="name_input inn" id="in" placeholder="请输入幼儿园名称">
-                </div>
-                <div class="kinder_name clearfix">
-                    <label>联 系 方 式：</label><input type="text" value="" class="name_input" id="tell" placeholder="请输入手机号">
-                </div>
-                <div class="intr_div">
-                    <div class="kinder_name clearfix">
-                        <label>园 所 介 绍：</label><textarea class="render_intr" onfocus=$(this).autoHeight(); placeholder="请添加园所特色"></textarea>
+            <div class="btn-toolbar">
+                <div class="btn-group">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle first-child text-btn-border">
+                            24
+                            <b class="caret">字号</b>
+                        </a>
+                        <ul class="dropdown-menu size-menu font-size-menu">
+                            <li class="ng-scope">
+                                <a data-size="96px">96px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="64px">64px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="48px">48px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="32px">32px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="24px">24px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="20px">20px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="18px">18px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="16px">16px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="14px">14px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="13px">13px</a>
+                            </li>
+                            <li class="ng-scope">
+                                <a data-size="12px">12px</a>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="javascript:void (0);" class="look_exam">查看示例</a>
                 </div>
-                <div class="line_bor"></div>
-                <div class="clearfix">
-                    <h3 class="perfect">活动信息</h3>
-                </div>
-                <div class="kinder_name clearfix">
-                    <label>合作方信息：</label><input type="text" value="" class="name_input inn" id="inp_partner" placeholder="请输入合作方信息">
-                </div>
-                <!--选择时间-->
-                <div class="activity_time clearfix">
-                    <h3 class="time_tit fl">活动时间：</h3>
-                    <div class="layui-form fl">
-                        <div class="layui-form-item">
-                            <div class="layui-inline">
-                                <div class="layui-input-inline time_choice">
-                                    <span class="year_icon"></span>
-                                    <input type="text" class="layui-input" id="time_year" placeholder="请选择活动时间" readonly="readonly">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="city_div1 clearfix">
-                    <span class="fl pick_span">活动地址</span>
-                    <div class="fl pick-area pick-area1" name="省 / 市 / 区"></div>
-                </div>
-                <!--提交按钮-->
-                <a href="#" class="submit_btn fl">提&nbsp;&nbsp;交</a>
             </div>
         </div>
     </div>
 </div>
 </body>
+
+<script>
+    $(function () {
+        $(".home ul li").addClass("pro_bor");
+    })
+</script>
 <script>
     $(function () {
         var swiper = new Swiper('.swiper-container', {

@@ -93,328 +93,112 @@
             height: 100%;
             position: relative;
           }
-          .edit_area {
-            text-align: left;
-            height: 667px;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            li {
-              .element-box {
-                overflow: hidden;
-              }
-            }
-          }
-          //第一屏  首页
-          .alitghost_home {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-size: 100% 100%;
-            position: relative;
-            //顶部的五彩起
-            .render_img {
-              display: block;
+          .mess_pro {
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            .list {
               width: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-            }
-            //你家中有闲置不用的物品么 文本图片
-            .title_one {
-              display: block;
-              width: 292px;
-              position: absolute;
-              top: 100px;
-              left: 50%;
-              margin-left: -146px;
-            }
-            .tiele_text {
-              display: block;
-              width: 193px;
-              position: absolute;
-              top: 172px;
-              left: 50%;
-              margin-left: -96.5px;
-            }
-            .theme_ghost {
-              position: absolute;
-              left: 0;
-              bottom: -10px;
-              width: 100%;
-            }
-            //龙舟
-            .title_textf {
-              position: absolute;
-              z-index: 2;
-              left: 50%;
-              bottom: 32px;
-              width: 252px;
-              margin-left: -126px;
-            }
-          }
-          //第二屏  学校的邀请函
-          .alitghost_invi {
-            width: 100%;
-            height: 100%;
-            background-size: 100% 100%;
-            position: relative;
-            .logo_render {
-              display: block;
-              width: 57px;
-              height: 57px;
-              margin: 30px auto 0;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -ms-border-radius: 50%;
-              -o-border-radius: 50%;
-              border-radius: 50%;
-              border: 2px solid #fff;
-            }
-            //幼儿园名称
-            .invi_title {
-              padding: 15px 20px 5px;
-              text-align: center;
-              font-size: 20px;
-              line-height: 28px;
-              color: #FF4539;
-            }
-            .invi_txt {
-              text-align: center;
-              font-size: 14px;
-              line-height: 20px;
-              color: #FF4539;
-              padding-bottom: 8px;
-            }
-            .title_left {
-              display: block;
-              margin: 0 auto 5px;
-              width: 251px;
-            }
-            .title_right {
-              display: block;
-              margin: 0 auto;
-              width: 295px;
-            }
-            .theme_img {
-              position: absolute;
-              bottom: 75px;
-              left: 50%;
-              display: block;
-              width: 290px;
-              margin-left: -145px;
-            }
-          }
-          //第三屏   活动介绍
-          .alitghost_intr {
-            width: 100%;
-            background-size: 100% 100%;
-            position: relative;
-            .intr_text {
-              width: 269px;
-              height: 410px;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: 100% 100%;
-              margin: 0 auto;
-              padding: 90px 17px 0;
-              position: relative;
-              z-index: 4;
-              .lovelist_img {
-                display: block;
-                width: 100%;
-                margin: 0 auto 3px;
+              padding: 15px 15px 5px;
+              .timeimg {
+                width: 16px;
+                height: 16px;
+                margin-top: 4px;
               }
-              p {
+              .mess_time {
                 font-size: 14px;
-                color: #FFFFFF;
-                line-height: 22px;
-                margin-bottom: 15px;
+                color: #333333;
+                position: relative;
+                z-index: 555;
+                line-height: 25px;
+                padding-left: 10px;
               }
-              .p_back {
-                background-position: left 6px;
-                background-repeat: no-repeat;
-                background-size: 11px 10px;
-                text-indent: 20px;
+              //地点的图标
+              .mess_address {
+                width: 16px;
+                height: 16px;
+                margin-top: 4px;
               }
             }
-            .footer_ghost {
-              width: 100%;
-              position: absolute;
-              bottom: 0;
+            .time_num {
+              font-size: 12px;
+              line-height: 20px;
+              color: #333;
+              padding: 0 15px 15px 40px;
             }
           }
-          //第四屏
-          .alitghost_mess {
-            width: 100%;
-            height: 100%;
-            background-size: 100% 100%;
-            padding: 35px 15px 20px;
-            .mess_title {
-              margin-bottom: 15px;
-              font-size: 16px;
+
+          .baby_name {
+            position: relative;
+            padding: 42px 0 11px;
+            border-bottom: 1px solid #e6e6e6;
+            .baby_input {
+              display: block;
+              width: 70%;
+              height: 32px;
+              line-height: 32px;
               color: #333;
-              line-height: 40px;
-              background: url(../images/pub/tit.png) no-repeat left center;
-              background-size: 25px 25px;
-              padding-left: 35px;
+              font-size: 14px;
             }
-            .mess_list {
-              width: 100%;
-              li {
-                width: 100%;
-                background: #FFF;
-                -webkit-border-radius: 8px;
-                -moz-border-radius: 8px;
-                -ms-border-radius: 8px;
-                -o-border-radius: 8px;
-                border-radius: 8px;
-                margin-bottom: 8px;
-                //时间的图标
-                .list {
-                  width: 100%;
-                  padding: 15px 15px 5px;
-                  .timeimg {
-                    width: 16px;
-                    height: 16px;
-                    margin-top: 4px;
-                  }
-                  .mess_time {
-                    font-size: 14px;
-                    color: #333333;
-                    position: relative;
-                    z-index: 555;
-                    line-height: 25px;
-                    padding-left: 10px;
-                  }
-                  //地点的图标
-                  .mess_address {
-                    width: 16px;
-                    height: 16px;
-                    margin-top: 4px;
-                  }
-                }
-                .time_num {
-                  font-size: 12px;
-                  line-height: 20px;
-                  color: #333;
-                  padding: 0 15px 15px 40px;
-                }
-              }
+            .baby_la {
+              height: 32px;
+              line-height: 32px;
+              color: #333;
+              font-size: 14px;
             }
-            .mess_bot {
-              margin-top: 50px;
-              width: 183px;
-              height: 86px;
-              padding: 8px 10px 5px 15px;
+            .obtain_code {
+              display: block;
               color: #fff;
+              width: 95px;
+              height: 32px;
+              line-height: 32px;
+              text-align: center;
               font-size: 12px;
-              background-size: cover;
-            }
-            .theme_rice {
+              background-color: #0099FF;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              -ms-border-radius: 3px;
+              -o-border-radius: 3px;
+              border-radius: 3px;
               position: absolute;
               right: 0;
-              bottom: 150px;
-              width: 180px;
+              bottom: 14px;
             }
           }
-          //第五屏 用户信息
-          .alitghost_user {
+          ::-webkit-input-placeholder {
+            color: #999999;
+            font-size: 14px;
+          }
+          ::-moz-placeholder {
+            color: #999999;
+            font-size: 14px;
+          }
+          :-ms-input-placeholder {
+            color: #999999;
+            font-size: 14px;
+          }
+          input:-moz-placeholder {
+            color: #999999;
+            font-size: 14px;
+          }
+          .sub_btn {
+            display: block;
             width: 100%;
-            height: 100%;
-            background-size: 100% 100%;
-            padding: 35px 15px 20px;
-            .mess_title {
-              margin-bottom: 15px;
-              font-size: 16px;
-              color: #333;
-              line-height: 40px;
-              background: url("../images/pub/tit1.png") no-repeat left center;
-              background-size: 25px 25px;
-              padding-left: 40px;
-            }
-            //宝宝信息填写
-            .mess_list {
-              background: #fff;
-              border-radius: 8px;
-              padding: 20px 15px 50px;
-              .baby_name {
-                position: relative;
-                padding-top: 30px;
-                padding-bottom: 11px;
-                border-bottom: 1px solid #e6e6e6;
-                .baby_input {
-                  display: block;
-                  width: 70%;
-                  height: 32px;
-                  line-height: 32px;
-                  color: #333;
-                  font-size: 14px;
-                }
-                .baby_la {
-                  height: 32px;
-                  line-height: 32px;
-                  color: #333;
-                  font-size: 14px;
-                }
-                .obtain_code {
-                  display: block;
-                  color: #fff;
-                  width: 95px;
-                  height: 32px;
-                  line-height: 32px;
-                  text-align: center;
-                  font-size: 12px;
-                  background-color: #0099FF;
-                  -webkit-border-radius: 3px;
-                  -moz-border-radius: 3px;
-                  -ms-border-radius: 3px;
-                  -o-border-radius: 3px;
-                  border-radius: 3px;
-                  position: absolute;
-                  right: 0;
-                  bottom: 14px;
-                }
-              }
-              ::-webkit-input-placeholder {
-                color: #999999;
-                font-size: 14px;
-              }
-              ::-moz-placeholder {
-                color: #999999;
-                font-size: 14px;
-              }
-              :-ms-input-placeholder {
-                color: #999999;
-                font-size: 14px;
-              }
-              input:-moz-placeholder {
-                color: #999999;
-                font-size: 14px;
-              }
-              .cord_error {
-                font-size:12px;
-                color:rgba(255,19,19,1);
-                line-height:17px;
-                text-align: right;
-                padding-top: 7px;
-              }
-              .sub_btn {
-                display: block;
-                width: 100%;
-                height: 50px;
-                line-height: 50px;
-                color: #999999;
-                font-size: 16px;
-                text-align: center;
-                background-color: #F3F3F3;
-                -webkit-border-radius: 50px 50px;
-                -moz-border-radius: 50px 50px;
-                -ms-border-radius: 50px 50px;
-                -o-border-radius: 50px 50px;
-                border-radius: 50px 50px;
-                margin: 15px auto 0;
-              }
-            }
+            height: 50px;
+            line-height: 50px;
+            color: #999999;
+            font-size: 16px;
+            text-align: center;
+            background-color: #F3F3F3;
+            -webkit-border-radius: 50px 50px;
+            -moz-border-radius: 50px 50px;
+            -ms-border-radius: 50px 50px;
+            -o-border-radius: 50px 50px;
+            border-radius: 50px 50px;
+            margin: 15px auto 0;
           }
         }
       }

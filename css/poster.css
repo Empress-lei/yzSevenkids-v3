@@ -1,6 +1,5 @@
 @import "base_pc.css";
 .poster_pages {
-  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -339,7 +338,7 @@
 .invi_text {
   position: absolute;
   right: 66px;
-  bottom: 30px;
+  bottom: 20px;
 }
 .invi_text .invi_li {
   width: 56px;
@@ -357,6 +356,26 @@
   height: 56px;
   color: rgba(255, 255, 255, 0);
   background-image: url("../images/pub/edit_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_text .pres_text:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/pres_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_text .prev_txt:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/prev_icon.png");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center;
@@ -381,4 +400,9 @@
   background-size: 22px 22px;
   background-position: center;
   background-color: #FF530B;
+}
+.invi_posi {
+  position: absolute;
+  right: 350px;
+  bottom: 10px;
 }

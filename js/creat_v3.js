@@ -32,11 +32,15 @@ $(function () {
         var intVal = $("#inp_partner").val();
         console.log(intVal)
         if(intVal == "") {
-            $('#kinder_name').html(innVal);
+            $('.kinder_name .element-box div').html(innVal);
         }else {
-            $('#kinder_name').html(innVal + "&nbsp;" + "&" + "&nbsp;" + intVal);
+            $('.kinder_name .element-box div').html(innVal + "&nbsp;" + "&" + "&nbsp;" + intVal);
         }
     });
+    //获取文本
+    $('.render_intr').bind('input propertychange', function () {
+        $(".renderIntr .element-box div").html($('.render_intr').val());
+    })
 
     //选择年月日
     layui.use('laydate', function () {

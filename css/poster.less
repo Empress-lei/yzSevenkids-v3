@@ -1,7 +1,7 @@
 @import "base_pc.css";
 //邀约海报
 .poster_pages {
-  display: none;
+  //display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -349,11 +349,12 @@
   }
 }
 
-//下载按钮
+//下载按钮（公用））
 .invi_text {
   position: absolute;
   right: 66px;
-  bottom: 30px;
+  bottom: 20px;
+  //公用
   .invi_li {
     width: 56px;
     height: 56px;
@@ -365,6 +366,7 @@
     margin-bottom: 10px;
     background-color: #fff;
   }
+  //编辑按钮
   .edit_txt:hover {
     width: 56px;
     height: 56px;
@@ -375,6 +377,29 @@
     background-position: center;
     background-color: #FF530B;
   }
+  //保存
+  .pres_text:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/pres_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+  //预览
+  .prev_txt:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/prev_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+  //下载
   .down_txt:hover {
     width: 56px;
     height: 56px;
@@ -385,6 +410,7 @@
     background-position: center;
     background-color: #FF530B;
   }
+  //转发
   .send_txt:hover {
     width: 56px;
     height: 56px;
@@ -395,4 +421,10 @@
     background-position: center;
     background-color: #FF530B;
   }
+}
+//创建成功按钮
+.invi_posi {
+  position: absolute;
+  right: 350px;
+  bottom: 10px;
 }

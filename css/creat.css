@@ -366,3 +366,13 @@
   border-radius: 50px 50px;
   margin: 15px auto 0;
 }
+.warp_page .creat_pages .creat_modu .suc_container {
+  padding: 20px 0 20px 0;
+  border-left: 10px solid #fff;
+}
+.warp_page .creat_pages .creat_modu .suc_container .creat_content {
+  margin: 0 auto;
+  width: 395px;
+  height: 687px;
+  border: 10px solid #fff;
+}

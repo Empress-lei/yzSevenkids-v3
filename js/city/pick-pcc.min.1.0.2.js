@@ -6308,7 +6308,7 @@ var areaJson = {
             if (cityJson.length != 0) {
                 for (var j = 0; j < cityJson.length; j++) {
                     if (selCity == cityJson[j].name) {
-                        cityStr += '<li class="ulli pick-selectedLi" style="background:' + this.config.hoverColor + ';color:#fff;font-weight:bold;">' + cityJson[j].name + '</li>'
+                        cityStr += '<li class="ulli pick-selectedLi" style="background:' + this.config.hoverColor + ';color:#ff530b;font-weight:bold;">' + cityJson[j].name + '</li>'
                         // cityStr += '<li class="ulli pick-selectedLi" style="color:#fff;font-weight:bold;">' + cityJson[j].name + '</li>'
                         console.log(this.config.hoverColor);
                     } else {
@@ -6349,7 +6349,7 @@ var areaJson = {
                 }
                 for (var t = 0; t < countyJson.length; t++) {
                     if (selCounty == countyJson[t].name) {
-                        countyStr += '<li class="ulli pick-selectedLi" style="background:' + this.config.hoverColor + ';color:#fff;font-weight:bold;">' + countyJson[t].name + '</li>'
+                        countyStr += '<li class="ulli pick-selectedLi" style="background:' + this.config.hoverColor + ';color:#ff530b;font-weight:bold;">' + countyJson[t].name + '</li>'
                         // countyStr += '<li class="ulli pick-selectedLi" style="background:' + this.config.hoverColor + ';color:#fff;font-weight:bold;">' + countyJson[t].name + '</li>'
                         console.log(this.config.hoverColor);
                     } else {
