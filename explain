@@ -22,7 +22,7 @@ me class
     drag_text      文本标识
     prohibit       可拖动不可修改大小
     pro_bor        鼠标经过没有border
-    edit           双击可编辑
+    edit           双击可编辑（文字或者图片）
 
 
 海报规则：

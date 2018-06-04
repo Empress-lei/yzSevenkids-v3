@@ -1,0 +1,24 @@
+@import 'base_pc.css';
+.warp_page {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.warp_page .error_content {
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.warp_page .error_content .error_img {
+  display: block;
+  margin: 0 auto;
+  width: 223px;
+  height: 223px;
+}
+.warp_page .error_content .error_text {
+  font-size: 28px;
+  color: #B2B2B2;
+  padding-top: 30px;
+  text-align: center;
+}

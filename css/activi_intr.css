@@ -464,6 +464,7 @@ input:-moz-placeholder {
 }
 .warp_page .make_appo .make_ul {
   width: 100%;
+  min-height: 387px;
 }
 .warp_page .make_appo .make_ul li {
   padding: 30px 15px;
