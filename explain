@@ -17,13 +17,15 @@
     data-iseditable 元素是否可编辑
 
 me class
+
     ui-widget-content   元素拖动标识类名
     drag_img       图片标识
     drag_text      文本标识
+    intersected    双击文字  字体修改大小
     prohibit       可拖动不可修改大小
     pro_bor        鼠标经过没有border
     edit           双击可编辑（文字或者图片）
-
+    swiper-lazy    懒加载（所有的li标签和img标签都添加此类名---移动端）
 
 海报规则：
 来杰
