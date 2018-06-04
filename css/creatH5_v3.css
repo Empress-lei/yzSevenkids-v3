@@ -262,6 +262,7 @@
   position: relative;
 }
 .warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro {
+  padding: 15px 15px 5px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -269,33 +270,68 @@
   border-radius: 8px;
   margin-bottom: 8px;
 }
-.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro .list {
-  width: 100%;
-  padding: 15px 15px 5px;
-}
-.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro .list .timeimg {
-  width: 16px;
-  height: 16px;
-  margin-top: 4px;
-}
-.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro .list .mess_time {
+.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro .list::before {
+  content: "时间";
   font-size: 14px;
   color: #333333;
   position: relative;
   z-index: 555;
   line-height: 25px;
-  padding-left: 10px;
+  background-image: url("../images/pub/time_3.png");
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
 }
-.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro .list .mess_address {
-  width: 16px;
-  height: 16px;
-  margin-top: 4px;
+.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_add {
+  padding: 15px 15px 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
 }
-.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_pro .time_num {
+.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_add .list::before {
+  content: "地点";
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  z-index: 555;
+  line-height: 25px;
+  background-image: url("../images/pub/add.png");
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_tell {
+  padding: 15px 15px 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.warp_page .creat_pages .creat_modu .creat_container .creat_content .mess_tell .list::before {
+  content: "咨询电话";
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  z-index: 555;
+  line-height: 25px;
+  background-image: url("../images/pub/tell.png");
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+.warp_page .creat_pages .creat_modu .creat_container .creat_content .time_num {
   font-size: 12px;
   line-height: 20px;
   color: #333;
-  padding: 0 15px 15px 40px;
+  padding: 0 15px 15px 25px;
 }
 .warp_page .creat_pages .creat_modu .creat_container .creat_content .baby_name {
   position: relative;

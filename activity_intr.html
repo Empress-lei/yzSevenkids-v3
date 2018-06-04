@@ -132,11 +132,25 @@
                     <span class="four_line"></span>
                 </div>
             </li>
-            <li class="list_li">
+
+            <!--
+
+                以下活动推文   只能存在已在情况（下面两个类名都是标识状态，无实际样式））
+                text_li  标识可点击状态 有活动推文
+                gray_li  灰色  标识不可点击状态；无活动推文
+            -->
+            <li class="list_li text_li" style="display: none">
                 <div class="case_w">
                     <img src="./images/intr_1.4/fir.png" class="case_img" />
                     <p class="x_like">活动推文</p>
                     <span class="fri_line"></span>
+                </div>
+            </li>
+            <li class="list_li gray_li">
+                <div class="case_w">
+                    <img src="./images/intr_1.4/fir_gray.png" class="case_img" />
+                    <p class="x_color">活动推文</p>
+                    <span class="fri_color"></span>
                 </div>
             </li>
         </ul>
@@ -179,6 +193,8 @@
                 <a href="javascript:void (0);" class="click_a fl">现在购买 惊喜不断···</a>
             </div>
         </div>
+    </div>
+    <div class="maxcen_width minh">
         <div class="myloadDiv">
         </div>
     </div>

@@ -196,6 +196,14 @@ input:-moz-placeholder {
   background: url("../images/pub/grayrigarr.png") no-repeat 159px center;
   background-size: 13px 12px;
 }
+.warp_page .intr_pages .mudular-list .list_li .case_w .x_color {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eee;
+  padding-left: 75px;
+  background: url("../images/pub/arrfirgray.png") no-repeat 159px center;
+  background-size: 13px 12px;
+}
 .warp_page .intr_pages .mudular-list .list_li .case_w .like_four {
   padding-left: 65px;
   background: url("../images/pub/grayrigarr.png") no-repeat 169px center;
@@ -235,6 +243,13 @@ input:-moz-placeholder {
   height: 2px;
   margin: 0 auto;
   background-image: linear-gradient(90deg, #6e7d8d 0%, #c3ceda 100%);
+}
+.warp_page .intr_pages .mudular-list .list_li .case_w .fri_color {
+  display: block;
+  width: 96px;
+  height: 2px;
+  margin: 0 auto;
+  background-image: linear-gradient(90deg, #eeeeee 0%, #eeeeee 100%);
 }
 .warp_page .intr_pages .activi_intr {
   width: 100%;
@@ -590,6 +605,9 @@ input:-moz-placeholder {
   background-size: 22px 22px;
   background-position: center;
   background-color: #FF530B;
+}
+.warp_page .minh {
+  min-height: 600px;
 }
 .item {
   width: 283px;
