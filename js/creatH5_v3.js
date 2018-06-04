@@ -10,9 +10,7 @@ $(function () {
     });
     //旁边导航
     seleRender(".craet_nav li", $(".home"))
-    $(".prohibit .ui-resizable-handle").remove();
-
-    $(".edit").click(function () {
+    $(".edit").dblclick(function () {
         //图片
         if ($(this).data("type") == "1") {
             $(".hander").css("height", 0);
@@ -38,7 +36,6 @@ $(function () {
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
-                    $(".btn-toolbar").hide()
                     $(".hander").css("height", "100%");
                     $(".hander").css("width", "100%");
                 }

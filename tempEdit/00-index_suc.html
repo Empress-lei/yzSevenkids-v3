@@ -17,13 +17,10 @@
     <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
-    <script src="../js/jquery-2.1.1.min.js"></script>
-    <script src="../swiperjs/swiper-3.4.2.min.js"></script>
-    <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
 </head>
 <body>
 <!--二维码展示区域-->
-<div class="cord_pages">
+<div class="cord_pages" style="display: none">
     <div class="cord_box">
         <div class="poster_title clearfix">
             <h3 class="poster_left">我是一条快乐的小鱼（音乐律动） - 邀约海报编辑</h3>
@@ -118,79 +115,61 @@
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
                                     style="width:100%;height: 100%;position:relative;">
-                                    <!--
-                                        中强：
-                                           是否：
-                                             0 否   1 是
-
-                                        data-type="" 元素类型 0 提交按钮  1 图片  2 文本 3音频 4 视频 5页面背景图 6背景颜色
-                                                                          100  新文本框  101 复合文本 102 表单
-                                        data-site="1"  每屏 元素位置   1开始  以此类推
-                                        data-animation  动画名称  直接是动画名称
-                                        data-duration 动画时长    自定义的动画时长
-                                        data-delay  动画延时
-                                        data-animcountnum 动画次数
-                                        data-isfor    动画是否循环
-                                        data-isdrag   元素是否可拖动
-                                        data-issize   元素是否可以更改大小
-                                        data-isshow   元素是否显示
-                                        data-iseditable 元素是否可编辑
-                                    -->
                                     <!--背景图-->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5" data-site="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="1"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back1.png');background-size: cover;"></div>
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;;background-size: cover;" data-background="../images/template/alit/back1.png"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img  pro_bor" data-type="1" data-site="2"
+                                    <li class="ui-widget-content swiper-lazy drag_img  pro_bor" data-type="1" data-site="2"
                                         style="display: block;position: absolute;top: 0;left: 0;">
                                         <div class="element-box" style="display: block;">
-                                            <img src="../images/template/alit/render1.png" alt=""
+                                            <img data-src="../images/template/alit/render1.png" alt="" class="swiper-lazy"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img  ani pro_bor" data-type="1" data-site="3"
+                                    <li class="ui-widget-content swiper-lazy drag_img  ani pro_bor" data-type="1" data-site="3"
                                         data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
                                         data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 100px;left: 43px"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
                                         <div class="element-box" style="display: block;">
-                                            <img src="../images/template/alit/title1.png" alt=""
+                                            <img data-src="../images/template/alit/title1.png" alt="" class="swiper-lazy"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img  pro_bor" data-type="1" data-site="4"
+                                    <li class="ui-widget-content swiper-lazy drag_img  pro_bor" data-type="1" data-site="4"
                                         data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
                                         data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 178px;left: 91px"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
                                         <div class="element-box" style="display: block;">
-                                            <img src="../images/template/alit/title_txt.png" alt=""
+                                            <img data-src="../images/template/alit/title_txt.png" alt="" class="swiper-lazy"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img  pro_bor" data-type="1" data-site="5"
+                                    <li class="ui-widget-content swiper-lazy drag_img  pro_bor" data-type="1" data-site="5"
                                         data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
                                         data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 312px;left: 0"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
                                         <div class="element-box" style="display: block;">
-                                            <img src="../images/template/alit/theme1.png" alt=""
+                                            <img data-src="../images/template/alit/theme1.png" alt="" class="swiper-lazy"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img  pro_bor" data-type="1" data-site="6"
+                                    <li class="ui-widget-content swiper-lazy drag_img  pro_bor" data-type="1" data-site="6"
                                         data-issize="1" data-iseditable="1" data-animation="fadeInRightBig"
                                         data-duration="0.8" data-delay="0.8" data-isfor="0"
                                         style="display: block;position: absolute;top: 568px;left: 58px"
                                         swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s"
                                         swiper-animate-delay="0.8s">
                                         <div class="element-box" style="display: block;">
-                                            <img src="../images/template/alit/txt_img.png" alt=""
+                                            <img data-src="../images/template/alit/txt_img.png" alt="" class="swiper-lazy"
                                                  style="display: block;width:100%;">
                                         </div>
                                     </li>
@@ -204,22 +183,22 @@
                                           元素单独的样式  全部加在li标签上
                                           动画全部加在li样式上
                                     -->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back2.png');background-size: cover;"></div>
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: cover;" data-background="../images/template/alit/back2.png"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img  " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img  " data-type="1"
                                         style="display: block;width: 57px;height: 57px;position: absolute;top: 30px;left: 159px">
                                         <i class='hander'></i>
                                         <!--园所logo-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <img src="../images/pub/default_pic.png" alt=""
+                                            <img data-src="../images/pub/default_pic.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text " data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text " data-type="2"
                                         style="display: block;position: absolute;top: 102px;left: 80.54px;font-size: 20px;line-height:28px;color: #FF4539;">
                                         <i class='hander'></i>
                                         <div class="element-box">
@@ -227,7 +206,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text " data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text " data-type="2"
                                         style="display: block;position: absolute;top: 129px;left: 108px;font-size: 14px;line-height: 20px;color: #FF4539;">
                                         <!--可拖动的标识-->
                                         <i class='hander'></i>
@@ -235,29 +214,29 @@
                                             <div contenteditable="true" style="outline: none">邀您参加免费亲子体验活</div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width: 251px;position: absolute;top: 160px;left: 62px;">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
 
-                                            <img src="../images/template/alit/poster_tit.png" alt=""
+                                            <img data-src="../images/template/alit/poster_tit.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width: 309px;position: absolute;top: 200px;left: 33px">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
-                                            <img src="../images/template/alit/love_tit.png" alt=""
+                                            <img data-src="../images/template/alit/love_tit.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width: 304px;position: absolute;top: 353px;left: 36px">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
                                             <!--3、logo-->
-                                            <img src="../images/template/alit/theme2.png" alt=""
+                                            <img data-src="../images/template/alit/theme2.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;">
                                         </div>
                                     </li>
@@ -271,30 +250,30 @@
                                           元素单独的样式  全部加在li标签上
                                           动画全部加在li样式上
                                     -->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back3.png');background-size: cover;"></div>
+                                            <div  class="swiper-lazy" style="display: block;width: 100%;height: 100%;;background-size: cover;" data-background="../images/template/alit/back4.png"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width:269px;position: absolute;top: 0;left: 60px">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <img src="../images/template/alit/red.png" alt=""
+                                            <img data-src="../images/template/alit/red.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width:215px;position: absolute;top: 90px;left: 84px;z-index: 1">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <img src="../images/template/alit/heat.png" alt=""
+                                            <img data-src="../images/template/alit/heat.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text" data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text" data-type="2"
                                         style="display: block;width:233px;position: absolute;top: 103px;left: 80.54px;font-size: 14px;line-height:25px;color: #fff;z-index: 2">
                                         <i class='hander'></i>
                                         <div class="element-box">
@@ -304,7 +283,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text" data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text" data-type="2"
                                         style="display: block;width:233px;position: absolute;top: 190px;left: 80.54px;font-size: 14px;line-height:25px;color: #fff;z-index: 2">
                                         <!--可拖动的标识-->
                                         <i class='hander'></i>
@@ -315,7 +294,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text" data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text" data-type="2"
                                         style="display: block;width:236px;position: absolute;top: 315px;left: 80.54px;font-size: 14px;line-height:25px;color: #fff;z-index: 2">
                                         <!--可拖动的标识-->
                                         <i class='hander'></i>
@@ -326,11 +305,11 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width: 100%;position: absolute;top: 473px;left: 0">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
-                                            <img src="../images/template/alit/footer3.png" alt=""
+                                            <img data-src="../images/template/alit/footer3.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;">
                                         </div>
                                     </li>
@@ -345,22 +324,22 @@
                                           元素单独的样式  全部加在li标签上
                                           动画全部加在li样式上
                                     -->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back4.png');background-size: cover;"></div>
+                                            <div  class="swiper-lazy" style="display: block;width: 100%;height: 100%;;background-size: cover;" data-background="../images/template/alit/back4.png"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="1"
                                         style="display: block;width:30px;position: absolute;top: 60px;left: 15px">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <img src="../images/pub/mess_tit.png" alt=""
+                                            <img data-src="../images/pub/mess_tit.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text prohibit  pro_bor"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text prohibit  pro_bor"
                                         data-type="2"
                                         style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
                                         <!--<i class='hander'></i>-->
@@ -370,18 +349,18 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width:90px;position: absolute;top: 45px;left: 253px;z-index: 1">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <img src="../images/template/alit/chi.png" alt=""
+                                            <img data-src="../images/template/alit/chi.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
                                     <!--
                                             宽高  不允许修改
                                         -->
-                                    <li class="ui-widget-content intersected drag_text prohibit " data-type="7"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text prohibit " data-type="7"
                                         style="display: block;width: 345px;height: 329px;overflow: auto;padding: 15px;background-color: #fff;position: absolute;top: 110px;left: 15px;font-size: 14px;line-height:25px;color: #333;z-index: 2">
                                         <!--可拖动的标识-->
                                         <i class='hander'></i>
@@ -393,12 +372,12 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img " data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img " data-type="1"
                                         style="display: block;width: 100%;position: absolute;top: 449px;left: 0">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
                                             <!--3、logo-->
-                                            <img src="../images/template/alit/footer4.png" alt=""
+                                            <img data-src="../images/template/alit/footer4.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;">
                                         </div>
                                     </li>
@@ -413,14 +392,14 @@
                                           元素单独的样式  全部加在li标签上
                                           动画全部加在li样式上
                                     -->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back4.png');background-size: cover;"></div>
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;;background-size: cover;" data-background="../images/template/alit/back1.png"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit" data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit" data-type="1"
                                         style="display: block;width:30px;position: absolute;top: 60px;left: 15px">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
@@ -429,7 +408,7 @@
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text prohibit" data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text prohibit" data-type="2"
                                         style="display: block;position: absolute;top: 60px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box">
@@ -438,14 +417,12 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit mess_pro" data-type="8"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit mess_pro" data-type="101"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1">
 
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="clearfix list">
-                                                <img src="../images/pub/time_3.png" alt="" class="timeimg fl">
-                                                <h4 class="mess_time fl">时间</h4>
                                             </div>
                                             <div class="time_num clearfix">
                                                 <span id="year_num">2018-01-23 周二 上午 01:30:00</span>
@@ -453,13 +430,11 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content drag_img prohibit mess_pro" data-type="8"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit mess_add" data-type="101"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 211px;left: 15px;z-index: 1">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="clearfix list">
-                                                <img src="../images/pub/add.png" alt="" class="mess_address fl">
-                                                <h4 class="mess_time fl">地点</h4>
                                             </div>
                                             <div class="time_num address">
                                                 <span id="address">**市 **区 **区</span>
@@ -467,14 +442,12 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content drag_img prohibit mess_pro" data-type="8"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit mess_tell" data-type="101"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 313px;left: 15px;z-index: 1">
 
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="clearfix list">
-                                                <img src="../images/pub/tell.png" alt="" class="timeimg fl">
-                                                <h4 class="mess_time fl">咨询电话</h4>
                                             </div>
                                             <p id="tell_num" class="time_num">010 - 12345678</p>
                                         </div>
@@ -489,22 +462,22 @@
                                           元素单独的样式  全部加在li标签上
                                           动画全部加在li样式上
                                     -->
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="5"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5"
                                         style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <div style="display: block;width: 100%;height: 100%;background-image: url('../images/template/alit/back4.png');background-size: cover;"></div>
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: cover;" data-background="../images/template/alit/back4.png"></div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="1"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="1"
                                         style="display: block;width:30px;position: absolute;top: 60px;left: 15px;z-index: 2;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
-                                            <img src="../images/pub/tit1.png" alt=""
+                                            <img data-src="../images/pub/tit1.png" alt="" class="swiper-lazy"
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content intersected drag_text prohibit pro_bor" data-type="2"
+                                    <li class="ui-widget-content swiper-lazy intersected drag_text prohibit pro_bor" data-type="2"
                                         style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box">
@@ -513,14 +486,14 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="6"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="6"
                                         style="display: block;width:345px;height: 424px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-color: #fff;border-radius: 8px;">
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;position: absolute;top: 122px;left: 30px;z-index: 35;">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="baby_name clearfix ani">
@@ -532,7 +505,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;background-color:#fff;position: absolute;top: 190px;left: 30px;z-index: 5">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div class="baby_name clearfix ani">
@@ -544,7 +517,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;background-color:#fff;position: absolute;top: 257px;left: 30px;z-index: 1">
 
                                         <!--<i class='hander'></i>-->
@@ -557,7 +530,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="102"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="102"
                                         style="display: block;width:315px;position: absolute;top: 324px;left: 30px;z-index: 5">
 
                                         <!--<i class='hander'></i>-->
@@ -570,7 +543,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="2"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="2"
                                         style="display: block;width:315px;position: absolute;top: 415px;left: 218px;z-index: 1;color: #FF4539;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
@@ -579,7 +552,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="0"
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="0"
                                         style="display: block;width:315px;position: absolute;top: 430px;left: 30px;z-index: 1;color: #FF4539;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
@@ -602,56 +575,15 @@
                     </li>
                 </ol>
             </div>
-            <div class="btn-toolbar">
-                <div class="btn-group">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle first-child text-btn-border">
-                            24
-                            <b class="caret">字号</b>
-                        </a>
-                        <ul class="dropdown-menu size-menu font-size-menu">
-                            <li class="ng-scope">
-                                <a data-size="96px">96px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="64px">64px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="48px">48px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="32px">32px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="24px">24px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="20px">20px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="18px">18px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="16px">16px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="14px">14px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="13px">13px</a>
-                            </li>
-                            <li class="ng-scope">
-                                <a data-size="12px">12px</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
 </body>
-
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/jquery.lazyload.js"></script>
+<script src="../swiperjs/swiper-3.4.2.min.js"></script>
+<script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
+<script src="../js/swiperlazy.js"></script>
 <script>
     $(function () {
         $(".prev_txt").click(function () {
