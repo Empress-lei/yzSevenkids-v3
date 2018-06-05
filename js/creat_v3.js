@@ -18,12 +18,12 @@ $(function () {
             var province = $(".pick-area .pick-province").html(), city = $(".pick-area .pick-city").html() ,qu = $(".pick-area .pick-county").html();
             province = province == city ? province : (province + (city == '请选择市' ? '' : city));
             province +=  qu == '请选择县' ? '' : qu ;
-            $("#address").html(province + city + qu)
+            $(".mess_add .element-box .time_num span").html(province + city + qu)
         }
     });
     //电话号码
     $('#tell').bind('input propertychange', function () {
-        $("#tell_num").html($("#tell").val());
+        $(".mess_tell .element-box .time_num").html($("#tell").val());
     })
     //修改学校的名字
     $('.inn').bind('input propertychange', function () {
@@ -53,7 +53,7 @@ $(function () {
                 console.log(value); //得到日期生成的值，如：2017-08-18
                 console.log(date); //得到日期时间对象：{year: 2017, month: 8, date: 18, hours: 0, minutes: 0, seconds: 0}
                 console.log(endDate); //得结束的日期时间对象，开启范围选择（range: true）才会返回。对象成员同上。
-                $("#year_num").html(value);
+                $(".mess_pro .element-box .time_num span").html(value);
             }
         });
     })
