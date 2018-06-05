@@ -16,6 +16,18 @@
     data-isshow   元素是否显示
     data-iseditable 元素是否可编辑
 
+
+
+properties（元素属性）
+    2   文本
+        {"linkageName":"linkageName"}
+       【说明：创建时候左右联动的园所名称】
+    102 表单
+        {"labelTxt":"***","inputPlaceholder":"********"}
+       【说明：label 标签的内容，input的placeholder】
+
+
+
 me class
 
     ui-widget-content   元素拖动标识类名

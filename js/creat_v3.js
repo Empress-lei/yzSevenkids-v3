@@ -32,9 +32,9 @@ $(function () {
         var intVal = $("#inp_partner").val();
         console.log(intVal)
         if(intVal == "") {
-            $('.kinder_name .element-box div').html(innVal);
+            $('.linkageName .element-box div').html(innVal);
         }else {
-            $('.kinder_name .element-box div').html(innVal + "&nbsp;" + "&" + "&nbsp;" + intVal);
+            $('.linkageName .element-box div').html(innVal + "&nbsp;" + "&" + "&nbsp;" + intVal);
         }
     });
     //获取文本

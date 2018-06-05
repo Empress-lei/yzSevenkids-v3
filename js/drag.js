@@ -74,8 +74,8 @@ $.fn.extend({
         }
 
         hander.mousedown(function(e){
-            father.children().css({"zIndex":"0"});
-            $this.css({"zIndex":"1"});
+            // father.children().css({"zIndex":"0"});
+            // $this.css({"zIndex":"1"});
             mDown = true;
             X = e.pageX;
             Y = e.pageY;
