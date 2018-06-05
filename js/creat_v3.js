@@ -23,7 +23,7 @@ $(function () {
     });
     //电话号码
     $('#tell').bind('input propertychange', function () {
-        $(".mess_tell .element-box .time_num").html($("#tell").val());
+        $(".mess_tell .element-box .time_num span").html($("#tell").val());
     })
     //修改学校的名字
     $('.inn').bind('input propertychange', function () {
