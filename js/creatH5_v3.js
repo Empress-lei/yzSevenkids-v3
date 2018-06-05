@@ -19,7 +19,7 @@ $(function () {
             editImg($(this).find("img"));
             var tag = $(this);
             var flag = true;
-            $(document).on("click", function (e) {//点击空白处，设置的弹框消失
+            $(document).on("click", function (e) {//点击空白处
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
@@ -33,7 +33,7 @@ $(function () {
             $(".hander").css("width", 0);
             var tag = $(this);
             var flag = true;
-            $(document).on("click", function (e) {//点击空白处，设置的弹框消失
+            $(document).on("click", function (e) {//点击空白处
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
@@ -48,7 +48,7 @@ $(function () {
             editImg($(this).find("img"));
             var tag = $(this);
             var flag = true;
-            $(document).on("click", function (e) {//点击空白处，设置的弹框消失
+            $(document).on("click", function (e) {//点击空白处
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;

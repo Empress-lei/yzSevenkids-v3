@@ -94,43 +94,80 @@
             position: relative;
           }
           .mess_pro {
+            padding: 15px 15px 5px;
             -webkit-border-radius: 8px;
             -moz-border-radius: 8px;
             -ms-border-radius: 8px;
             -o-border-radius: 8px;
             border-radius: 8px;
             margin-bottom: 8px;
-            .list {
-              width: 100%;
-              padding: 15px 15px 5px;
-              .timeimg {
-                width: 16px;
-                height: 16px;
-                margin-top: 4px;
-              }
-              .mess_time {
-                font-size: 14px;
-                color: #333333;
-                position: relative;
-                z-index: 555;
-                line-height: 25px;
-                padding-left: 10px;
-              }
-              //地点的图标
-              .mess_address {
-                width: 16px;
-                height: 16px;
-                margin-top: 4px;
-              }
-            }
-            .time_num {
-              font-size: 12px;
-              line-height: 20px;
-              color: #333;
-              padding: 0 15px 15px 40px;
+            .list::before {
+              content: "时间";
+              font-size: 14px;
+              color: #333333;
+              position: relative;
+              z-index: 555;
+              line-height: 25px;
+              background-image: url("../images/pub/time_3.png");
+              background-size: 16px 16px;
+              background-position: left center;
+              background-repeat: no-repeat;
+              padding-left: 25px;
             }
           }
-
+          //地址
+          .mess_add {
+            padding: 15px 15px 5px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            .list::before {
+              content: "地点";
+              font-size: 14px;
+              color: #333333;
+              position: relative;
+              z-index: 555;
+              line-height: 25px;
+              background-image: url("../images/pub/add.png");
+              background-size: 16px 16px;
+              background-position: left center;
+              background-repeat: no-repeat;
+              padding-left: 25px;
+            }
+          }
+          //电话
+          .mess_tell {
+            padding: 15px 15px 5px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            .list::before {
+              content: "咨询电话";
+              font-size: 14px;
+              color: #333333;
+              position: relative;
+              z-index: 555;
+              line-height: 25px;
+              background-image: url("../images/pub/tell.png");
+              background-size: 16px 16px;
+              background-position: left center;
+              background-repeat: no-repeat;
+              padding-left: 25px;
+            }
+          }
+          //内容公用
+          .time_num {
+            font-size: 12px;
+            line-height: 20px;
+            color: #333;
+            padding: 0 15px 15px 25px;
+          }
           .baby_name {
             position: relative;
             padding: 42px 0 11px;
@@ -199,6 +236,22 @@
             -o-border-radius: 50px 50px;
             border-radius: 50px 50px;
             margin: 15px auto 0;
+          }
+
+          .look_intr {
+            display: block;
+            width: 100%;
+            height: 42px;
+            line-height: 42px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            background-color: #0099FF;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
           }
         }
       }

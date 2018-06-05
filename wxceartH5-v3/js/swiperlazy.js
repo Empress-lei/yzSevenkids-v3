@@ -2,6 +2,7 @@
  * Created by Administrator on 2018/1/10.
  */
 $(function () {
+
     var swiper = new Swiper('.swiper-container', {
         direction : 'vertical',
         slidesPerView: "auto",

@@ -2,59 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>pc版创建活动 -- 完善信息</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>好玩的喷刷画 -- 编辑成功</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="Generator" content="EditPlus">
     <meta name="renderer" content="ie-comp">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/activi_creat.css">
     <link rel="stylesheet" href="../css/poster.css">
+    <link rel="stylesheet" href="../css/textSize.css">
+    <link rel="stylesheet" href="../css/creatH5_v3.css">
     <link rel="stylesheet" href="../css/render_v3.css">
-    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../css/animate.min.css">
-    <link rel="stylesheet" href="../layui_v3/css/layui.css">
-    <style>
-        .layui-laydate-content td, .layui-laydate-content th {
-            width: 36px !important;
-        }
-    </style>
-    <script src="../js/jquery-2.1.1.min.js"></script>
-    <!--<script src="../js/jquery-2.1.1.min.js"></script>-->
-    <script src="../js/jquery.lazyload.js"></script>
-    <script src="../swiperjs/swiper-3.4.2.min.js"></script>
-    <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
-    <script src="../js/swiperlazy.js"></script>
-    <script src="../layui_v3/layui.js"></script>
-    <!--<script src="../js/city/pick-pcc.min.1.0.2.js"></script>-->
-    <script src="../js/areaAuto.js"></script>
-    <script src=../js/city/pick-pcc.min.1.0.2.js></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/creat_v3.js"></script>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
 </head>
 <body>
-<!--园所介绍示例-->
-<div class="exam_pages">
-    <div class="exam_box">
-        <div  class="exam_close">
-            <img src="../images/pub/close_icon.png" alt="" class="exam_icon">
+<!--二维码展示区域-->
+<div class="cord_pages" style="display: none">
+    <div class="cord_box">
+        <div class="poster_title clearfix">
+            <h3 class="poster_left">我是一条快乐的小鱼（音乐律动） - 邀约海报编辑</h3>
+            <div class="poster_close">
+                <img src="../images/pub/close_icon.png" alt="" class="close_icon">
+            </div>
         </div>
-        <ul class="exam_ul clearfix">
-            <li>1.品牌简介</li>
-            <li>2.教育理念</li>
-            <li>3.特色课程</li>
-            <li>4.食谱介绍</li>
-        </ul>
-        <h3 class="render_intrd">园所介绍示例</h3>
-        <p class="render_text">
-            ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
-            <br><br>
-            我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。
-            <br><br>
-            我园严格执行365天带量食谱，详细制定了孩子每天摄入的蛋白质、脂肪、碳水化合物等营养的摄入量，让孩子吃好每一顿饭不仅是家长关心的事，也是我们最重要的事</p>
+        <div class="cord_div">
+            <div class="cord_content">
+                <div class="cord_pic">
+                    <!--<img src="../images/pub/invalidwe.png" alt="二维码的位置" class="cord_pic">-->
+                </div>
+                <!--<img src="../images/pub/invalidwe.png" alt="二维码的位置" class="cord_pic">-->
+                <p class="cord_p">打开微信扫一扫，分享成功，即可免费学习。</p>
+            </div>
+        </div>
     </div>
 </div>
+<!--创建活动区域-->
 <div class="warp_page">
     <!--导航-->
     <div class="home_nav">
@@ -115,13 +101,16 @@
             </div>
         </header>
     </div>
+
+    <!--创建区域-->
     <div class="creat_pages maxcen_width">
+        <input id="File" type="file" style="display: none"/>
         <div class="creat_title">
             <h3>好玩的喷刷画</h3>
             <p class="describe_text">一句话描述活动宣品的重要性，引导用户创建使用</p>
         </div>
-        <div class="creat_modu clearfix maxcen_width">
-            <div class="creat_center fl">
+        <div class="creat_modu maxcen_width clearfix">
+            <div class="creat_container suc_container">
                 <div class="creat_content">
                     <!--1、背景色-->
                     <div class="swiper-container">
@@ -156,7 +145,6 @@
                                     </li>
                                 </ul>
                             </div>
-
                             <!--第二屏-->
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
@@ -181,7 +169,7 @@
                                                  style="display: block;width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content edit intersected drag_text kinder_name ani" data-type="2" data-site="3" data-issize="1" data-iseditable="1" data-isdrag="1"
+                                    <li class="ui-widget-content edit intersected drag_text ani" data-type="2" data-site="3" data-issize="1" data-iseditable="1" data-isdrag="1"
                                         style="display: block;position: absolute;top: 103px;left: 139px;;line-height:28px;color: #25AF9C;"
                                         data-animation="slideInLeft" data-duration="1s" data-delay="0.9s"
                                         swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
@@ -361,7 +349,6 @@
                                 </ul>
                             </div>
 
-
                             <!--第五屏-->
                             <div class="swiper-slide home">
                                 <ul class="edit_area"
@@ -412,7 +399,7 @@
                                     <!--
                                             可修改文本，不可拖动
                                         -->
-                                    <li class="ui-widget-content edit drag_text prohibit render_share renderIntr" data-type="2" data-site="6" data-issize="1" data-iseditable="1"
+                                    <li class="ui-widget-content edit drag_text prohibit render_share" data-type="2" data-site="6" data-issize="1" data-iseditable="1"
                                         data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
                                         style="display: block;width: 315px;height:200px;overflow: auto;position: absolute;top: 125px;left: 30px;font-size: 12px;color: #333;z-index: 2"
                                         swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
@@ -577,60 +564,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next button_my">下<br>一<br>页</div>
-                    <div class="swiper-button-prev button_my">上<br>一<br>页</div>
                 </div>
-            </div>
-            <!--创建活动-->
-            <div class="creat_modify">
-                <div class="clearfix">
-                    <h3 class="perfect">园所信息完善</h3>
-                </div>
-                <div class="kinder_name clearfix">
-                    <label>幼儿园名称：</label><input type="text" value="" class="name_input inn" id="in" placeholder="请输入幼儿园名称">
-                </div>
-                <div class="kinder_name clearfix">
-                    <label>联 系 方 式：</label><input type="text" value="" class="name_input" id="tell" placeholder="请输入手机号">
-                </div>
-                <div class="intr_div">
-                    <div class="kinder_name clearfix">
-                        <label>园 所 介 绍：</label><textarea class="render_intr" onfocus=$(this).autoHeight(); placeholder="请添加园所特色"></textarea>
-                    </div>
-                    <a href="javascript:void (0);" class="look_exam">查看示例</a>
-                </div>
-                <div class="line_bor"></div>
-                <div class="clearfix">
-                    <h3 class="perfect">活动信息</h3>
-                </div>
-                <div class="kinder_name clearfix">
-                    <label>合作方信息：</label><input type="text" value="" class="name_input inn" id="inp_partner" placeholder="请输入合作方信息">
-                </div>
-                <!--选择时间-->
-                <div class="activity_time clearfix">
-                    <h3 class="time_tit fl">活动时间：</h3>
-                    <div class="layui-form fl">
-                        <div class="layui-form-item">
-                            <div class="layui-inline">
-                                <div class="layui-input-inline time_choice">
-                                    <span class="year_icon"></span>
-                                    <input type="text" class="layui-input" id="time_year" placeholder="请选择活动时间" readonly="readonly">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="city_div1 clearfix">
-                    <span class="fl pick_span">活动地址</span>
-                    <div class="fl pick-area pick-area1" name="省 / 市 / 区"></div>
-                </div>
-                <!--提交按钮-->
-                <a href="#" class="submit_btn fl">提&nbsp;&nbsp;交</a>
+                <ol class="invi_text invi_posi">
+                    <li class="invi_li prev_txt">
+                        预览
+                    </li>
+                    <li class="invi_li send_txt">
+                        转发
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
 </div>
 </body>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/jquery.lazyload.js"></script>
+<script src="../swiperjs/swiper-3.4.2.min.js"></script>
+<script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
+<script src="../js/swiperlazy.js"></script>
+<script>
+    $(function () {
+        $(".prev_txt").click(function () {
+            $(".cord_pages").show();
+        })
+        //二维码上的的关闭按钮
+        $(".cord_pages .poster_close").click(function () {
+            $(".cord_pages").hide();
+        })
+        $(".home ul li").addClass("pro_bor");
+    })
+</script>
 <script>
     $(function () {
         $(".look_intr").click(function () {

@@ -22,12 +22,12 @@ $(function () {
     $(".prev_txt").click(function () {
         $(".cord_pages").show();
     })
-    //点击转发  出现二维码
-    $(".send_txt").click(function () {
-        $(".cord_pages").show();
-        $(".poster_pages").hide();
-        $(".sgin_pages").hide();
-    })
+    // //点击转发  出现二维码
+    // $(".send_txt").click(function () {
+    //     $(".cord_pages").show();
+    //     $(".poster_pages").hide();
+    //     $(".sgin_pages").hide();
+    // })
     //二维码上的的关闭按钮
     $(".cord_pages .poster_close").click(function () {
         $(".cord_pages").hide();

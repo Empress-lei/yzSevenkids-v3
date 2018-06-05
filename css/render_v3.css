@@ -1,0 +1,32 @@
+@import "base_pc.css";
+.render_content {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: auto;
+  z-index: 999999999;
+  padding: 97px 30px 30px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.render_content .close_render::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  z-index: 555;
+  background-image: url("../images/pub/render_icon.png");
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.render_content .render_txt {
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+}

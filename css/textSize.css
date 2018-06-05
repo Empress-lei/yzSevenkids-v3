@@ -104,6 +104,12 @@
 .pro_bor:hover {
   border: none !important;
 }
+.render_share {
+  border: 2px dashed rgba(255, 255, 255, 0);
+}
+.render_share:hover {
+  border: 2px dashed #0099FF;
+}
 i.hander {
   display: block;
   position: absolute;
