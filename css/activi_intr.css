@@ -152,9 +152,7 @@ input:-moz-placeholder {
 }
 .warp_page .intr_pages .mudular-list {
   width: 1228px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: flex;
+  margin: 0 auto -1px;
   padding: 34px 0 6px;
   border: 1px solid #E7E7E7;
   border-right: none;
@@ -164,9 +162,10 @@ input:-moz-placeholder {
   background-color: #fff;
 }
 .warp_page .intr_pages .mudular-list .list_li {
-  flex: 1;
+  float: left;
+  width: 19.9%;
   cursor: pointer;
-  margin-right: 1px;
+  margin-left: 1px;
 }
 .warp_page .intr_pages .mudular-list .list_li .case_w {
   display: block;

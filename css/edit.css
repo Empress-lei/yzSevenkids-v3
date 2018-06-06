@@ -190,7 +190,7 @@
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 .edit_share .share-bar .reader_paper .myschedule .file_img .imgbor {
   border: 8px solid #fff;
@@ -252,13 +252,14 @@
   width: 100%;
   height: auto;
   position: relative;
+  border: 1px solid #fff;
 }
 .edit_share .share-bar .reader_paper .reader_content .schedule .file_img .img {
   display: block;
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 .edit_share .share-bar .reader_paper .reader_content .sche {
   display: block !important;
@@ -598,13 +599,14 @@
   width: 100%;
   height: auto;
   position: relative;
+  border: 1px solid #fff;
 }
 .warp_page .edit_article .article .article_content .myschedule .file_img .img {
   display: block;
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 .warp_page .edit_article .article .article_content .myschedule .file_img .imgbor {
   border: 8px solid #fff;
@@ -619,6 +621,9 @@
   top: 0;
   width: 20px;
   height: 20px;
+}
+.warp_page .edit_article .article .article_content .myschedule .file_img:hover {
+  border: 1px dotted #0099FF;
 }
 .warp_page .edit_article .article .article_content .myschedule .file_img:hover .imgclose {
   display: block;
@@ -657,13 +662,14 @@
   width: 100%;
   height: auto;
   position: relative;
+  border: 1px solid #fff;
 }
 .warp_page .edit_article .article .article_content .schedule .file_img .img {
   display: block;
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 .warp_page .edit_article .article .article_content .schedule .file_img .imgclose {
   display: none;
@@ -672,6 +678,9 @@
   top: 0;
   width: 20px;
   height: 20px;
+}
+.warp_page .edit_article .article .article_content .schedule .file_img:hover {
+  border: 1px dotted #0099FF;
 }
 .warp_page .edit_article .article .article_content .schedule .file_img:hover .imgclose {
   display: block;

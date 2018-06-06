@@ -69,7 +69,7 @@
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  margin: 0 auto 0.4rem;
+  margin: 0 auto;
 }
 .warp_wx .reader_paper .reader_content .sche {
   display: block !important;
@@ -164,7 +164,7 @@
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  margin: 0 auto 0.4rem;
+  margin: 0 auto;
 }
 .warp_wx .reader_paper .myschedule .file_img .imgbor {
   border: 0.21333333rem solid #ffffff;

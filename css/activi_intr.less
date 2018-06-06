@@ -163,9 +163,9 @@ input:-moz-placeholder {
     //引导步骤
     .mudular-list {
       width: 1228px;
-      margin: 0 auto;
-      display: -webkit-flex;
-      display: flex;
+      margin: 0 auto -1px;
+      //display: -webkit-flex;
+      //display: flex;
       padding: 34px 0 6px;
       border: 1px solid #E7E7E7;
       border-right: none;
@@ -174,9 +174,11 @@ input:-moz-placeholder {
       z-index: 3333;
       background-color: #fff;
       .list_li {
-        flex: 1;
+        //flex: 1;
+        float: left;
+        width: 19.9%;
         cursor: pointer;
-        margin-right: 1px;
+        margin-left: 1px;
         .case_w {
           display: block;
           width: 100%;

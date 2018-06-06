@@ -11,6 +11,7 @@ $(function () {
         console.log($(this));
         myload($(this).data("url"),function () {
             $(".activi_div").hide();
+            $(".minh").show();
         });
     })
 })

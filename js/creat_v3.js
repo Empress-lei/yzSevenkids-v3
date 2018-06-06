@@ -1,4 +1,19 @@
+//记录文本框中的字数
+function fn() {
+    var len = $(".render_intr").val().length;
+    $(".length span").text(len);
+}
+function vfn() {
+    var len = $(".render_intr").val().length;
+    if(len < 10) {
+        toast("至少输入10个字符");
+        return false;
+    }
+}
+
 $(function () {
+
+
     //点击查看示例，弹出蒙城
     $(".look_exam").click(function () {
         $(".exam_pages").show();
@@ -7,9 +22,9 @@ $(function () {
     $(".exam_pages .exam_close").click(function () {
         $(".exam_pages").hide();
     })
+
+
     //城市联动选择
-    var address = $('#address').html()
-    console.log(address + 'wbl')
     $(".pick-area1").pickArea({
         "getVal":function(){
             var thisdom = $("."+$(".pick-area-dom").val());
@@ -18,9 +33,12 @@ $(function () {
             var province = $(".pick-area .pick-province").html(), city = $(".pick-area .pick-city").html() ,qu = $(".pick-area .pick-county").html();
             province = province == city ? province : (province + (city == '请选择市' ? '' : city));
             province +=  qu == '请选择县' ? '' : qu ;
-            $(".mess_add .element-box .time_num span").html(province + city + qu)
+            $(".mess_add .element-box .time_num :nth-child(1)").html(province + city + qu)
         }
     });
+    $('.intr_mess').bind('input propertychange', function () {
+        $(".mess_add .element-box .time_num :nth-child(1)").append($(".intr_mess").val())
+    })
     //电话号码
     $('#tell').bind('input propertychange', function () {
         $(".mess_tell .element-box .time_num span").html($("#tell").val());
