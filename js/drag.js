@@ -1,4 +1,5 @@
-
+var dragChang = false;
+console.log(dragChang);
 $.fn.extend({
     //---元素拖动插件
     dragging:function(data){
@@ -35,13 +36,9 @@ $.fn.extend({
         hander.css({"cursor":"move"});
 
         var faWidth = father.width();
-        // console.log(faWidth)
         var faHeight = father.height();
-        // console.log(faHeight)
         var thisWidth = $this.width()+parseInt($this.css('padding-left'))+parseInt($this.css('padding-right'));
-        // console.log(thisWidth)
         var thisHeight = $this.height()+parseInt($this.css('padding-top'))+parseInt($this.css('padding-bottom'));
-        // console.log(thisHeight)
         var mDown = false;//
         var positionX;
         var positionY;
@@ -154,4 +151,36 @@ $.fn.extend({
             }
         });
     }
-}); 
+});
+
+//修改文字大小
+var thix;
+$(function () {
+    //双击文字，修改字体大小
+    $('.intersected').click(function (e) {
+        thix = $(this);
+        console.log(thix.index())
+        var aaaStyle = thix.css("font-size");
+        console.log(aaaStyle)
+        $(".btn-toolbar .dropdown-toggle").text(aaaStyle);
+        $(".btn-toolbar").show();
+        // e.stopPropagation();
+    })
+    $('.dropdown-menu li a').click(function () {
+        obtainSize($(this));
+        dragChang = true;
+        $(".btn-toolbar").hide();
+        $(".dropdown-menu").hide()
+    })
+    $(".dropdown-toggle").click(function (e) {
+        e.stopPropagation();
+        $(".dropdown-menu").show();
+    })
+});
+function obtainSize(obj) {
+    var obj = $(obj);
+    console.log(obj)
+    var text = obj.data("size");
+    console.log(text);
+    thix.css("fontSize", text);
+}

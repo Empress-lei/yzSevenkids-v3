@@ -430,6 +430,16 @@ input:-moz-placeholder {
   background: url("../images/pub/wririgarr.png") no-repeat right center;
   background-size: 10px 18px;
 }
+.warp_page .poster_div .record_div .record_ul .current_list {
+  background-color: #FF530B;
+}
+.warp_page .poster_div .record_div .record_ul .current_list p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  background: url("../images/pub/wririgarr.png") no-repeat right center;
+  background-size: 10px 18px;
+}
 .warp_page .lookbtn {
   display: block;
   padding: 13px 0;

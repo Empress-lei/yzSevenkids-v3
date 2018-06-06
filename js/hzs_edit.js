@@ -9,7 +9,7 @@ $(function () {
         console.log(aaaStyle)
         $(".btn-toolbar .dropdown-toggle").text(aaaStyle);
         $(".btn-toolbar").show();
-        e.stopPropagation();
+        // e.stopPropagation();
     })
     $('.dropdown-menu li a').click(function () {
         obtainSize($(this));

@@ -92,6 +92,12 @@
 .intersected:hover {
   border: 2px dashed #0099FF;
 }
+.intersected2 {
+  border: 2px dashed rgba(255, 255, 255, 0);
+}
+.intersected2:hover {
+  border: 2px dashed #0099FF;
+}
 .drag_img {
   border: 2px dashed rgba(255, 255, 255, 0);
 }
