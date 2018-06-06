@@ -37,7 +37,7 @@ $(function () {
         }
     });
     $('.intr_mess').bind('input propertychange', function () {
-        $(".mess_add .element-box .time_num :nth-child(1)").append($(".intr_mess").val())
+        $(".mess_add .element-box .time_num :nth-child(2)").html($(".intr_mess").val())
     })
     //电话号码
     $('#tell').bind('input propertychange', function () {

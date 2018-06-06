@@ -171,7 +171,7 @@
                                         </div>
                                     </li>
                                     <li class="ui-widget-content edit drag_img ani" data-type="7" data-site="2" data-issize="1" data-iseditable="1" data-isdrag="1"
-                                        style="display: block;width: 57px;height: 57px;position: absolute;top: 40px;left: 159px"
+                                        style="display: block;width: 57px;height: 57px;position: absolute;top: 40px;left: 159px;z-index: 22"
                                         data-animation="fadeIn" data-duration="1s" data-delay="0.5s"
                                         swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
                                         <i class='hander'></i>
@@ -182,7 +182,7 @@
                                         </div>
                                     </li>
                                     <li class="ui-widget-content edit intersected drag_text linkageName ani" data-type="2" data-site="3" data-issize="1" data-iseditable="1" data-isdrag="1"
-                                        style="display: block;position: absolute;top: 103px;left: 139px;;line-height:28px;color: #25AF9C;"
+                                        style="display: block;position: absolute;top: 103px;left: 139px;;line-height:28px;color: #25AF9C;z-index: 22"
                                         data-animation="slideInLeft" data-duration="1s" data-delay="0.9s"
                                         swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
                                         <i class='hander'></i>
@@ -305,7 +305,7 @@
                                         </div>
                                     </li>
                                     <!--城市-->
-                                    <li class="ui-widget-content edit drag_img prohibit mess_add ani" data-type="101" data-site="5" data-isdrag="1"
+                                    <li class="ui-widget-content edit drag_img prohibit mess_add ani" data-type="105" data-site="5" data-isdrag="1"
                                         data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
                                         style="display: block;width:345px;background-color:#fff;position: absolute;top: 211px;left: 15px;z-index: 1"
                                         swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
@@ -314,7 +314,7 @@
                                             <div class="list">
                                             </div>
                                             <div class="time_num">
-                                                <span>**市 **区 **区</span>
+                                                <span>**市 **区 **区</span><span>***具体地址</span>
                                             </div>
                                         </div>
                                     </li>
@@ -380,14 +380,14 @@
                                         </div>
                                     </li>
                                     <li class="ui-widget-content edit drag_img prohibit pro_bor" data-type="1" data-site="2"
-                                        style="display: block;width:30px;height:30px;position: absolute;top: 60px;left: 15px">
+                                        style="display: block;width:30px;height:30px;position: absolute;top: 40px;left: 15px">
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <img src="../images/template/paint/mess_iocn.png" alt=""
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
                                     <li class="ui-widget-content edit intersected drag_text prohibit pro_bor" data-type="2" data-site="3"
-                                        style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
+                                        style="display: block;position: absolute;top: 43px;left: 55px;font-size: 18px;line-height:25px;color: #333;z-index: 2">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box">
                                             <div>
@@ -396,15 +396,15 @@
                                         </div>
                                     </li>
                                     <li class="ui-widget-content edit drag_img prohibit pro_bor" data-type="1" data-site="4"
-                                        style="display: block;width:90px;position: absolute;top: 45px;left: 253px;z-index: 5">
+                                        style="display: block;width:90px;position: absolute;top: 15px;left: 253px;z-index: 5">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <img src="../images/template/paint/theme4.png" alt=""
                                                  style="display: block;width: 100%;height: 100%;">
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content edit drag_img prohibit pro_bor" data-type="6" data-site="5"
-                                        style="display: block;width:345px;height: 343px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1;border-radius: 8px">
+                                    <li class="ui-widget-content edit drag_img prohibit pro_bor backIntr" data-type="6" data-site="5"
+                                        style="display: block;width:345px;height: 288px;;background-color:#fff;position: absolute;top: 75px;left: 15px;z-index: 1;border-radius: 8px">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
                                             <div style="display: block;width: 100%;height: 100%;background-color: #fff;border-radius: 8px;">
@@ -414,23 +414,25 @@
                                     <!--
                                             可修改文本，不可拖动
                                         -->
-                                    <li class="ui-widget-content edit drag_text prohibit render_share renderIntr" data-type="2" data-site="6" data-issize="1" data-iseditable="1"
+                                    <li class="ui-widget-content edit drag_text prohibit render_share renderIntr" data-type="2" data-site="6"
                                         data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
-                                        style="display: block;width: 315px;height:285px;overflow: auto;position: absolute;top: 125px;left: 30px;font-size: 12px;color: #333;z-index: 2"
+                                        style="display: block;width: 288px;height:230px;overflow: auto;position: absolute;top: 90px;left: 45px;line-height:22px;font-size: 12px;color: #333;z-index: 2"
                                         swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
                                         <!--可拖动的标识-->
                                         <div class="element-box">
-                                            <div contenteditable="true" style="outline: none">
+                                            <div>
                                                 ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
                                                 <br><br>
-                                                我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。
-                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。 我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。 ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等风系统…
-                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。 我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。 ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等风系统…
+                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+                                                <br><br>
+                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+                                                <br><br>
+                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接结束啦
                                             </div>
                                         </div>
                                     </li>
                                     <li class="ui-widget-content edit drag_img prohibit pro_bor ani" data-type="8" data-site="7"
-                                        style="display: block;width:345px;position: absolute;top: 368px;left: 15px;z-index: 9;font-size:14px;color: #0099FF;
+                                        style="display: block;width:345px;position: absolute;top: 278px;left: 15px;z-index: 9;font-size:14px;color: #0099FF;
                                         background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
                                         background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
                                         background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
@@ -444,23 +446,12 @@
                                     </li>
                                     <li class="ui-widget-content edit drag_img" data-type="1" data-site="8" data-issize="1" data-iseditable="1" data-isdrag="1"
                                         data-animation="rotateInUpRight" data-duration="0.8s" data-delay="0.7s"
-                                        style="display: block;width: 345px;height:169px;position: absolute;top: 468px;left: 16px"
+                                        style="display: block;width: 345px;height:169px;position: absolute;top: 378px;left: 16px"
                                         swiper-animate-effect="rotateInUpRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">
                                         <i class='hander'></i>
                                         <div class="element-box" style="display: block;width: 100%;height: 100%">
                                             <img src="../images/template/paint/footer5.png" alt=""
                                                  style="display: block;width: 100%;">
-                                        </div>
-                                    </li>
-                                    <!--朦层介绍详情-->
-                                    <li class="ui-widget-content edit drag_img render_content  prohibit pro_bor" data-type="" data-site="9"
-                                        style="display: none;width: 100%;position: absolute;top: 0;left: 0;">
-                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
-                                            <div class="close_render">
-                                            </div>
-                                            <div class="render_txt">
-
-                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -519,7 +510,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="ui-widget-content edit drag_img prohibit pro_bor ani" data-type="102" data-site="6"
+                                    <li class="ui-widget-content edit drag_img prohibit pro_bor ani" data-type="106" data-site="6"
                                         data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
                                         style="display: block;width:315px;background-color:#fff;position: absolute;top: 190px;left: 30px;z-index: 5"
                                         swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s" >
@@ -533,7 +524,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content edit drag_img prohibit pro_bor ani" data-type="102" data-site="7"
+                                    <li class="ui-widget-content edit drag_img prohibit pro_bor ani" data-type="104" data-site="7"
                                         data-animation="zoomIn" data-duration="0.8s" data-delay="0.6s"
                                         style="display: block;width:315px;background-color:#fff;position: absolute;top: 257px;left: 30px;z-index: 1"
                                         swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
@@ -559,7 +550,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="ui-widget-content edit drag_img prohibit pro_bor" data-type="2" data-site="9"
+                                    <!--ident_err   验证码错误提示-->
+                                    <li class="ui-widget-content edit drag_img prohibit pro_bor ident_err" data-type="2" data-site="9"
                                         style="display: block;width:315px;position: absolute;top: 415px;left: 218px;z-index: 1;color: #FF4539;">
                                         <!--<i class='hander'></i>-->
                                         <div class="element-box" style="display: block;width: 100%;height: 100%;">
@@ -600,12 +592,12 @@
                 </div>
                 <div class="intr_div">
                     <div class="kinder_name clearfix">
-                        <label>园 所 介 绍：</label><textarea class="render_intr"onkeyup="fn()" onblur="fn()" onfocus=$(this).autoHeight(); maxlength="600"placeholder="请添加园所特色"></textarea>
+                        <label>园 所 介 绍：</label><textarea class="render_intr"onkeyup="fn()" onblur="fn()" onfocus=$(this).autoHeight(); maxlength="500"placeholder="请添加园所特色"></textarea>
                     </div>
                     <div class="clearfix">
                         <a href="javascript:void (0);" class="look_exam fl">查看示例</a>
                         <!--<a href="javascript:void (0);" class="look_exam">查看示例</a>-->
-                        <p class="length fr"><span>0</span>/600</p>
+                        <p class="length fr"><span>0</span>/500</p>
                     </div>
                 </div>
                 <div class="line_bor"></div>
@@ -646,14 +638,37 @@
 </body>
 <script>
     $(function () {
-        $(".look_intr").click(function () {
-            var mess = $(".render_share div div").html();
-            $(".render_txt").html(mess);
-            $(".render_content").show();
+        $(".look_intr").on('click',function(){
+            var self = $(this);
+            if(!self.data('status') || self.data('status') == 1){
+                $(".backIntr").css("height","95%");
+                $(".backIntr").css("top","15px");
+                $(".backIntr").css("zIndex","10");
+                $(".renderIntr").css("height","84%");
+                $(".renderIntr").css("top","30px");
+                $(".renderIntr").css("zIndex","11");
+                $(".look_intr").parent().parent().css("top","550px")
+                $(".look_intr").parent().parent().css("zIndex","12");
+                $(".look_intr").parent().parent().css("background-image","none");
+                $(".look_intr").html("向上收起");
+                $(".look_intr").addClass("look_intrtop");
+                $(".look_intr").data("status","2");
+            }else{
+                $(".backIntr").css("height","288px");
+                $(".backIntr").css("top","75px");
+                $(".backIntr").css("zIndex","1");
+                $(".renderIntr").css("height","230px");
+                $(".renderIntr").css("top","90px");
+                $(".renderIntr").css("zIndex","2");
+                $(".look_intr").parent().parent().css("top","278px")
+                $(".look_intr").parent().parent().css("zIndex","9");
+                $(".look_intr").parent().parent().css("background-image","-webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgb(255, 255, 255));");
+                $(".look_intr").html("向下展开");
+                $(".look_intr").removeClass("look_intrtop");
+                $(".look_intr").data("status","1");
+            }
         })
-        $(".render_content .close_render").click(function () {
-            $(".render_content").hide();
-        })
+
     })
 </script>
 <script>

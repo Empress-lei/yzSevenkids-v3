@@ -1,0 +1,33 @@
+@import "base_mob.css";
+//园所信息介绍蒙城
+.render_content {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 999999999;
+  padding: 97px 30px 30px;
+  background: rgba(0, 0, 0, .8);
+  .close_render::before {
+    content: "";
+    display: block;
+    width: 30/37.5rem;
+    height: 30/37.5rem;
+    position: absolute;
+    right: 30/37.5rem;
+    top: 30/37.5rem;
+    cursor: pointer;
+    z-index: 555;
+    background-image: url("../images/pub/render_icon.png");
+    background-size: 30/37.5rem 30/37.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .render_txt {
+    color: #fff;
+    line-height: 20/37.5rem;
+    font-size: 12/37.5rem;
+  }
+}

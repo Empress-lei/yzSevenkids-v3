@@ -1,0 +1,335 @@
+@import "base_mob.css";
+.warp_page {
+  width: 100%;
+  height: 100%;
+  max-width: 540px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /*清除点击高亮效果*/
+}
+.warp_page .maxcen_width {
+  width: 100%;
+  margin: 0 auto;
+}
+.warp_page .creat_pages {
+  height: 100%;
+  cursor: pointer;
+}
+.warp_page .creat_pages .creat_content {
+  width: 100%;
+  height: 100%;
+}
+.warp_page .creat_pages .creat_content .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.warp_page .creat_pages .creat_content .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.warp_page .creat_pages .creat_content .mess_pro {
+  padding: 15px 15px 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.warp_page .creat_pages .creat_content .mess_pro .list::before {
+  content: "时间";
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  z-index: 555;
+  line-height: 25px;
+  background-image: url("../images/pub/time_3.png");
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+.warp_page .creat_pages .creat_content .mess_add {
+  padding: 15px 15px 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.warp_page .creat_pages .creat_content .mess_add .list::before {
+  content: "地点";
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  z-index: 555;
+  line-height: 25px;
+  background-image: url("../images/pub/add.png");
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+.warp_page .creat_pages .creat_content .mess_tell {
+  padding: 15px 15px 5px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.warp_page .creat_pages .creat_content .mess_tell .list::before {
+  content: "咨询电话";
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  z-index: 555;
+  line-height: 25px;
+  background-image: url("../images/pub/tell.png");
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+.warp_page .creat_pages .creat_content .time_num {
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+  padding: 0 15px 15px 25px;
+}
+.warp_page .creat_pages .creat_content .baby_name {
+  position: relative;
+  padding: 42px 0 11px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.warp_page .creat_pages .creat_content .baby_name .baby_input {
+  display: block;
+  width: 70%;
+  height: 32px;
+  line-height: 32px;
+  color: #333;
+  font-size: 14px;
+}
+.warp_page .creat_pages .creat_content .baby_name .baby_la {
+  height: 32px;
+  line-height: 32px;
+  color: #333;
+  font-size: 14px;
+}
+.warp_page .creat_pages .creat_content .baby_name .obtain_code {
+  display: block;
+  color: #fff;
+  width: 95px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #0099FF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  bottom: 14px;
+}
+.warp_page .creat_pages .creat_content ::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+.warp_page .creat_pages .creat_content ::-moz-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+.warp_page .creat_pages .creat_content :-ms-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+.warp_page .creat_pages .creat_content input:-moz-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+.warp_page .creat_pages .creat_content .sub_btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #999999;
+  font-size: 16px;
+  text-align: center;
+  background-color: #F3F3F3;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
+  border-radius: 50px 50px;
+  margin: 15px auto 0;
+}
+.warp_page .creat_pages .creat_content .look_intr {
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background-color: #0099FF;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+.activity_btnblack {
+  position: fixed;
+  right: 0.53333333rem;
+  bottom: 0.53333333rem;
+  z-index: 555;
+}
+.activity_btnblack .btnimg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.activity_btnblack .btn {
+  display: block;
+  font-size: 0.32rem;
+  text-align: center;
+  color: #181818;
+}
+.play {
+  position: fixed;
+  top: 0.48rem;
+  right: 0.48rem;
+  z-index: 555;
+  width: 1.12rem !important;
+  height: 1.12rem !important;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+.play img {
+  display: block;
+  width: 0.61866667rem;
+  margin: 0.25066667rem auto;
+  position: relative;
+  z-index: 333;
+}
+.pause {
+  position: fixed;
+  top: 0.48rem;
+  right: 0.48rem;
+  z-index: 555;
+  width: 1.12rem !important;
+  height: 1.12rem !important;
+  display: block !important;
+  margin: 0 auto !important;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  -webkit-animation: rotating 1.2s linear infinite;
+  -moz-animation: rotating 1.2s linear infinite;
+  -ms-animation: rotating 1.2s linear infinite;
+  -o-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+.pause img {
+  display: block;
+  width: 0.61866667rem;
+  margin: 0.25066667rem auto;
+  position: relative;
+  z-index: 333;
+}
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@-moz-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@-ms-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@-o-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}

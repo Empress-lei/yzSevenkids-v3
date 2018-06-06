@@ -412,17 +412,37 @@
           .look_intr {
             display: block;
             width: 100%;
-            height: 42px;
-            line-height: 42px;
-            color: #fff;
+            height: 65px;
+            padding-top: 55px;
+            color: #0099FF;
             font-size: 14px;
             text-align: center;
-            background-color: #0099FF;
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            -ms-border-radius: 8px;
-            -o-border-radius: 8px;
-            border-radius: 8px;
+          }
+          .look_intr::after {
+            content: "";
+            position: absolute;
+            z-index: 555;
+            width: 11px;
+            height: 8px;
+            background-image: url("../images/pub/botarr_icon.png");
+            background-size: 100% 100%;
+            background-position: right center;
+            background-repeat: no-repeat;
+            margin-top: 7px;
+            margin-left: 4px;
+          }
+          .look_intrtop::after {
+            content: "";
+            position: absolute;
+            z-index: 555;
+            width: 11px;
+            height: 8px;
+            background-image: url("../images/pub/toparr_icon.png");
+            background-size: 100% 100%;
+            background-position: right center;
+            background-repeat: no-repeat;
+            margin-top: 7px;
+            margin-left: 4px;
           }
         }
       }
