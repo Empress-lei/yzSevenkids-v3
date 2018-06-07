@@ -577,6 +577,9 @@
 </div>
 </body>
 <script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/hzs_edit.js"></script>
+<script src="../js/hzs_poster.js"></script>
 <script src="../js/jquery.lazyload.js"></script>
 <script src="../swiperjs/swiper-3.4.2.min.js"></script>
 <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
@@ -591,6 +594,8 @@
             $(".cord_pages").hide();
         })
         $(".home ul li").addClass("pro_bor");
+        $(".home ul li").addClass("drag_no");
+        $(".home ul .drag_no .ui-resizable-handle").remove();
     })
 </script>
 <script>

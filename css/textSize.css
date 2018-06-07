@@ -104,6 +104,9 @@
 .drag_img:hover {
   border: 2px dashed #0099FF;
 }
+/*.drag_no .ui-resizable-handle{*/
+  /*display: none !important;*/
+/*}*/
 .pro_bor {
   border: none !important;
 }
