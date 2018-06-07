@@ -17,16 +17,6 @@ $(function () {
             $(".hander").css("height", 0);
             $(".hander").css("width", 0);
             editImg($(this).find("img"));
-            var tag = $(this);
-            var flag = true;
-            $(document).on("click", function (e) {//点击空白处
-                var target = $(e.target);
-                if (target.closest(tag).length == 0 && flag == true) {
-                    flag = false;
-                    $(".hander").css("height", "100%");
-                    $(".hander").css("width", "100%");
-                }
-            });
         // 文字
         } else if ($(this).data("type") == "2") {
             $(".hander").css("height", 0);
@@ -46,16 +36,16 @@ $(function () {
             $(".hander").css("height", 0);
             $(".hander").css("width", 0);
             editImg($(this).find("img"));
-            var tag = $(this);
-            var flag = true;
-            $(document).on("click", function (e) {//点击空白处
-                var target = $(e.target);
-                if (target.closest(tag).length == 0 && flag == true) {
-                    flag = false;
-                    $(".hander").css("height", "100%");
-                    $(".hander").css("width", "100%");
-                }
-            });
+            // var tag = $(this);
+            // var flag = true;
+            // $(document).on("click", function (e) {//点击空白处
+            //     var target = $(e.target);
+            //     if (target.closest(tag).length == 0 && flag == true) {
+            //         flag = false;
+            //         $(".hander").css("height", "100%");
+            //         $(".hander").css("width", "100%");
+            //     }
+            // });
         }
     })
 })
