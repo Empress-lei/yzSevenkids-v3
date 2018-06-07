@@ -134,12 +134,28 @@ input:-moz-placeholder {
   color: #FF4539;
   font-weight: 800;
 }
-.warp_page .intr_pages .intr_top .intr_title .buy_div .buy_btn {
-  font-size: 18px;
-  line-height: 25px;
-  color: #FF4539;
-  text-decoration: underline;
-  padding-top: 22px;
+.warp_page .intr_pages .intr_top .intr_title .buy_div .btn_fr {
+  float: right;
+}
+.warp_page .intr_pages .intr_top .intr_title .buy_div .btn_fr a {
+  display: block;
+  width: 116px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.warp_page .intr_pages .intr_top .intr_title .buy_div .btn_fr .buy_btn {
+  background-color: #FF4539;
+}
+.warp_page .intr_pages .intr_top .intr_title .buy_div .btn_fr .free_btn {
+  margin-right: 2px;
+  background-color: #0098FF;
 }
 .warp_page .intr_pages .intr_top .intr_title .buy_a {
   padding-top: 68px;
