@@ -64,7 +64,7 @@ $(function () {
 var currentEle = {src: ""};
 $("#File").change(function () {
     var file = this.files[0];
-    console.log(file);
+    // console.log(file);
     if (window.FileReader) {
         var reader = new FileReader();
         console.log(reader);
@@ -85,8 +85,7 @@ function editImg(ele) {
     console.log(ele)
     var eleth = $(ele);
     currentEle = eleth;
-    var eleSrc = eleth.attr("src");
-    console.log(eleSrc);
+    // var eleSrc = eleth.attr("src");
     $("#File").click();
 }
 

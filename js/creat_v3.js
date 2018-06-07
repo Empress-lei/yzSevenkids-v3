@@ -10,10 +10,7 @@ function vfn() {
         return false;
     }
 }
-
 $(function () {
-
-
     //点击查看示例，弹出蒙城
     $(".look_exam").click(function () {
         $(".exam_pages").show();
@@ -46,9 +43,7 @@ $(function () {
     //修改学校的名字
     $('.inn').bind('input propertychange', function () {
         var innVal = $("#in").val();
-        console.log(innVal)
         var intVal = $("#inp_partner").val();
-        console.log(intVal)
         if(intVal == "") {
             $('.linkageName .element-box div').html(innVal);
         }else {
@@ -80,7 +75,6 @@ $(function () {
 $(function () {
     $(window).scroll(function(event){
         var aa = $(window).scrollTop();
-        console.log(aa)
         if(aa >= 100) {
             $(".creat_content").css("position","fixed");
             $(".creat_content").css("top","120px");

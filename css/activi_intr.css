@@ -405,6 +405,7 @@ input:-moz-placeholder {
   width: 100%;
 }
 .warp_page .poster_div .record_div .record_ul .record_list {
+  cursor: pointer;
   padding: 10px 20px;
 }
 .warp_page .poster_div .record_div .record_ul .record_list p {

@@ -75,13 +75,8 @@
     function seleRender(item) {
         var item = $(item);
         item.on("click", function () {
-            item.removeClass("current_list");
-            $(this).siblings("li").addClass("current_list");
-        })
-        item.on("click", function () {
-            item.removeClass("current_list");
+            $(".current_list").removeClass("current_list");
             $(this).addClass("current_list");
-
         })
     }
 </script>
