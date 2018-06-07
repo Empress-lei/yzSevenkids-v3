@@ -14,8 +14,6 @@ $(function () {
     $(".edit").dblclick(function () {
         //图片
         if ($(this).data("type") == "1") {
-            $(".hander").css("height", 0);
-            $(".hander").css("width", 0);
             editImg($(this).find("img"));
         // 文字
         } else if ($(this).data("type") == "2") {
@@ -33,19 +31,7 @@ $(function () {
                 }
             });
         }else if ($(this).data("type") == "7") {
-            $(".hander").css("height", 0);
-            $(".hander").css("width", 0);
             editImg($(this).find("img"));
-            // var tag = $(this);
-            // var flag = true;
-            // $(document).on("click", function (e) {//点击空白处
-            //     var target = $(e.target);
-            //     if (target.closest(tag).length == 0 && flag == true) {
-            //         flag = false;
-            //         $(".hander").css("height", "100%");
-            //         $(".hander").css("width", "100%");
-            //     }
-            // });
         }
     })
 })
