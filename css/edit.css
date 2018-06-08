@@ -212,6 +212,7 @@
 .edit_share .share-bar .reader_paper .cord_img {
   padding-top: 0.4rem;
   width: 100%;
+  cursor: pointer;
 }
 .edit_share .share-bar .reader_paper .cord_img .cord_render {
   display: block;
@@ -592,6 +593,7 @@
 .warp_page .edit_article .article .article_content .cord_img {
   padding-top: 0.4rem;
   width: 100%;
+  cursor: pointer;
 }
 .warp_page .edit_article .article .article_content .cord_img .cord_render {
   display: block;
