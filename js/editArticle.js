@@ -16,7 +16,7 @@ $(function () {
     //复制
     var clipboard = new Clipboard('#copy', {
         target: function() {
-            return document.querySelector('#schedule');
+            return document.querySelector('.myschedule');
         }
     });
     $('.font13 textarea').autoHeight();

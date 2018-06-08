@@ -86,22 +86,16 @@
   height: 36px;
   line-height: 36px;
 }
-.intersected {
+.intersected div img,
+.intersected div div {
   border: 2px dashed #0099FF;
 }
-.intersected:hover {
+.drag_img div img,
+.drag_img div div {
   border: 2px dashed #0099FF;
 }
-.drag_img {
-  border: 2px dashed #0099FF;
-}
-.drag_img:hover {
-  border: 2px dashed #0099FF;
-}
-.pro_bor {
-  border: none !important;
-}
-.pro_bor:hover {
+.pro_bor div img,
+.drag_img div div {
   border: none !important;
 }
 .render_share {

@@ -107,11 +107,30 @@
             </header>
         </div>
         <div class="article">
-            <div class="copy_div">
-                <a href="javascript:void (0);" class="copy_btn btn" id="copy">复制</a>
-            </div>
-            <div class="preview_div">
-                <a href="javascript:void (0);" class="preview" id="preview">预览</a>
+            <!--<div class="copy_div">-->
+                <!--<a href="javascript:void (0);" class="copy_btn btn" id="copy">复制</a>-->
+            <!--</div>-->
+            <!--<div class="preview_div">-->
+                <!--<a href="javascript:void (0);" class="preview" id="preview">预览</a>-->
+            <!--</div>-->
+            <ul class="copy_div">
+                <li class="invi_li preview" id="preview">
+                    预览
+                </li>
+                <li class="invi_li copy_btn btn"  id="copy">
+                    复制
+                </li>
+            </ul>
+            <div class="fundescr">
+                <h3>活动推文功能说明：</h3>
+                <p>
+                    1、可根据慧招生提供的文章模板快速生成属于园所自己的活动精彩回顾推文；<br><br>
+                    2、虚线框内文字可做修改；<br><br>
+                    3、双击图片可修改，上传自己园所活动照片替换；<br><br>
+                    4、可以在最下方添加文字及活动图片。<br><br>
+                    5、可点复制按钮，粘贴文章至园所公号直接发布；<br><br>
+                    6、预览链接可一键分享朋友圈。
+                </p>
             </div>
             <div class="blcok_back"></div>
             <div class="article_content" id="selectText">
@@ -290,10 +309,10 @@
 </div>
 </body>
 <script src="../js/jquery-2.1.1.min.js"></script>
-<script src="../js/editArticle.js"></script>
 <!--获取数据调用方法  article();-->
 <script src="../js/editData.js"></script>
 <script src="../js/clipboard.js"></script>
+<script src="../js/editArticle.js"></script>
 <script>
     $(function () {
         $("#preview").click(function () {

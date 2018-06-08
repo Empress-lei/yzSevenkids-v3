@@ -284,102 +284,6 @@
   -webkit-tap-highlight-color: transparent;
   /*清除点击高亮效果*/
 }
-.warp_page .copy_div {
-  width: 100%;
-  position: fixed;
-  top: 50%;
-  left: 69%;
-  z-index: 444;
-  margin-top: -40px;
-  max-width: 375px;
-}
-.warp_page .copy_div .copy_btn {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 16px;
-  text-align: center;
-  color: #FF530B;
-  background-color: #fff;
-  -webkit-border-radius: 50%;
-  -moa-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-}
-.warp_page .copy_div .copy_btn:hover {
-  display: block;
-  width: 100%;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 16px;
-  text-align: center;
-  color: #fff;
-  background-color: #FF530B;
-  -webkit-border-radius: 50%;
-  -moa-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-}
-.warp_page .preview_div {
-  width: 100%;
-  position: fixed;
-  top: 63%;
-  left: 69%;
-  z-index: 444;
-  margin-top: -40px;
-  max-width: 375px;
-}
-.warp_page .preview_div .preview {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 16px;
-  text-align: center;
-  color: #FF530B;
-  background-color: #fff;
-  -webkit-border-radius: 50%;
-  -moa-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-}
-.warp_page .preview_div .preview:hover {
-  display: block;
-  width: 100%;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 16px;
-  text-align: center;
-  color: #fff;
-  background-color: #FF530B;
-  -webkit-border-radius: 50%;
-  -moa-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-}
 .warp_page .edit_article {
   width: 100%;
   padding-bottom: 50px;
@@ -748,4 +652,74 @@
   height: auto;
   cursor: pointer;
   margin: 0 auto;
+}
+.copy_div {
+  position: fixed;
+  left: 65%;
+  top: 103px;
+}
+.copy_div .invi_li {
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 56px;
+  color: #FF530B;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  -moz-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  -ms-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  -o-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+}
+.copy_div .copy_btn:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/edit/copy_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.copy_div .preview:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/edit/look_img.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.fundescr {
+  position: fixed;
+  left: 65%;
+  top: 245px;
+  width: 213px;
+  padding: 20px 20px 30px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  -moz-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  -ms-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  -o-box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+  box-shadow: 0px 7px 12px 0 rgba(222, 222, 222, 0.5);
+}
+.fundescr h3 {
+  color: #FF530B;
+  font-size: 12px;
+  line-height: 17px;
+  padding-bottom: 30px;
+}
+.fundescr p {
+  color: #999999;
+  font-size: 12px;
+  line-height: 17px;
 }

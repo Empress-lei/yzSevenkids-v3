@@ -18,6 +18,16 @@ $(function () {
         if ($(this).data("type") == "1") {
             editImg($(this).find("img"));
             $(".ui-widget-content .ui-icon").css("display","block");
+            $(document).on("click", function (e) {//点击空白处
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".hander").css("height", "100%");
+                    $(".hander").css("width", "100%");
+                    $(".btn-toolbar").hide();
+                    $(".ui-widget-content .ui-icon").css("display","none");
+                }
+            });
         // 文字
         } else if ($(this).data("type") == "2") {
             $(".hander").css("height", 0);
@@ -37,21 +47,29 @@ $(function () {
         }else if ($(this).data("type") == "7") {
             editImg($(this).find("img"));
             $(".ui-widget-content .ui-icon").css("display","block");
-        }
-    })
-    $(".edit").click(function () {
-        if ($(this).data("type") == "2") {
-            var tag = $(this);
-            var flag = true;
             $(document).on("click", function (e) {//点击空白处
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
+                    $(".hander").css("height", "100%");
+                    $(".hander").css("width", "100%");
                     $(".btn-toolbar").hide();
                     $(".ui-widget-content .ui-icon").css("display","none");
                 }
             });
         }
+    })
+    $(".edit").click(function () {
+        var tag = $(this);
+        var flag = true;
+        $(document).on("click", function (e) {//点击空白处
+            var target = $(e.target);
+            if (target.closest(tag).length == 0 && flag == true) {
+                flag = false;
+                $(".btn-toolbar").hide();
+                $(".ui-widget-content .ui-icon").css("display","none");
+            }
+        });
     })
 })
 
