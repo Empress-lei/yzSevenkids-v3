@@ -656,6 +656,7 @@
   margin: 0 auto;
 }
 .copy_div {
+  z-index: 100;
   position: fixed;
   left: 65%;
   top: 103px;
@@ -697,6 +698,7 @@
   background-color: #FF530B;
 }
 .fundescr {
+  z-index: 100;
   position: fixed;
   left: 65%;
   top: 245px;

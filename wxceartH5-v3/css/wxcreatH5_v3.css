@@ -171,6 +171,22 @@ input:-moz-placeholder {
   border-radius: 50px 50px;
   margin: 15px auto 0;
 }
+.sub_tijiao {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: #FD530B;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
+  border-radius: 50px 50px;
+  margin: 15px auto 0;
+}
 .look_intr {
   display: block;
   width: 100%;
