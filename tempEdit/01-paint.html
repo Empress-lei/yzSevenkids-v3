@@ -47,8 +47,6 @@
         </div>
     </div>
 </div>
-<!--创建活动区域-->
-
 <div class="warp_page">
     <!--导航-->
     <div class="home_nav">
@@ -110,7 +108,7 @@
         </header>
     </div>
 
-    <!--创建区域-->
+    <!--创建活动区域-->
     <div class="creat_pages maxcen_width">
         <input id="File" type="file" style="display: none"/>
         <div class="creat_title">
@@ -148,6 +146,10 @@
                 </ul>
                 <div class="file_mus">
                     <span class="fl">上传音乐</span><i class="mus_icon fr"></i>
+                    <div class="mus_share">
+                        <p>在这里可以修改H5链接背景音乐</p>
+                        <a href="javascript:void (0);" class="musi_btn">下一步</a>
+                    </div>
                 </div>
             </div>
             <div class="creat_container fl">
@@ -608,8 +610,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="con_share">
+                        <p>蓝色线框内文字可修改样式并拖动位置哦</p>
+                        <a href="javascript:void (0);" class="musi_btn">下一步</a>
+                    </div>
                 </div>
-                <ol class="invi_text">
+                <ol class="invi_creat">
                     <li class="invi_li pres_text">
                         保存
                     </li>
@@ -620,6 +626,10 @@
                         转发
                     </li>
                 </ol>
+                <div class="invi_share">
+                    <p>修改后，记得点保存哦</p>
+                    <a href="javascript:void (0);" class="musi_btn">知道了</a>
+                </div>
             </div>
             <div class="btn-toolbar">
                 <div class="btn-group">
@@ -671,7 +681,23 @@
 </div>
 </body>
 <script src="../js/creatH5_v3.js"></script>
-
+<script>
+    // $(function () {
+    //     $(".creat_modu .craet_nav li").unbind();
+    //     $(".mus_share .musi_btn").click(function () {
+    //         $(".con_share").show()
+    //     })
+    //     $(".con_share .musi_btn").click(function () {
+    //         $(".invi_share").show()
+    //     })
+    //     $(".invi_share .musi_btn").click(function () {
+    //         $(".invi_share").hide();
+    //         $(".con_share").hide()
+    //         $(".mus_share").hide()
+    //         seleRender(".craet_nav li", $(".home"))
+    //     })
+    // })
+</script>
 <script>
     $(function () {
         $(".look_intr").on('click',function(){

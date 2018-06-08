@@ -1,4 +1,5 @@
 $(function () {
+    $(".ui-widget-content .ui-icon").css("display","none");
     $(".first").addClass("current_nav");
     $(".home:eq(0)").show().siblings(".home").hide();
     $('.ui-widget-content').each(function () {
@@ -12,13 +13,16 @@ $(function () {
     seleRender(".craet_nav li", $(".home"))
     $(".prohibit .ui-resizable-handle").remove();
     $(".edit").dblclick(function () {
+        console.log(this)
         //图片
         if ($(this).data("type") == "1") {
             editImg($(this).find("img"));
+            $(".ui-widget-content .ui-icon").css("display","block");
         // 文字
         } else if ($(this).data("type") == "2") {
             $(".hander").css("height", 0);
             $(".hander").css("width", 0);
+            $(".ui-widget-content .ui-icon").css("display","block");
             var tag = $(this);
             var flag = true;
             $(document).on("click", function (e) {//点击空白处
@@ -32,6 +36,7 @@ $(function () {
             });
         }else if ($(this).data("type") == "7") {
             editImg($(this).find("img"));
+            $(".ui-widget-content .ui-icon").css("display","block");
         }
     })
     $(".edit").click(function () {

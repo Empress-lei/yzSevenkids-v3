@@ -1,5 +1,6 @@
 @import "base_pc.css";
 .poster_pages {
+  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -68,6 +69,7 @@
   margin: 11.5px auto;
 }
 .sgin_pages {
+  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -103,6 +105,7 @@
   border: 10px solid #fff;
 }
 .poster_exhi {
+  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -205,6 +208,7 @@
   bottom: 30px;
 }
 .cord_pages {
+  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -393,6 +397,16 @@
   height: 56px;
   color: rgba(255, 255, 255, 0);
   background-image: url("../images/pub/send_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_text .bespeak:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/bespeak_icon.png");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center;

@@ -202,6 +202,7 @@
         }
         //上传音乐
         .file_mus {
+          position: relative;
           width: 100%;
           height: 48px;
           background-color: #fff;
@@ -223,6 +224,7 @@
             background-repeat: no-repeat;
             background-position: center;
           }
+
         }
         .file_mus:hover {
           width: 100%;
@@ -255,6 +257,7 @@
         .creat_content {
           width: 395px;
           height: 687px;
+          position: relative;
           border: 10px solid #fff;
           .swiper-container {
             width: 100%;
@@ -457,6 +460,189 @@
         }
       }
     }
+  }
+}
+//上传音乐提示
+.mus_share {
+  position: absolute;
+  right: -219px;
+  width: 219px;
+  height: 80px;
+  background: url("../images/creat_1.png") no-repeat center;
+  background-size: 100% 98%;
+  p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 8px 0 14px 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .musi_btn {
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 50px 50px;
+    -moz-border-radius: 50px 50px;
+    -ms-border-radius: 50px 50px;
+    -o-border-radius: 50px 50px;
+    border-radius: 50px 50px;
+  }
+}
+//内容提示
+.con_share {
+  display: none;
+  position: absolute;
+  top: 243px;
+  right: -282px;
+  width: 271px;
+  height: 80px;
+  background: url("../images/creat_1.png") no-repeat center;
+  background-size: 100% 98%;
+  p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 8px 0 14px 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .musi_btn {
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 50px 50px;
+    -moz-border-radius: 50px 50px;
+    -ms-border-radius: 50px 50px;
+    -o-border-radius: 50px 50px;
+    border-radius: 50px 50px;
+  }
+}
+//保存提示
+.invi_creat {
+  position: absolute;
+  right: 160px;
+  bottom: 20px;
+  //公用
+  .invi_li {
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 56px;
+    color: #FF530B;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  //编辑按钮
+  .edit_txt:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/edit_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+  //保存
+  .pres_text:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/pres_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+  //预览
+  .prev_txt:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/prev_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+  //下载
+  .down_txt:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/down_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+  //转发
+  .send_txt:hover {
+    width: 56px;
+    height: 56px;
+    color: rgba(255,255,255,0);
+    background-image: url("../images/pub/send_icon.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    background-color: #FF530B;
+  }
+}
+
+//内容提示
+.invi_share {
+  display: none;
+  position: absolute;
+  bottom: 131px;
+  right: 0px;
+  width: 156px;
+  height: 80px;
+  background: url("../images/creat_3.png") no-repeat center;
+  background-size: 100% 98%;
+  p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 8px 0 14px 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .musi_btn {
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 50px 50px;
+    -moz-border-radius: 50px 50px;
+    -ms-border-radius: 50px 50px;
+    -o-border-radius: 50px 50px;
+    border-radius: 50px 50px;
   }
 }
 

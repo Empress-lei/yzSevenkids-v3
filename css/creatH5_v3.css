@@ -198,6 +198,7 @@
   background-position: center;
 }
 .warp_page .creat_pages .creat_modu .creat_left .file_mus {
+  position: relative;
   width: 100%;
   height: 48px;
   background-color: #fff;
@@ -250,6 +251,7 @@
 .warp_page .creat_pages .creat_modu .creat_container .creat_content {
   width: 395px;
   height: 687px;
+  position: relative;
   border: 10px solid #fff;
 }
 .warp_page .creat_pages .creat_modu .creat_container .creat_content .swiper-container {
@@ -446,4 +448,176 @@
   width: 395px;
   height: 687px;
   border: 10px solid #fff;
+}
+.mus_share {
+  position: absolute;
+  right: -219px;
+  width: 219px;
+  height: 80px;
+  background: url("../images/creat_1.png") no-repeat center;
+  background-size: 100% 98%;
+}
+.mus_share p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 0 14px 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mus_share .musi_btn {
+  display: block;
+  margin: 0 auto;
+  width: 65px;
+  height: 24px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
+  border-radius: 50px 50px;
+}
+.con_share {
+  display: none;
+  position: absolute;
+  top: 243px;
+  right: -282px;
+  width: 271px;
+  height: 80px;
+  background: url("../images/creat_1.png") no-repeat center;
+  background-size: 100% 98%;
+}
+.con_share p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 0 14px 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.con_share .musi_btn {
+  display: block;
+  margin: 0 auto;
+  width: 65px;
+  height: 24px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
+  border-radius: 50px 50px;
+}
+.invi_creat {
+  position: absolute;
+  right: 160px;
+  bottom: 20px;
+}
+.invi_creat .invi_li {
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 56px;
+  color: #FF530B;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.invi_creat .edit_txt:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/edit_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_creat .pres_text:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/pres_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_creat .prev_txt:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/prev_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_creat .down_txt:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/down_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_creat .send_txt:hover {
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0);
+  background-image: url("../images/pub/send_icon.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  background-color: #FF530B;
+}
+.invi_share {
+  display: none;
+  position: absolute;
+  bottom: 131px;
+  right: 0px;
+  width: 156px;
+  height: 80px;
+  background: url("../images/creat_3.png") no-repeat center;
+  background-size: 100% 98%;
+}
+.invi_share p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 0 14px 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.invi_share .musi_btn {
+  display: block;
+  margin: 0 auto;
+  width: 65px;
+  height: 24px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
+  border-radius: 50px 50px;
 }

@@ -742,3 +742,10 @@
   height: 48px;
   filter: alpha(opacity=0);
 }
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto;
+}
