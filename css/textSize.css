@@ -91,11 +91,11 @@
   border: 2px dashed #0099FF;
 }
 .drag_img div img,
-.drag_img div div {
+.drag_text div div {
   border: 2px dashed #0099FF;
 }
 .pro_bor div img,
-.drag_img div div {
+.pro_bor div div {
   border: none !important;
 }
 .render_share {

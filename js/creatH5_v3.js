@@ -18,13 +18,12 @@ $(function () {
         if ($(this).data("type") == "1") {
             editImg($(this).find("img"));
             $(".ui-widget-content .ui-icon").css("display","block");
+            var tag = $(this);
+            var flag = true;
             $(document).on("click", function (e) {//点击空白处
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
-                    $(".hander").css("height", "100%");
-                    $(".hander").css("width", "100%");
-                    $(".btn-toolbar").hide();
                     $(".ui-widget-content .ui-icon").css("display","none");
                 }
             });
@@ -47,6 +46,34 @@ $(function () {
         }else if ($(this).data("type") == "7") {
             editImg($(this).find("img"));
             $(".ui-widget-content .ui-icon").css("display","block");
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".ui-widget-content .ui-icon").css("display","none");
+                }
+            });
+        }
+    })
+    $(".edit").click(function () {
+        //图片
+        if ($(this).data("type") == "1") {
+            $(".ui-widget-content .ui-icon").css("display","block");
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".ui-widget-content .ui-icon").css("display","none");
+                }
+            });
+            // 文字
+        } else if ($(this).data("type") == "2") {
+            var tag = $(this);
+            var flag = true;
             $(document).on("click", function (e) {//点击空白处
                 var target = $(e.target);
                 if (target.closest(tag).length == 0 && flag == true) {
@@ -57,19 +84,18 @@ $(function () {
                     $(".ui-widget-content .ui-icon").css("display","none");
                 }
             });
+        }else if ($(this).data("type") == "7") {
+            $(".ui-widget-content .ui-icon").css("display","block");
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".ui-widget-content .ui-icon").css("display","none");
+                }
+            });
         }
-    })
-    $(".edit").click(function () {
-        var tag = $(this);
-        var flag = true;
-        $(document).on("click", function (e) {//点击空白处
-            var target = $(e.target);
-            if (target.closest(tag).length == 0 && flag == true) {
-                flag = false;
-                $(".btn-toolbar").hide();
-                $(".ui-widget-content .ui-icon").css("display","none");
-            }
-        });
     })
 })
 
