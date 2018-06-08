@@ -48,6 +48,7 @@ $(function () {
                 if (target.closest(tag).length == 0 && flag == true) {
                     flag = false;
                     $(".btn-toolbar").hide();
+                    $(".ui-widget-content .ui-icon").css("display","none");
                 }
             });
         }

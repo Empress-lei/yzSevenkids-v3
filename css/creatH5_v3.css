@@ -452,7 +452,7 @@
 .mus_share {
   position: absolute;
   left: 323px;
-  top: 400px;
+  top: 440px;
   width: 219px;
   height: 80px;
   background: url("../images/creat_1.png") no-repeat center;
@@ -487,7 +487,7 @@
 .con_share {
   display: none;
   position: absolute;
-  top: 243px;
+  top: 80px;
   right: -282px;
   width: 271px;
   height: 80px;

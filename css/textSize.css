@@ -12,8 +12,8 @@
   position: fixed;
   display: none;
   z-index: 999999999999;
-  top: 363px;
-  right: 115px;
+  top: 260px;
+  right: 120px;
   cursor: pointer;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
   background-color: #fff;
