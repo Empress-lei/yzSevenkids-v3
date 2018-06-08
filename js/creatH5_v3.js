@@ -34,6 +34,19 @@ $(function () {
             editImg($(this).find("img"));
         }
     })
+    $(".edit").click(function () {
+        if ($(this).data("type") == "2") {
+            var tag = $(this);
+            var flag = true;
+            $(document).on("click", function (e) {//点击空白处
+                var target = $(e.target);
+                if (target.closest(tag).length == 0 && flag == true) {
+                    flag = false;
+                    $(".btn-toolbar").hide();
+                }
+            });
+        }
+    })
 })
 
 //在原位置修改图片
