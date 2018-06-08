@@ -11,6 +11,16 @@ $(function () {
         $(".btn-toolbar").show();
         // e.stopPropagation();
     })
+    //园所介绍修改文字大小
+    $('.renderIntr').click(function (e) {
+        thix = $(this);
+        console.log(thix.index())
+        var aaaStyle = thix.css("font-size");
+        console.log(aaaStyle)
+        $(".btn-toolbar .dropdown-toggle").text(aaaStyle);
+        $(".btn-toolbar").show();
+        // e.stopPropagation();
+    })
     $('.dropdown-menu li a').click(function () {
         obtainSize($(this));
         $(".btn-toolbar").hide();
