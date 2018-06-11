@@ -1,13 +1,12 @@
 @import "base_pc.css";
 .poster_pages {
-  display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
   position: fixed;
   top: 0;
   overflow: auto;
-  z-index: 999999999;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .poster_pages .poster_box {
@@ -76,7 +75,7 @@
   position: fixed;
   top: 0;
   overflow: auto;
-  z-index: 999999999;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .sgin_pages .poster_box {
@@ -112,7 +111,7 @@
   position: fixed;
   top: 0;
   overflow: auto;
-  z-index: 999999999;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .poster_exhi .exhi_box {
@@ -215,7 +214,7 @@
   position: fixed;
   top: 0;
   overflow: auto;
-  z-index: 999999999;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .cord_pages .cord_box {
@@ -262,7 +261,7 @@
   position: fixed;
   top: 0;
   overflow: auto;
-  z-index: 999999999;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .exam_pages .exam_box {

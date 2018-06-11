@@ -30,7 +30,7 @@ $(function () {
             var province = $(".pick-area .pick-province").html(), city = $(".pick-area .pick-city").html() ,qu = $(".pick-area .pick-county").html();
             province = province == city ? province : (province + (city == '请选择市' ? '' : city));
             province +=  qu == '请选择县' ? '' : qu ;
-            $(".mess_add .element-box .time_num :nth-child(1)").html(province + city + qu)
+            $(".mess_add .element-box .time_num :nth-child(1)").html(province)
         }
     });
     $('.intr_mess').bind('input propertychange', function () {

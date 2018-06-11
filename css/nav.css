@@ -35,7 +35,7 @@ input:-moz-placeholder {
   height: 88px;
   position: fixed;
   top: 0;
-  z-index: 9999999;
+  z-index: 99;
   background-color: #fff;
   min-width: 1228px;
   border-bottom: 1px solid #E6E6E6;
