@@ -51,7 +51,7 @@
 </div>
 <div class="warp_creat">
     <!--背景色-->
-    <div class="myswiper-container creat_page" style="background-color: #fff;">
+    <div class="myswiper-container creat_page">
         <audio style="display:none; height: 0" id="bg-music" preload="auto" src="../../music/动物园的小熊们.mp3" loop="loop"></audio>
         <div class="playBtn play">
             <img src="../../images/icon/music_play.png" alt="">
@@ -793,9 +793,9 @@
             document.getElementById('bg-music').pause();
         })
         $(".arrbot").click(function () {
-            // $(".activity_intr").animate(
-            //         {top:"100%"},500
-            // );
+            $(".activity_intr").animate(
+                    {top:"100%"},500
+            );
             $(".activity_intr").hide();
             $(".creat_page").show();
             $(".buy_btn").hide();

@@ -338,7 +338,7 @@
 .warp_page .creat_pages .creat_modu .creat_container .creat_content .baby_name {
   position: relative;
   padding: 42px 0 11px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6 !important;
 }
 .warp_page .creat_pages .creat_modu .creat_container .creat_content .baby_name .baby_input {
   display: block;

@@ -8,6 +8,9 @@ $(function () {
         centeredSlides: true,
         paginationClickable: true,
         normalizeSlideIndex: true,
+        pagination: '.swiper-pagination',
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
         /*
          * 设置为true -> 开启图片延迟加载
          * <img>的src属性改为data-src，class增加一个'swiper-lazy'
