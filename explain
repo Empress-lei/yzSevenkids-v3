@@ -1,9 +1,13 @@
-慧招生1.4（创建h5）规则：
+慧招生1.4（创建h5）规则： 
 
 模版属性(模版表里的 properties 字段) 版本v3：
 	{k,v}
 	k:元素id
-	v:对应模版活动表字段 
+	v:对应模版活动表字段   
+模版属性(模版表里的 properties 字段) 版本v3：
+	{k,v}
+	k:元素id
+	v:对应模版活动表字段
 	样例：{"12":"kindergartenName","25":"[\"activityAddress\",\"addressDetails\"]","37":"kindergartenIntroduce","7":"kindergartenLogo","31":"telephone","21":"activityStartTime"} 用来对应 元素和园所活动 之间的关系
 
 页面属性(页面表里的 properties 字段 ) 版本v3：
