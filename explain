@@ -1,5 +1,25 @@
 慧招生1.4（创建h5）规则：
-中强：
+中强
+模版属性(模版表里的 properties 字段) 版本v3：
+	{k,v}
+	k:元素id
+	v:对应模版活动表字段
+	样例：{"12":"kindergartenName","25":"[\"activityAddress\",\"addressDetails\"]","37":"kindergartenIntroduce","7":"kindergartenLogo","31":"telephone","21":"activityStartTime"} 用来对应 元素和园所活动 之间的关系
+
+页面属性(页面表里的 properties 字段 ) 版本v3：
+	{k,v}
+	k:功能名称
+	v:功能状态
+	样例:{"modify":true} 用于界定页面需不需要修改
+
+元素属性(元素表里的 properties 字段 ) 版本v3:
+	{k,v}
+	k:自定义
+	v:自定义
+	其中k值中的 elementType 表示 元素类型 类似枚举 值包括： date、text、album 分别对应的 时间、文本、头像
+	样例：{"a_sendId":"j_getVerifyCode","labelTxt":"联系电话：","id":"j_phone","elementType":"tel","inputPlaceholder":"请输入联系电话"}
+
+
   是否：
     0 否   1 是
     data-type="" 元素类型
