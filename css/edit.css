@@ -105,7 +105,6 @@
 }
 .edit_share .share-bar .reader_paper .myschedule .textarea {
   display: block;
-  width: 100%;
   font-size: 14px;
   color: #333;
   outline: none;
@@ -181,7 +180,6 @@
   letter-spacing: 2px;
 }
 .edit_share .share-bar .reader_paper .myschedule .file_img {
-  width: 100%;
   height: auto;
   position: relative;
 }
@@ -239,7 +237,6 @@
 }
 .edit_share .share-bar .reader_paper .reader_content .schedule .textarea {
   display: block;
-  width: 100%;
   outline: none;
   font-size: 14px;
   border: 1px dotted #fff;
@@ -250,7 +247,6 @@
   border: 1px dotted #fff;
 }
 .edit_share .share-bar .reader_paper .reader_content .schedule .file_img {
-  width: 100%;
   height: auto;
   position: relative;
   border: 1px solid #fff;
@@ -296,6 +292,10 @@
   position: absolute;
   left: 50%;
   margin-left: -187.5px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 .warp_page .edit_article .article .blcok_back {
   height: 103px;
@@ -413,15 +413,16 @@
   margin: 30px 0;
 }
 .warp_page .edit_article .article .article_content .container {
-  padding-bottom: 90px;
+  width: 374px;
+  padding: 56px 15px;
   background-color: #fff;
-}
-.warp_page .edit_article .article .article_content .myschedule {
-  padding: 56px 15px 0;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 .warp_page .edit_article .article .article_content .myschedule .textarea {
   display: block;
-  width: 100%;
   font-size: 14px;
   color: #333;
   outline: none;
@@ -501,10 +502,10 @@
   letter-spacing: 2px;
 }
 .warp_page .edit_article .article .article_content .myschedule .file_img {
-  width: 100%;
   height: auto;
   position: relative;
   border: 1px solid #fff;
+  box-sizing: border-box;
 }
 .warp_page .edit_article .article .article_content .myschedule .file_img .img {
   display: block;
@@ -540,7 +541,6 @@
 }
 .warp_page .edit_article .article .article_content .schedule .textarea {
   display: block;
-  width: 100%;
   font-size: 14px;
   color: #333;
   outline: none;
@@ -564,7 +564,6 @@
   margin-bottom: 30px;
 }
 .warp_page .edit_article .article .article_content .schedule .file_img {
-  width: 100%;
   height: auto;
   position: relative;
   border: 1px solid #fff;

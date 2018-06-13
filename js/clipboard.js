@@ -470,6 +470,7 @@ module.exports = E;
                 document.body.appendChild(this.fakeElem);
 
                 this.selectedText = (0, _select2.default)(this.fakeElem);
+                console.log(this.selectedText)
                 this.copyText();
             }
         }, {

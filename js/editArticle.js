@@ -16,8 +16,18 @@ $(function () {
     //复制
     var clipboard = new Clipboard('#copy', {
         target: function() {
-            return document.querySelector('.container');
+            // $("section").css("width","100%")
+            var aaa = document.querySelector('.container');
+            console.log(aaa.style.width);
+            return aaa;
+
         }
+    });
+    // var $a = $(".container").text();
+    clipboard.on('success',function(e){
+        // console.info("Text","e.text")
+        // $(".container").css("width","750px")
+        console.log( $(".container section").width())
     });
     $('.font13 textarea').autoHeight();
     //图片上传   增加

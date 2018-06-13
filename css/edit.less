@@ -1,5 +1,4 @@
 @import "base_pc.css";
-
 .edit_share {
   display: none;
   width: 100%;
@@ -105,7 +104,6 @@
         padding: 56px 0 0;
         .textarea {
           display: block;
-          width: 100%;
           font-size: 14px;
           color: #333;
           outline: none;
@@ -182,7 +180,6 @@
         }
         //图片
         .file_img {
-          width: 100%;
           height: auto;
           position: relative;
           .img {
@@ -243,7 +240,6 @@
           background-color: #fff;
           .textarea {
             display: block;
-            width: 100%;
             outline: none;
             font-size: 14px;
             border: 1px dotted #fff;
@@ -255,7 +251,6 @@
           }
           //图片
           .file_img {
-            width: 100%;
             height: auto;
             position: relative;
             border: 1px solid #fff;
@@ -305,6 +300,10 @@
       position: absolute;
       left: 50%;
       margin-left: -187.5px;
+      -webkit-user-select: all;
+      -moz-user-select: all;
+      -ms-user-select: all;
+      user-select: all;
       .blcok_back {
         height: 103px;
         width: 100%;
@@ -426,14 +425,18 @@
         }
         //我们写好的推文
         .container {
-          padding-bottom: 90px;
+          width: 374px;
+          padding: 56px 15px;
           background-color: #fff;
+          -webkit-user-select: all;
+          -moz-user-select: all;
+          -ms-user-select: all;
+          user-select: all;
         }
         .myschedule {
-          padding: 56px 15px 0;
           .textarea {
             display: block;
-            width: 100%;
+            //width: 100%;
             font-size: 14px;
             color: #333;
             outline: none;
@@ -514,10 +517,11 @@
           }
           //图片
           .file_img {
-            width: 100%;
+            //width: 100%;
             height: auto;
             position: relative;
             border: 1px solid #fff;
+            box-sizing: border-box;
             .img {
               display: block;
               max-width: 100%;
@@ -554,7 +558,6 @@
           background-color: #fff;
           .textarea {
             display: block;
-            width: 100%;
             font-size: 14px;
             color: #333;
             outline: none;
@@ -563,7 +566,7 @@
             border: 1px dotted #fff;
             textarea {
               width: 100%;
-               color: #0099FF;
+              color: #0099FF;
               border: 1px dotted #fff;
             }
           }
@@ -579,7 +582,6 @@
           }
           //图片
           .file_img {
-            width: 100%;
             height: auto;
             position: relative;
             border: 1px solid #fff;

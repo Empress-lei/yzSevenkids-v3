@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>端午节 -- 完善信息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="ie-comp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/activi_creat.css">
+    <link rel="stylesheet" href="../css/poster.css">
+    <link rel="stylesheet" href="../css/render_v3.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../layui_v3/css/layui.css">
+    <style>
+        .layui-laydate-content td, .layui-laydate-content th {
+            width: 36px !important;
+        }
+    </style>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/jquery.lazyload.js"></script>
+    <script src="../swiperjs/swiper-3.4.2.min.js"></script>
+    <script src="../swiperjs/swiper.animate1.0.2.min.js"></script>
+    <script src="../js/swiperlazy.js"></script>
+    <!--<script src="../js/jquery-2.1.1.min.js"></script>-->
+    <script src="../layui_v3/layui.js"></script>
+    <!--<script src="../js/city/pick-pcc.min.1.0.2.js"></script>-->
+    <script src="../js/areaAuto.js"></script>
+    <script src=../js/city/pick-pcc.min.1.0.2.js></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/creat_v3.js"></script>
+</head>
+<body>
+<!--园所介绍示例-->
+<div class="exam_pages">
+    <div class="exam_box">
+        <div  class="exam_close">
+            <img src="../images/pub/close_icon.png" alt="" class="exam_icon">
+        </div>
+        <ul class="exam_ul clearfix">
+            <li>1.品牌简介</li>
+            <li>2.教育理念</li>
+            <li>3.特色课程</li>
+            <li>4.食谱介绍</li>
+        </ul>
+        <h3 class="render_intrd">园所介绍示例</h3>
+        <p class="render_text">
+            ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+            <br><br>
+            我园采用的是国家**课题教程——****（教材），有三大特色：艺术开发、科学探究、阳光体育，五大领域：健康、语言、社会、科学、艺术。
+            <br><br>
+            我园严格执行365天带量食谱，详细制定了孩子每天摄入的蛋白质、脂肪、碳水化合物等营养的摄入量，让孩子吃好每一顿饭不仅是家长关心的事，也是我们最重要的事</p>
+    </div>
+</div>
+<div class="warp_page">
+    <!--导航-->
+    <div class="home_nav">
+        <header class="home_header clearfix maxcen_width">
+            <a href="index.html"><img src="./images/pub/logo.png" alt="logo" class="logo_img fl"></a>
+            <div class="hover_ani">
+                <span class="span_dec" style="display:none"></span>
+                <ul>
+                    <li>
+                        <a href="./pages/templateCore/exper-1.0.html" class="nav_list">活动中心</a>
+                    </li>
+                    <li>
+                        <a href="./pages/designMana/makeapint.html" class="nav_list">活动管理</a>
+                    </li>
+                    <li>
+                        <a href="./pages/guide.html" class="nav_list">操作指南</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav_list">更多</a>
+                    </li>
+                </ul>
+            </div>
+            <!--登录注册的地方-->
+            <a href="javascript:void(0)" class="home_sing" style="display: none">
+                <span class="sing_in">请登录</span>&nbsp;&nbsp;|&nbsp;&nbsp; <span class="register">免费注册</span>
+            </a>
+            <!--登录之后显示的信息-->
+            <div class="sing_nostyle">
+                <img src="../../images/icon/edit_icon.png" alt="" class="szimg">
+                <p class="name_sco">学校名称或者已登录</p>
+                <img src="../../images/new1.0/mess/touxiang.png" alt="" class="sco_icon">
+                <ul class="hover_mess">
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="activ_tit fl">我的活动</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p><span>2</span>场准备中活动</p>
+                    </li>
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="num_tit fl">我的账号</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p>手机账号:<span>1591036****</span></p>
+                        <p>微信账号：<span>***</span>星</p>
+                        <p>微信账号：<span class="no_binding">未绑定</span></p>
+                    </li>
+                    <li class="mess_activ">
+                        <div class="clearfix">
+                            <h4 class="back_tit fl">管理员</h4>
+                            <img src="../../images/icon/navarr_icon.png" alt="" class="navarr fr">
+                        </div>
+                        <p>数据统计分析报表</p>
+                    </li>
+                    <a href="javascript:void(0)" class="sign_out">退出登录</a>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="creat_pages maxcen_width">
+        <div class="creat_title">
+            <h3>端午节 — 与“粽”不同</h3>
+            <p class="describe_text">一句话描述活动宣品的重要性，引导用户创建使用</p>
+        </div>
+        <div class="creat_modu clearfix maxcen_width">
+            <div class="creat_center fl">
+                <div class="creat_content">
+                    <!--1、背景色-->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--第一屏  首页-->
+                            <div class="swiper-slide home">
+                                <ul class="edit_area"
+                                    style="width:100%;height: 100%;position:relative;">
+                                    <!-- 背景色-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor backIntr" data-type="6" data-site="1"
+                                        style="display: block;width:100%;height: 100%;background-color:#fff;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div style="display: block;width: 100%;height: 100%;background-color: #fff;border-radius: 8px;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--背景图-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="2" style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/back1.png';></div>
+                                        </div>
+                                    </li>
+                                    <!--第一个竹子-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="3"
+                                        style="display: block;position: absolute;top: 0;left: 270px">
+                                        <div class="element-box" style="display: block;">
+                                            <img data-src="../images/template/draFes/bam1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width:100%;">
+                                        </div>
+                                    </li>
+                                    <!--第二个竹子-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="4" style="display: block;width:55px;position: absolute;top: 245px;left: 0">
+                                        <div class="element-box" style="display: block;">
+                                            <img data-src="../images/template/draFes/bam2.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width:100%;">
+                                        </div>
+                                    </li>
+                                    <!--背景上的圆-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="5"
+                                        style="display: block;width: 221px;position: absolute;top: 74px;left: 77px;"
+                                        data-animation="rotateIn" data-duration="1s" data-delay="0.8s"
+                                        swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/cir1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--第一个云-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="6"
+                                        style="display: block;width: 94px;position: absolute;top: 100px;left: 243px;"
+                                        data-animation="fadeIn" data-duration="0.5s" data-delay="0.1s"
+                                        swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/cloud1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--第二个云-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="7"
+                                        style="display: block;width: 79px;position: absolute;top: 230px;left: 55px;"
+                                        data-animation="fadeIn" data-duration="0.5s" data-delay="0.1s"
+                                        swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/cloud2.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--端-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="8"
+                                        style="display: block;width: 70px;position: absolute;top: 38px;left: 140px;"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="1s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/duan.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--午-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="9"
+                                        style="display: block;width: 60px;position: absolute;top: 99px;left: 173px;"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="1.4s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.4s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/wu.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--节-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="10"
+                                        style="display: block;width: 70px;position: absolute;top: 188px;left: 170px;"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="1.8s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/jie.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--五月五文字-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="11"
+                                        style="display: block;width: 25px;position: absolute;top: 110px;left: 124px;"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="2s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/wutext.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--传统节日文字-->
+                                    <li class="ui-widget-content swiper-lazy drag_text prohibit pro_bor ani" data-type="2" data-site="12"
+                                        style="display: block;position: absolute;top: 300px;left: 110px;font-size: 18px;color: #027838;"
+                                        data-animation="rotateInDownRight" data-duration="1s" data-delay="1.5s"
+                                        swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                                        <!--可拖动的标识-->
+                                        <div class="element-box">
+                                            <div class="swiper-lazy">— 中国传统节日 —</div>
+                                        </div>
+                                    </li>
+                                    <!--龙舟-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="13"
+                                        style="display: block;width: 304px;position: absolute;top: 320px;left: 26px;"
+                                        data-animation="lightSpeedIn" data-duration="1s" data-delay="2.2s"
+                                        swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="2.2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/loo.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--粽子图片-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="14"
+                                        style="display: block;width: 240px;position: absolute;top: 400px;left: 63px;z-index: 1"
+                                        data-animation="fadeInUp" data-duration="1s" data-delay="2.5s"
+                                        swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/rice.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <!--底图-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1"  data-site="15"
+                                        style="display: block;width: 100%;position: absolute;top: 554px;left: 0;"
+                                        data-animation="slideInUp" data-duration="1s" data-delay="2s"
+                                        swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/footer1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--第二屏-->
+                            <div class="swiper-slide home">
+                                <ul class="edit_area"
+                                    style="width:100%;height: 100%;position:relative;">
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <!-- 背景色-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor backIntr" data-type="6" data-site="1"
+                                        style="display: block;width:100%;height: 100%;background-color:#fff;position: absolute;top: 0;left: 0;">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div style="display: block;width: 100%;height: 100%;background-color: #fff;border-radius: 8px;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--背景图-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="2"
+                                        style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/back2.png'></div>
+                                        </div>
+                                    </li>
+                                    <!--第一个竹子-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="3"
+                                        style="display: block;width:105px;position: absolute;top: 0;left: 270px">
+                                        <div class="element-box" style="display: block;">
+                                            <img data-src="../images/template/draFes/bam1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width:100%;">
+                                        </div>
+                                    </li>
+                                    <!--第二个竹子-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="4" style="display: block;width:55px;position: absolute;top: 245px;left: 0">
+                                        <div class="element-box" style="display: block;">
+                                            <img data-src="../images/template/draFes/bam2.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width:100%;">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy edit drag_img ani" data-type="7" data-site="5" data-issize="1" data-iseditable="1" data-isdrag="1"
+                                        style="display: block;width: 57px;height: 57px;position: absolute;top: 40px;left: 159px;z-index: 22"
+                                        data-animation="fadeIn" data-duration="1s" data-delay="0.5s"
+                                        swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                                        <i class='hander'></i>
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <!--园所logo-->
+                                            <img data-src="../images/pub/default_pic.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy edit intersected drag_text linkageName ani" data-type="2" data-site="6" data-issize="1" data-iseditable="1" data-isdrag="1"
+                                        style="display: block;position: absolute;top: 103px;left: 104px;color: #3D7223;z-index: 22"
+                                        data-animation="rotateInDownRight" data-duration="1s" data-delay="0.9s"
+                                        swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+                                        <i class='hander'></i>
+                                        <div class="element-box">
+                                            <div class="swiper-lazy">********************幼儿园
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_text prohibit pro_bor ani" data-type="2" data-site="7"
+                                        style="display: block;position: absolute;top: 136px;left: 108px;font-size: 14px;color: #3D7223;"
+                                        data-animation="slideInLeft" data-duration="1s" data-delay="1.2s"
+                                        swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.2s">
+                                        <!--可拖动的标识-->
+                                        <div class="element-box">
+                                            <div class="swiper-lazy">邀您参加免费亲子体验活动</div>
+                                        </div>
+                                    </li>
+                                    <!--主题的标题位置-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1"  data-site="8"
+                                        style="display: block;width: 23px;position: absolute;top: 250px;left: 53px;"
+                                        data-animation="slideInLeft" data-duration="1s" data-delay="1.6s"
+                                        swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.6s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/redicon.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1" data-site="9"
+                                        style="display: block;width: 244px;position: absolute;top: 250px;left: 80px"
+                                        data-animation="slideInRight" data-duration="1s" data-delay="1.6s"
+                                        swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="1.6s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/title2.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;">
+                                        </div>
+                                    </li>
+                                    <!--主题图-->
+                                    <li class="ui-widget-content swiper-lazy drag_img  prohibit pro_bor ani" data-type="1" data-site="10"
+                                        style="display: block;width: 267px;position: absolute;top: 350px;left: 54px"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="2s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/gran.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--第三屏-->
+                            <div class="swiper-slide home">
+                                <ul class="edit_area"
+                                    style="width:100%;height: 100%;position:relative;">
+
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="1"
+                                        style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/back3.png'></div>
+                                        </div>
+                                    </li>
+                                    <!--第一个竹子-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="2"
+                                        style="display: block;width:105px;position: absolute;top: 0;left: 270px">
+                                        <div class="element-box" style="display: block;">
+                                            <img data-src="../images/template/draFes/bam1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width:100%;">
+                                        </div>
+                                    </li>
+                                    <!--第三屏的第二个竹子-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="3" style="display: block;width:55px;position: absolute;top: 20px;left: 0">
+                                        <div class="element-box" style="display: block;">
+                                            <img data-src="../images/template/draFes/bam3.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width:100%;">
+                                        </div>
+                                    </li>
+                                    <!--描述文本-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="4"
+                                        style="display: block;width:340px;position: absolute;top: 60px;left: 17px"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="0.6s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/describe.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                    <!--节日习俗图片-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="5"
+                                        style="display: block;width:110px;position: absolute;top: 205px;left: 70px;z-index: 1"
+                                        data-animation="slideInLeft" data-duration="1s" data-delay="0.9s"
+                                        swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/rice3.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="6"
+                                        style="display: block;width:110px;position: absolute;top: 205px;left: 200px;z-index: 1"
+                                        data-animation="slideInRight" data-duration="1s" data-delay="0.9s"
+                                        swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/colourful.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                    <!--赛龙舟图标-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="7"
+                                        style="display: block;width: 89px;position: absolute;top: 370px;left: 143px"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="1.1s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.1s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/sai.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;">
+                                        </div>
+                                    </li>
+                                    <!--赛龙舟-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="8"
+                                        style="display: block;width: 345px;position: absolute;top: 380px;left: 23px;z-index: 2"
+                                        data-animation="zoomIn" data-duration="1s" data-delay="1.4s"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.4s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/loo3.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;">
+                                        </div>
+                                    </li>
+                                    <!--文本描述-->
+                                    <li class="ui-widget-content swiper-lazy drag_text prohibit pro_bor ani" data-type="2" data-site="9"
+                                        style="display: block;position: absolute;top: 540px;left: 67px;font-size: 14px;color: #333333;z-index: 2"
+                                        data-animation="bounceInUp" data-duration="1s" data-delay="1.7s"
+                                        swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="1.7s">
+                                        <div class="element-box">
+                                            <div class="swiper-lazy">精彩的节日传统活动等着你和宝贝一起来</div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_text prohibit pro_bor ani" data-type="2" data-site="10"
+                                        style="display: block;position: absolute;top: 560px;left: 138px;font-size: 14px;color: #333333;z-index: 2"
+                                        data-animation="bounceInUp" data-duration="1s" data-delay="1.7s"
+                                        swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="1.7s">
+                                        <div class="element-box">
+                                            <div class="swiper-lazy">还有精美礼品哟！</div>
+                                        </div>
+                                    </li>
+                                    <!--赛龙舟-->
+                                    <li class="ui-widget-content swiper-lazy swiper-lazy drag_img prohibit pro_bor ani" data-type="1" data-site="11"
+                                        style="display: block;width: 100%;position: absolute;top: 495px;left: 0"
+                                        data-animation="slideInUp" data-duration="1s" data-delay="2s"
+                                        swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/footer3.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--第四屏-->
+                            <div class="swiper-slide home">
+                                <ul class="edit_area"
+                                    style="width:100%;height: 100%;position:relative;">
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="1"
+                                        style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div  class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/back4.png'></div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit prohibit pro_bor" data-type="1" data-site="2"
+                                        style="display: block;width:30px;height:30px;position: absolute;top: 60px;left: 15px">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/mess_iocn.png" alt="" class="swiper-lazy"
+
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content intersected drag_text prohibit prohibit pro_bor" data-type="2" data-site="3"
+                                        style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;color: #333;z-index: 2">
+                                        <div class="element-box">
+                                            <div>
+                                                活动信息
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--活动时间-->
+                                    <li class="ui-widget-content drag_img prohibit mess_pro pro_bor ani" data-type="101" data-site="4" data-isdrag="1"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.2s"
+                                        style="display: block;width:345px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="list">
+                                            </div>
+                                            <div class="time_num">
+                                                <span>2018-01-23 周二 上午 01:30:00</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--城市-->
+                                    <li class="ui-widget-content drag_img prohibit mess_add pro_bor ani" data-type="105" data-site="5" data-isdrag="1"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
+                                        style="display: block;width:345px;background-color:#fff;position: absolute;top: 211px;left: 15px;z-index: 1"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="list">
+                                            </div>
+                                            <div class="time_num">
+                                                <span>**市 **区 **区</span><span>***具体地址</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--电话-->
+                                    <li class="ui-widget-content drag_img prohibit mess_tell pro_bor ani" data-type="101" data-site="6" data-isdrag="1"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.6s"
+                                        style="display: block;width:345px;background-color:#fff;position: absolute;top: 313px;left: 15px;z-index: 1"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="list">
+                                            </div>
+                                            <div class="time_num">
+                                                <span >010 - 12345678</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--活动下面文本的背景图-->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="7"
+                                        style="display: block;width:183px;height:86px;position: absolute;top: 439px;left: 15px;">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/rectangle.png'></div>
+                                        </div>
+                                    </li>
+                                    <!--活动下面文本-->
+                                    <li class="ui-widget-content intersected drag_text prohibit prohibit pro_bor ani" data-type="2" data-site="8"
+                                        data-animation="fadeInLeft" data-duration="0.8s" data-delay="0.9s"
+                                        style="display: block;width:150px;position: absolute;top: 450px;left: 30px;font-size: 10px;color: #fff;z-index: 2"
+                                        swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.9s">
+                                        <div class="element-box">
+                                            <div>
+                                                如果宝宝的年龄在2—3岁， 那赶紧报名吧！ 只限20组家庭，手慢无！ 报名后，老师会跟你联系哦！
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit prohibit pro_bor ani" data-type="1" data-site="9"
+                                        data-animation="fadeInLeftBig" data-duration="0.8s" data-delay="0.9s"
+                                        style="display: block;width:237px;position: absolute;top: 350px;left: 138px;z-index: 2"
+                                        swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.9s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/rice4.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--第五屏-->
+                            <div class="swiper-slide home">
+                                <ul class="edit_area"
+                                    style="width:100%;height: 100%;position:relative;">
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="1"
+                                        style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/back5.png';></div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="1" data-site="2"
+                                        style="display: block;width:30px;height:30px;position: absolute;top: 40px;left: 15px">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/mess_iocn1.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content intersected drag_text prohibit pro_bor" data-type="2" data-site="3"
+                                        style="display: block;position: absolute;top: 43px;left: 55px;font-size: 18px;color: #333;z-index: 2">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box">
+                                            <div>
+                                                园所介绍
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor backIntr" data-type="6" data-site="4"
+                                        style="display: block;width:345px;height: 288px;;background-color:#fff;position: absolute;top: 75px;left: 15px;z-index: 1;border-radius: 8px">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div style="display: block;width: 100%;height: 100%;background-color: #fff;border-radius: 8px;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--
+                                            可修改文本，不可拖动
+                                        -->
+                                    <li class="ui-widget-content edit drag_text prohibit renderIntr" data-type="2" data-site="5"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
+                                        style="display: block;width: 288px;height:230px;overflow: auto;position: absolute;top: 90px;left: 45px;font-size: 12px;color: #333;z-index: 2"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                                        <!--可拖动的标识-->
+                                        <div class="element-box">
+                                            <div>
+                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+                                                <br><br>
+                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+                                                <br><br>
+                                                ***幼儿园是一所高品质、国际化连锁幼儿园，建筑面积****多平方米，园所内外绿植常青、四季花开、室内配备了多媒体智能白板、中央空调、新风系统等。户外设有进口原木游乐设施、多功能攀爬区、体能组合区等，建造了木屋、沙池、景观台等，让孩子充分接触自然，培养他们尊重自然、和谐共生的人文理念。
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content edit drag_img prohibit pro_bor ani" data-type="8" data-site="6"
+                                        style="display: block;width:345px;position: absolute;top: 278px;left: 15px;z-index: 9;font-size:14px;color: #0099FF;
+                                        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+                                        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+                                        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+                                        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="look_intr">
+                                                向下展开
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content swiper-lazy edit drag_img" data-type="1" data-site="7" data-issize="1" data-iseditable="1" data-isdrag="1"
+                                        data-animation="rotateInUpRight" data-duration="0.8s" data-delay="0.7s"
+                                        style="display: block;width: 345px;height:169px;position: absolute;top: 378px;left: 16px"
+                                        swiper-animate-effect="rotateInUpRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">
+                                        <i class='hander'></i>
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%">
+                                            <img data-src="../images/template/draFes/footer5.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--第六屏-->
+                            <div class="swiper-slide home">
+                                <ul class="edit_area"
+                                    style="width:100%;height: 100%;position:relative;">
+                                    <!--
+                                          元素单独的样式  全部加在li标签上
+                                          动画全部加在li样式上
+                                    -->
+                                    <li class="ui-widget-content swiper-lazy drag_img prohibit pro_bor" data-type="5" data-site="1"
+                                        style="display: block;width:100%;height:100%;position: absolute;top: 0;left: 0;">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div  class="swiper-lazy" style="display: block;width: 100%;height: 100%;background-size: 100% 100%;" data-background='../images/template/draFes/back6.png'></div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="1" data-site="2"
+                                        style="display: block;width:30px;position: absolute;top: 60px;left: 15px;z-index: 2;">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <img data-src="../images/template/draFes/mess_icon2.png" alt="" class="swiper-lazy"
+                                                 style="display: block;width: 100%;height: 100%;">
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content intersected drag_text prohibit pro_bor" data-type="2" data-site="3"
+                                        style="display: block;position: absolute;top: 66px;left: 55px;font-size: 18px;color: #333;z-index: 2">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box">
+                                            <div>
+                                                报名信息
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor" data-type="6" data-site="4"
+                                        style="display: block;width:345px;height: 424px;background-color:#fff;position: absolute;top: 110px;left: 15px;z-index: 1;border-radius: 8px;">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div style="display: block;width: 100%;height: 100%;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor ani" data-type="102" data-site="5"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.2s"
+                                        style="display: block;width:315px;position: absolute;top: 122px;left: 30px;z-index: 35;"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="baby_name clearfix ani">
+                                                <label class="fl baby_la">宝宝姓名：</label><input type="text"
+                                                                                              class="baby_input fl"
+                                                                                              placeholder="请输入宝宝名称"
+                                                                                              readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="ui-widget-content drag_img prohibit pro_bor ani" data-type="106" data-site="6"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.4s"
+                                        style="display: block;width:315px;background-color:#fff;position: absolute;top: 190px;left: 30px;z-index: 5"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s" >
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="baby_name clearfix ani">
+                                                <label class="fl baby_la">出生日期：</label><input type="tel"
+                                                                                              placeholder="请输入出生日期"
+                                                                                              readonly="readonly"
+                                                                                              class="baby_input fl"
+                                                                                              id="nickSpan">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor ani" data-type="104" data-site="7"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.6s"
+                                        style="display: block;width:315px;background-color:#fff;position: absolute;top: 257px;left: 30px;z-index: 1"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="baby_name clearfix">
+                                                <label class="fl baby_la">联系电话：</label>
+                                                <input type="tel" class="baby_input fl" placeholder="请输入联系电话"
+                                                       id="j_phone" readonly="readonly">
+                                                <a href="javascript:void (0)" class="obtain_code" id="j_getVerifyCode">获取验证码</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor ani" data-type="102" data-site="8"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.8s"
+                                        style="display: block;width:315px;position: absolute;top: 324px;left: 30px;z-index: 5"
+                                        swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s">
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="baby_name clearfix">
+                                                <label class="fl baby_la">验证码：</label><input type="tel"
+                                                                                             placeholder="请输入手机验证码"
+                                                                                             class="baby_input fl"
+                                                                                             readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--ident_err   验证码错误提示-->
+                                    <li class="ui-widget-content drag_img prohibit pro_bor ident_err" data-type="2" data-site="9"
+                                        style="display: block;width:315px;position: absolute;top: 415px;left: 218px;z-index: 1;color: #FF4539;">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div>
+                                                短信验证码输入错误
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ui-widget-content drag_img prohibit pro_bor ani" data-type="0" data-site="10"
+                                        data-animation="zoomIn" data-duration="0.8s" data-delay="0.8s"
+                                        style="display: block;width:315px;position: absolute;top: 430px;left: 30px;z-index: 1;color: #FF4539;"
+                                        swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="1s">
+                                        <!--<i class='hander'></i>-->
+                                        <div class="element-box" style="display: block;width: 100%;height: 100%;">
+                                            <div class="sub_btn">
+                                                提交
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next button_my">下<br>一<br>页</div>
+                    <div class="swiper-button-prev button_my">上<br>一<br>页</div>
+                </div>
+            </div>
+            <!--创建活动-->
+            <div class="creat_modify">
+                <div class="clearfix">
+                    <h3 class="perfect">园所信息完善</h3>
+                </div>
+                <div class="kinder_name clearfix">
+                    <label>幼儿园名称：</label><input type="text" value="" class="name_input inn" id="in" placeholder="请输入幼儿园名称">
+                </div>
+                <div class="kinder_name clearfix">
+                    <label>联 系 方 式：</label><input type="text" value="" class="name_input" id="tell" placeholder="请输入手机号">
+                </div>
+                <div class="intr_div">
+                    <div class="kinder_name clearfix">
+                        <label>园 所 介 绍：</label><textarea class="render_intr"onkeyup="fn()" onblur="fn()" onfocus=$(this).autoHeight(); maxlength="500"placeholder="请添加园所特色"></textarea>
+                    </div>
+                    <div class="clearfix">
+                        <a href="javascript:void (0);" class="look_exam fl">查看示例</a>
+                        <!--<a href="javascript:void (0);" class="look_exam">查看示例</a>-->
+                        <p class="length fr"><span>0</span>/500</p>
+                    </div>
+                </div>
+                <div class="line_bor"></div>
+                <div class="clearfix">
+                    <h3 class="perfect">活动信息</h3>
+                </div>
+                <div class="kinder_name clearfix">
+                    <label>合作方信息：</label><input type="text" value="" class="name_input inn" id="inp_partner" placeholder="请输入合作方信息">
+                </div>
+                <!--选择时间-->
+                <div class="activity_time clearfix">
+                    <h3 class="time_tit fl">活动时间：</h3>
+                    <div class="layui-form fl">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <div class="layui-input-inline time_choice">
+                                    <span class="year_icon"></span>
+                                    <input type="text" class="layui-input" id="time_year" placeholder="请选择活动时间" readonly="readonly">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city_div1 clearfix">
+                    <span class="fl pick_span">活动地址：</span>
+                    <div class="fl pick-area pick-area1" name="省 / 市 / 区"></div>
+                </div>
+                <div class="kinder_name clearfix">
+                    <label style="color: rgba(255,255,255,0)">活动地址：</label><input type="text" value="" class="intr_mess" placeholder="请输入具体地址信息">
+                </div>
+                <!--提交按钮-->
+                <a href="#" class="submit_btn fl">提&nbsp;&nbsp;交</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $(".look_intr").on('click',function(){
+            var self = $(this);
+            if(!self.data('status') || self.data('status') == 1){
+                $(".backIntr").css("height","95%");
+                $(".backIntr").css("top","15px");
+                $(".backIntr").css("zIndex","10");
+                $(".renderIntr").css("height","84%");
+                $(".renderIntr").css("top","30px");
+                $(".renderIntr").css("zIndex","11");
+                $(".look_intr").parent().parent().css("top","550px")
+                $(".look_intr").parent().parent().css("zIndex","12");
+                $(".look_intr").parent().parent().css("background-image","none");
+                $(".look_intr").html("向上收起");
+                $(".look_intr").addClass("look_intrtop");
+                $(".look_intr").data("status","2");
+            }else{
+                $(".backIntr").css("height","288px");
+                $(".backIntr").css("top","75px");
+                $(".backIntr").css("zIndex","1");
+                $(".renderIntr").css("height","230px");
+                $(".renderIntr").css("top","90px");
+                $(".renderIntr").css("zIndex","2");
+                $(".look_intr").parent().parent().css("top","278px")
+                $(".look_intr").parent().parent().css("zIndex","9");
+                $(".look_intr").parent().parent().css("background-image","-webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgb(255, 255, 255));");
+                $(".look_intr").html("向下展开");
+                $(".look_intr").removeClass("look_intrtop");
+                $(".look_intr").data("status","1");
+            }
+        })
+
+    })
+</script>
+</html>

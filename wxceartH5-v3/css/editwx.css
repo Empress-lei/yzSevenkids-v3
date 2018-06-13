@@ -48,7 +48,6 @@
 }
 .warp_wx .reader_paper .reader_content .schedule .textarea {
   display: block;
-  width: 100%;
   outline: none;
   font-size: 0.37333333rem;
   border: 0.02666667rem dotted #ffffff;
@@ -60,7 +59,6 @@
   border: 0.02666667rem dotted #ffffff;
 }
 .warp_wx .reader_paper .reader_content .schedule .file_img {
-  width: 100%;
   height: auto;
   position: relative;
 }
@@ -79,7 +77,6 @@
 }
 .warp_wx .reader_paper .myschedule .textarea {
   display: block;
-  width: 100%;
   outline: none;
   font-size: 0.37333333rem;
   color: #333;
@@ -155,7 +152,6 @@
   letter-spacing: 0.05333333rem;
 }
 .warp_wx .reader_paper .myschedule .file_img {
-  width: 100%;
   height: auto;
   position: relative;
 }
