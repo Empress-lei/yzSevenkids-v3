@@ -1,0 +1,441 @@
+@import "base_pc.css";
+.warp_page {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /*清除点击高亮效果*/
+}
+.warp_page .maxcen_width {
+  width: 1228px;
+  margin: 0 auto;
+}
+.warp_page .admin_list {
+  width: 100%;
+  margin: 118px 0;
+}
+.warp_page .admin_list .admin_li {
+  position: relative;
+  border: 30px solid #fff;
+  background-color: #fff;
+}
+.warp_page .admin_list .admin_li .mudu_share {
+  width: 325px;
+  height: 228px;
+  position: relative;
+}
+.warp_page .admin_list .admin_li .mudu_share .modu_img {
+  width: 100%;
+  height: 100%;
+}
+.warp_page .admin_list .admin_li .modu_mess {
+  width: 842px;
+  padding: 5px 0px 0 15px;
+}
+.warp_page .admin_list .admin_li .modu_mess .mess_rec .rec_title {
+  width: 702px;
+  font-size: 18px;
+  color: #333;
+  line-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.warp_page .admin_list .admin_li .modu_mess .mess_rec .titlepro {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 2px;
+  background: url("../images/activiicon/grayarr_icon.png") no-repeat right center;
+  background-size: 20px 20px;
+  padding-right: 26px;
+  color: #999;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #999;
+  padding: 30px 0 52px;
+}
+.warp_page .admin_list .admin_li .modu_mess .btn_div {
+  width: 100%;
+}
+.warp_page .admin_list .admin_li .modu_mess .btn_div a {
+  float: left;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  margin-right: 76px;
+}
+.warp_page .admin_list .admin_li .modu_mess .btn_div .editButton {
+  background: url("../images/activiicon/editgray_icon.png") no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 26px;
+}
+.warp_page .admin_list .admin_li .modu_mess .btn_div .editButton:hover {
+  color: #FF530B;
+  background: url("../images/activiicon/editora_icon.png") no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 26px;
+}
+.warp_page .admin_list .admin_li .modu_mess .btn_div .deleButton {
+  background: url("../images/activiicon/delegray_icon.png") no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 26px;
+}
+.warp_page .admin_list .admin_li .modu_mess .btn_div .deleButton:hover {
+  color: #FF530B;
+  background: url("../images/activiicon/deleora_icon.png") no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 26px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now {
+  width: 100%;
+  padding-top: 30px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li {
+  float: left;
+  width: 33.33%;
+  height: 45px;
+  line-height: 45px;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #F3F3F3;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #F3F3F3;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li .li_icon {
+  background: url("../images/activiicon/grayinvi_icon.png") no-repeat 96px center;
+  background-size: 20px 20px;
+  padding-left: 122px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li .li_poster {
+  background: url("../images/activiicon/graysign_icon.png") no-repeat 76px center;
+  background-size: 20px 20px;
+  padding-left: 102px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li .li_num {
+  background: url("../images/activiicon/grayform_icon.png") no-repeat 60px center;
+  background-size: 20px 20px;
+  padding-left: 86px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li:hover {
+  float: left;
+  width: 33.33%;
+  height: 45px;
+  line-height: 45px;
+  color: #FF530B;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #FFF7F4;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #FF530B;
+  transition: all 1s ease;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li:hover .li_icon {
+  background: url("../images/activiicon/orainvi_icon.png") no-repeat 96px center;
+  background-size: 20px 20px;
+  padding-left: 122px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li:hover .li_poster {
+  background: url("../images/activiicon/orasign_icon.png") no-repeat 76px center;
+  background-size: 20px 20px;
+  padding-left: 102px;
+}
+.warp_page .admin_list .admin_li .modu_mess .activ_now .now_li:hover .li_num {
+  background: url("../images/activiicon/oraform_icon.png") no-repeat 60px center;
+  background-size: 20px 20px;
+  padding-left: 86px;
+}
+.warp_page .admin_list .admin_li:hover {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0 2px 14px 0 rgba(157, 157, 157, 0.5);
+  -moz-box-shadow: 0 2px 14px 0 rgba(157, 157, 157, 0.5);
+  -ms-box-shadow: 0 2px 14px 0 rgba(157, 157, 157, 0.5);
+  -o-box-shadow: 0 2px 14px 0 rgba(157, 157, 157, 0.5);
+  box-shadow: 0 2px 14px 0 rgba(157, 157, 157, 0.5);
+}
+.warp_page .admin_list .admin_li:hover .modu_mess .mess_rec .titlepro {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 2px;
+  background: url("../images/activiicon/oraarr_icon.png") no-repeat right center;
+  background-size: 20px 20px;
+  padding-right: 26px;
+  color: #FF530B;
+}
+.sign_page {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sign_page .sign_share {
+  width: 980px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  padding: 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.sign_page .sign_share .close_img1 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 39px;
+  height: 39px;
+  background-color: #F2F2F2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sign_page .sign_share .close_img1 img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 11px auto;
+}
+.sign_page .sign_share .poster_img {
+  width: 309px;
+  height: 517px;
+  border: 10px solid #E6E6E6;
+}
+.sign_page .sign_share .poster_img .poster {
+  width: 100%;
+  height: 100%;
+}
+.sign_page .sign_share .sign_mess {
+  width: 590px;
+  padding-left: 40px;
+}
+.sign_page .sign_share .sign_mess .sign_title {
+  font-size: 42px;
+  color: #181818;
+  line-height: 59px;
+  padding: 25px 0 31px;
+}
+.sign_page .sign_share .sign_mess .explain_title {
+  font-size: 16px;
+  color: #FF530B;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+.sign_page .sign_share .sign_mess .explain_text {
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  padding-bottom: 140px;
+}
+.sign_page .sign_share .sign_mess .sub_code .scene_cord {
+  width: 180px;
+  height: 180px;
+  border: 10px solid #D8D8D8;
+}
+.sign_page .sign_share .sign_mess .sub_code .scene_cord img {
+  width: 100%;
+  height: 100%;
+}
+.sign_page .sign_share .sign_mess .sub_code .cord_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #181818;
+  padding-left: 15px;
+  padding-top: 117px;
+}
+.sign_scene {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sign_scene .sign_share {
+  width: 980px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  padding: 60px 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.sign_scene .sign_share .close_img1 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 39px;
+  height: 39px;
+  background-color: #F2F2F2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sign_scene .sign_share .close_img1 img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 11px auto;
+}
+.sign_scene .sign_share .poster_img {
+  width: 309px;
+  height: 428px;
+  border: 10px solid #E6E6E6;
+}
+.sign_scene .sign_share .poster_img .poster {
+  width: 100%;
+  height: 100%;
+}
+.sign_scene .sign_share .sign_mess {
+  width: 590px;
+  padding-left: 40px;
+}
+.sign_scene .sign_share .sign_mess .sign_title {
+  font-size: 42px;
+  color: #181818;
+  line-height: 59px;
+  padding: 25px 0 31px;
+}
+.sign_scene .sign_share .sign_mess .explain_title {
+  font-size: 16px;
+  color: #FF530B;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+.sign_scene .sign_share .sign_mess .explain_text {
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  padding-bottom: 180px;
+}
+.sign_scene .sign_share .sign_mess .down {
+  position: relative;
+  width: 77px;
+  height: 28px;
+}
+.sign_scene .sign_share .sign_mess .down .submit_download {
+  display: block;
+  width: 77px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+  padding-left: 18px;
+  border-radius: 25px;
+  margin-right: 14px;
+  color: #888;
+  border: 1px solid #888;
+}
+.sign_scene .sign_share .sign_mess .down .down_img {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  width: 9px;
+  height: 10px;
+}
+.dele_page {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.dele_page .dele_box {
+  width: 650px;
+  padding: 66px 33px 49px;
+  background-color: #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.dele_page .dele_box .title_dele {
+  font-size: 20px;
+  line-height: 28px;
+  color: #333;
+  text-align: center;
+}
+.dele_page .dele_box .txt_dele {
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+  text-align: center;
+  padding: 22px 0 53px;
+}
+.dele_page .dele_box .btn_ul {
+  margin-left: -40px;
+  padding: 0 150px;
+}
+.dele_page .dele_box .btn_ul li {
+  cursor: pointer;
+  float: left;
+  width: 116px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.dele_page .dele_box .btn_ul .su_btn {
+  color: #fff;
+  background-color: #FF4539;
+}
+.dele_page .dele_box .btn_ul .can_btn {
+  color: #999;
+  background-color: #dddddd;
+}

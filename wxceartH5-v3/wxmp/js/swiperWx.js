@@ -26,11 +26,11 @@ $(function () {
             if (!$(".look_intr").data('status') || $(".look_intr").data('status') == 1) {
                 $(".backIntr").css("height", "98%");
                 $(".backIntr").css("top", "15px");
-                $(".backIntr").css("zIndex", "10");
+                // $(".backIntr").css("zIndex", "10");
                 $(".renderIntr").css("height", "85%");
                 $(".renderIntr").css("top", "30px");
                 $(".renderIntr").css("zIndex", "11");
-                $(".look_intr").parent().parent().css("top", "490px")
+                $(".look_intr").parent().parent().css("top", "430px")
                 $(".look_intr").parent().parent().css("zIndex", "12");
                 $(".look_intr").parent().parent().css("background-image", "none");
                 $(".look_intr").html("向上收起");
@@ -39,7 +39,7 @@ $(function () {
             } else {
                 $(".backIntr").css("height", "288px");
                 $(".backIntr").css("top", "75px");
-                $(".backIntr").css("zIndex", "1");
+                // $(".backIntr").css("zIndex", "1");
                 $(".renderIntr").css("height", "230px");
                 $(".renderIntr").css("top", "90px");
                 $(".renderIntr").css("zIndex", "2");

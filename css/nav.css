@@ -72,6 +72,9 @@ input:-moz-placeholder {
   width: 100px;
   text-align: center;
 }
+.warp_page .home_nav .home_header .hover_ani ul li a {
+  display: block;
+}
 .warp_page .home_nav .home_header .hover_ani ul li .nav_list {
   display: block;
   cursor: pointer;

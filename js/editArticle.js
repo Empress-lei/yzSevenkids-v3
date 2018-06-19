@@ -25,9 +25,7 @@ $(function () {
     });
     // var $a = $(".container").text();
     clipboard.on('success',function(e){
-        // console.info("Text","e.text")
-        // $(".container").css("width","750px")
-        console.log( $(".container section").width())
+        alert("复制成功")
     });
     $('.font13 textarea').autoHeight();
     //图片上传   增加
