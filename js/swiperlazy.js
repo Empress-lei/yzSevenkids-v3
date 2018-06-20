@@ -25,6 +25,7 @@ $(function () {
             swiperAnimate(swiper); //初始化完成开始动画
         },
         onSlideChangeEnd: function(swiper){
+            $(".look_intr").data("status", "2");
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
             if (!$(".look_intr").data('status') || $(".look_intr").data('status') == 1) {
                 $(".backIntr").css("height", "98%");
