@@ -49,6 +49,25 @@
         </li>
     </ul>
 </div>
+<!--免费兑换朦层-->
+<div class="freeexchange">
+    <div class="exchange_share">
+        <div class="exchange_con">
+            <div class="exchange_title clearfix">
+                <h3 class="title_h3 fl">免费兑换券</h3>
+                <span class="fr title_span">12 张</span>
+            </div>
+            <div class="exchange_text">
+                <p class="text_p">本次兑换将消耗一张免费兑换券，当前还剩 12 张</p>
+                <span class="text_span">您确定使用免费兑换券吗？</span>
+                <ul class="exchange_ul clearfix">
+                    <li class="exchange_li think_li">不，再看看</li>
+                    <li class="exchange_li sure_li">确 定</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="warp_creat">
     <!--背景色-->
     <div class="myswiper-container creat_page">
@@ -750,6 +769,14 @@
     })
 </script>
 <script>
+    $(function () {
+        $(".freedui_nav").click(function () {
+            $(".freeexchange").show();
+        })
+        $(".think_li").click(function () {
+            $(".freeexchange").hide()
+        })
+    })
     document.addEventListener('DOMContentLoaded', function () {
         function audioAutoPlay() {
             $(".playBtn").addClass("pause").removeClass("play");

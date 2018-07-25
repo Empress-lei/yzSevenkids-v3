@@ -54,7 +54,100 @@
     }
   }
 }
-
+//免费兑换
+.freeexchange {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.7);
+  .exchange_share {
+    width: 100%;
+    height: 100%;
+    padding: 30/37.5rem;
+    position: relative;
+    .exchange_con {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300/37.5rem;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      .exchange_title {
+        padding: 30/37.5rem 20/37.5rem;
+        background-color: #63A431;
+        -webkit-border-radius: 4/37.5rem 4/37.5rem 0 0;
+        -moz-border-radius: 4/37.5rem 4/37.5rem 0 0;
+        -ms-border-radius: 4/37.5rem 4/37.5rem 0 0;
+        -o-border-radius: 4/37.5rem 4/37.5rem 0 0;
+        border-radius: 4/37.5rem 4/37.5rem 0 0;
+        .title_h3 {
+          font-size: 18/37.5rem;
+          color: #fff;
+          font-weight: 800;
+        }
+        .title_span {
+          display: block;
+          font-size: 18/37.5rem;
+          color: #fff;
+          font-weight: 800;
+        }
+      }
+      .exchange_text {
+        padding: 30/37.5rem 10/37.5rem 0;
+        background-color: #fff;
+        -webkit-border-radius: 0 0 4/37.5rem 4/37.5rem;
+        -moz-border-radius: 0 0 4/37.5rem 4/37.5rem;
+        -ms-border-radius: 0 0 4/37.5rem 4/37.5rem;
+        -o-border-radius: 0 0 4/37.5rem 4/37.5rem;
+        border-radius: 0 0 4/37.5rem 4/37.5rem;
+        .text_p {
+          padding: 0 10/37.5rem;
+          font-size: 14/37.5rem;
+          line-height: 22/37.5rem;
+          color: #666;
+        }
+        .text_span {
+          display: block;
+          font-size: 15/37.5rem;
+          line-height: 22/37.5rem;
+          color: #666;
+          padding: 30/37.5rem 10/37.5rem 50/37.5rem;
+        }
+        .exchange_ul {
+          width: 100%;
+          padding: 10/37.5rem 0;
+          border-top: 1/37.5rem solid #EEEEEE;
+          .exchange_li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 14/37.5rem;
+            line-height: 40/37.5rem;
+            border-right: 1/37.5rem solid #EEEEEE;
+          }
+          .think_li {
+            color: #999;
+          }
+          .sure_li {
+            color: #63A431;
+          }
+          .exchange_li:nth-last-child(1) {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}
 .warp_creat {
   width: 100%;
   height: 100%;
@@ -145,7 +238,7 @@
     width: 100%;
     position: fixed;
     max-width: 540px;
-    z-index: 999999;
+    z-index: 100;
     bottom: 0;
     height: 54/37.5rem;
     background-color: rgba(255, 255, 255, 0.95);
@@ -170,22 +263,21 @@
           border-right: 1/37.5rem solid #999;
         }
       }
+      .freedui_nav {
+        a {
+          border-right: none;
+        }
+      }
       .buy_nav {
-        padding: 12/37.5rem 0;
         a {
           display: block;
-          width: 100/37.5rem;
-          height: 30/37.5rem;
+          width: 100%;
+          height: 100%;
           margin: 0 auto;
           color: #fff;
-          line-height: 30/37.5rem;
+          line-height: 54/37.5rem;
           font-size: 14/37.5rem;
           font-weight: 800;
-          -webkit-border-radius: 8/37.5rem;
-          -moz-border-radius: 8/37.5rem;
-          -ms-border-radius: 8/37.5rem;
-          -o-border-radius: 8/37.5rem;
-          border-radius: 8/37.5rem;
           background-color: #FF4539;
         }
       }
