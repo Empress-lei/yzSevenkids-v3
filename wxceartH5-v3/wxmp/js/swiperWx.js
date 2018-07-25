@@ -30,7 +30,7 @@ $(function () {
                 // $(".backIntr").css("zIndex", "10");
                 $(".renderIntr").css("height", "85%");
                 $(".renderIntr").css("top", "30px");
-                $(".renderIntr").css("zIndex", "11");
+                $(".renderIntr").css("zIndex", "12");
                 $(".look_intr").parent().parent().css("top", "430px")
                 $(".look_intr").parent().parent().css("zIndex", "12");
                 $(".look_intr").parent().parent().css("background-image", "none");
@@ -43,7 +43,7 @@ $(function () {
                 // $(".backIntr").css("zIndex", "1");
                 $(".renderIntr").css("height", "230px");
                 $(".renderIntr").css("top", "90px");
-                $(".renderIntr").css("zIndex", "2");
+                $(".renderIntr").css("zIndex", "12");
                 $(".look_intr").parent().parent().css("top", "278px")
                 $(".look_intr").parent().parent().css("zIndex", "12");
                 $(".look_intr").parent().parent().css("background-image", "-webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgb(255, 255, 255));");
