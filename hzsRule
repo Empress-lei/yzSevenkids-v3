@@ -1,0 +1,71 @@
+慧招生1.4（创建h5）规则： 
+
+模版属性(模版表里的 properties 字段) 版本v3：
+	{k,v}
+	k:元素id
+	v:对应模版活动表字段   
+模版属性(模版表里的 properties 字段) 版本v3：
+	{k,v}
+	k:元素id
+	v:对应模版活动表字段
+	样例：{"12":"kindergartenName","25":"[\"activityAddress\",\"addressDetails\"]","37":"kindergartenIntroduce","7":"kindergartenLogo","31":"telephone","21":"activityStartTime"} 用来对应 元素和园所活动 之间的关系
+
+页面属性(页面表里的 properties 字段 ) 版本v3：
+	{k,v}
+	k:功能名称
+	v:功能状态
+	样例:{"modify":true} 用于界定页面需不需要修改
+
+元素属性(元素表里的 properties 字段 ) 版本v3:
+	{k,v}
+	k:自定义
+	v:自定义
+	其中k值中的 elementType 表示 元素类型 类似枚举 值包括： date、text、album 分别对应的 时间、文本、头像
+	样例：{"a_sendId":"j_getVerifyCode","labelTxt":"联系电话：","id":"j_phone","elementType":"tel","inputPlaceholder":"请输入联系电话"}
+
+
+  是否：
+    0 否   1 是
+    data-type="" 元素类型
+        0 提交按钮  1 图片  2 文本 3音频 4 视频 5页面背景图 6背景颜色 7头像 8普通按钮
+        100  新文本  101 复合文本 102 表单 103 文档介绍（朦层）104 电话（带按钮）
+        105 新复合文本 106 日期选择
+    data-site="1"  每屏 元素位置   1开始  以此类推
+    data-animation  动画名称  直接是动画名称
+    data-duration 动画时长    自定义的动画时长
+    data-delay  动画延时
+    data-animcountnum 动画次数
+    data-isfor    动画是否循环
+    data-isdrag   元素是否可拖动
+    data-issize   元素是否可以更改大小
+    data-isshow   元素是否显示
+    data-iseditable 元素是否可编辑
+
+
+
+properties（元素属性）
+    2   文本
+        {"linkageName":"linkageName"}
+       【说明：创建时候左右联动的园所名称】
+    102 表单
+        {"labelTxt":"***","inputPlaceholder":"********"}
+       【说明：label 标签的内容，input的placeholder】
+
+
+
+me class
+
+    ui-widget-content   元素拖动标识类名
+    drag_img       图片标识
+    drag_text      文本标识
+    intersected    双击文字  字体修改大小
+    prohibit       可拖动不可修改大小
+    pro_bor        鼠标经过没有border
+    edit           双击可编辑（文字或者图片）
+    swiper-lazy    懒加载（所有的li标签和img标签都添加此类名---移动端）
+
+海报规则：
+来杰
+    data-contentType：
+        0是图片；
+        1是文字
